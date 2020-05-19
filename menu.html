@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#main-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="menu-home">BOT48.githbub.io</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="nav navbar-nav">
+                <li><a id="menu-members">Member</a></li>
+                <li><a id="menu-generations">Generasi</a></li>
+                <li><a id="menu-graduate">Graduate</a></li>
+                <li><a id="menu-about">Tentang BOT48</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $('#menu-home').click(function () {
+        $('#content').load('home.html');
+    });
+
+    $('#menu-members').click(function () {
+        $('#content').load('members.html?' + getShortDate());
+    });
+
+    $('#menu-generations').click(function () {
+        $('#content').load('generations.html?' + getShortDate());
+    });
+
+    $('#menu-graduate').click(function () {
+        $('#content').load('graduate.html?' + getShortDate());
+    });
+
+    $('#menu-about').click(function () {
+        $('#content').load('about.html?' + getShortDate());
+    });
+</script>

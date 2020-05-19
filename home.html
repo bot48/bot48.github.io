@@ -1,0 +1,368 @@
+<div class="chart-container col-md-6">
+    <div id="chart-team"></div>
+</div>
+<div class="chart-container col-md-6">
+    <div id="chart-team-gen"></div>
+</div>
+<div class="chart-container col-md-6">
+    <div id="chart-grad-year"></div>
+</div>
+<div class="chart-container col-md-6">
+    <div id="chart-grad-month"></div>
+</div>
+<div class="chart-container col-md-12">
+    <div id="chart-twitter"></div>
+</div>
+<script>
+    var colorTeamMap = {
+        "Team J": 'rgba(202, 23, 29, 1)',
+        "Team KIII": 'rgba(255, 241, 1, 1)',
+        "Team T": 'rgba(248, 176, 202, 1)',
+        "Academy Class A": 'rgba(27, 200, 248, 1)',
+        "Academy Class B": 'rgba(27, 200, 248, 1)'
+    }
+
+    $(document).ready(function () {
+        $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+            var teamName = [];
+            var teamCount = [];
+            var generation = [];
+            var teamGen = [];
+            var year = [];
+            var gradYear = [];
+            var gradMonth = [];
+            gradYear['All Gen'] = [];
+            $.each(dataMembers, function (key, entry) {
+                if (generation.indexOf('Gen ' + entry.gen) === -1) {
+                    generation.push('Gen ' + entry.gen)
+                }
+                if ('teams' in entry) {
+                    for (i = 0; i < entry.teams.length; i++) {
+                        if (teamName.indexOf(entry.teams[i]) === -1) {
+                            teamName.push(entry.teams[i])
+                            teamCount[entry.teams[i]] = 1
+                            teamGen[entry.teams[i]] = []
+                            teamGen[entry.teams[i]][entry.gen] = 1
+                        } else {
+                            teamCount[entry.teams[i]] = teamCount[entry.teams[i]] + 1;
+                            if (teamGen[entry.teams[i]][entry.gen] === undefined) {
+                                teamGen[entry.teams[i]][entry.gen] = 1
+                            } else {
+                                teamGen[entry.teams[i]][entry.gen] = teamGen[entry.teams[i]][entry.gen] + 1
+                            }
+                        }
+                    }
+                }
+                if ('last_date' in entry) {
+                    var dt = new Date(entry.last_date);
+                    var dtYear = dt.getFullYear()
+                    var dtMonth = dt.getMonth();
+                    if (year.indexOf(dtYear) === -1) {
+                        year.push(dtYear)
+                        gradYear['All Gen'][dtYear] = 1
+                    } else {
+                        gradYear['All Gen'][dtYear] = gradYear['All Gen'][dtYear] + 1
+                    }
+
+                    if (gradYear[entry.gen] === undefined) {
+                        gradYear[entry.gen] = []
+                        gradYear[entry.gen][dtYear] = 1
+                    } else {
+                        if (gradYear[entry.gen][dtYear] == undefined) {
+                            gradYear[entry.gen][dtYear] = 1
+                        } else {
+                            gradYear[entry.gen][dtYear] = gradYear[entry.gen][dtYear] + 1
+                        }
+                    }
+
+                    if (gradMonth[dtMonth] === undefined) {
+                        gradMonth[dtMonth] = 1
+                    } else {
+                        gradMonth[dtMonth] = gradMonth[dtMonth] + 1
+                    }
+                }
+            })
+
+            // data team
+            var dataTeam = []
+            var colorTeam = []
+            var labelTeam = []
+            for (var key in teamCount) {
+                dataTeam.push(teamCount[key])
+                colorTeam.push(colorTeamMap[key])
+                labelTeam.push(key)
+            }
+            renderChartTeam(dataTeam, labelTeam, colorTeam)
+
+            // data team per gen
+            var dataTeamGen = []
+            for (var team in teamGen) {
+                var dataSeries = []
+                for (i = 0; i < generation.length; i++) {
+                    if (teamGen[team][i + 1] === undefined) {
+                        dataSeries.push(0)
+                    } else {
+                        dataSeries.push(teamGen[team][i + 1])
+                    }
+                }
+
+                dataTeamGen.push({
+                    name: team,
+                    data: dataSeries,
+                })
+            }
+            renderChartTeamGen(dataTeamGen, generation, colorTeam)
+
+            // data grad per tahun
+            year.sort();
+            dataGradYear = []
+            for (var gen in gradYear) {
+                var dataSeries = []
+                for (i = 0; i < year.length; i++) {
+                    if (gradYear[gen][year[i]] === undefined) {
+                        dataSeries.push(0)
+                    } else {
+                        dataSeries.push(gradYear[gen][year[i]])
+                    }
+                }
+                if (gen != "All Gen") {
+                    gen = "Gen " + gen
+                }
+                dataGradYear.push({
+                    data: dataSeries,
+                    name: gen,
+                })
+            }
+            renderChartGradYear(dataGradYear, year)
+
+            // data grad per bulan
+            renderChartGradMonth(gradMonth, months)
+
+            // renderChartTwitter(gradMonth.sort(), months)
+        });
+
+    });
+
+    function renderChartTeam(data, labels, colors) {
+        var options = {
+            series: data,
+            colors: colors,
+            labels: labels,
+            chart: {
+                height: '300',
+                type: 'pie',
+            },
+            title: {
+                text: 'Jumlah Member per Team',
+                align: 'center'
+            },
+            legend: {
+                position: 'top',
+            },
+            dataLabels: {
+                formatter: function (val, opts) {
+                    return opts.w.config.series[opts.seriesIndex]
+                },
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    },
+                    legend: {
+                        show: false,
+                    },
+                    chart: {
+                        height: '200',
+                    },
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-team"), options);
+        chart.render();
+    }
+
+    function renderChartTeamGen(data, gen, colors) {
+        var options = {
+            series: data,
+            // colors: colors,
+            xaxis: {
+                categories: gen
+            },
+            chart: {
+                height: '300',
+                type: 'radar',
+                toolbar: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Jumlah Member Team per Generasi',
+                align: 'center'
+            },
+            legend: {
+                position: 'top',
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    },
+                    legend: {
+                        show: false,
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-team-gen"), options);
+        chart.render();
+    }
+
+    function renderChartGradYear(data, year) {
+        var options = {
+            series: data,
+            xaxis: {
+                categories: year,
+            },
+            chart: {
+                height: '300',
+                type: 'line',
+                toolbar: {
+                    show: false
+                }
+            },
+            legend: {
+                position: 'top',
+            },
+            stroke: {
+                curve: 'straight',
+                width: 1.5
+            },
+            title: {
+                text: 'Jumlah Grad dari Tahun ke Tahun',
+                align: 'center'
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    },
+                    legend: {
+                        show: false,
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-grad-year"), options);
+        chart.render();
+    }
+
+    function renderChartGradMonth(data, months) {
+        var options = {
+            series: [{
+                name: 'Grad',
+                data: data
+            }],
+            xaxis: {
+                categories: months,
+            },
+            title: {
+                text: 'Jumlah Grad dari Bulan ke Bulan',
+                align: 'center'
+            },
+            chart: {
+                type: 'bar',
+                height: 300,
+                toolbar: {
+                    show: false
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-grad-month"), options);
+        chart.render();
+
+    }
+
+    function renderChartTwitter(data, month) {
+        var options = {
+            series: [{
+                name: 'Follower',
+                data: data
+            }],
+            xaxis: {
+                categories: months,
+            },
+            yaxis: {
+                labels: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Jumlah Follower Twitter',
+                align: 'center'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    distributed: true,
+                }
+            },
+            legend: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: true,
+                style: {
+                    colors: ['#fff']
+                },
+                textAnchor: 'end',
+                formatter: function (val, opt) {
+                    return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+                },
+                offsetX: 0,
+            },
+            chart: {
+                type: 'bar',
+                toolbar: {
+                    show: false
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-twitter"), options);
+        chart.render();
+    }
+</script>

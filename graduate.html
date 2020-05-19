@@ -1,0 +1,104 @@
+<h3>Graduate</h3>
+
+<div class="filter">
+    <div class="dropdown col-sm-3">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="button-generation">Semua
+            Gen
+            <span class="caret"></span></button>
+        <input type="hidden" id="filter-generation" name="gen">
+        <ul class="dropdown-menu" id="list-generation">
+            <li id="list-all-generation">Semua Gen</li>
+        </ul>
+    </div>
+</div>
+
+<table data-toggle="table" class="display table table-bordered" id="table-members">
+    <thead>
+        <tr>
+            <th data-field="name">Nama</th>
+            <th data-field="gen">Generasi</th>
+            <th data-field="last_date" data-visible="false">Tanggal Graduate</th>
+            <th data-field="last_date_format">Tanggal Graduate</th>
+            <th data-field="days">Jumlah Hari di JKT48</th>
+            <th data-field="detail">Link Graduate</th>
+        </tr>
+    </thead>
+</table>
+
+<script>
+    $(document).ready(function () {
+        var allGeneration = [];
+        var joinDates = [];
+        var caret = $("<span class='caret'></span>")
+
+        let list = $('#list-generation');
+        $.getJSON('data/generations.json?' + getShortDate(), function (dataGeneration) {
+            for (i = 0; i < dataGeneration.length; i++) {
+                joinDates[i] = '';
+            }
+
+            $.each(dataGeneration, function (key, entry) {
+                var opt = $("<li></li>");
+                opt.text('Gen ' + entry.generation);
+                opt.click(function () {
+                    $('#filter-generation').val(entry.generation);
+                    $('#button-generation').text('Gen ' + entry.generation + ' ').append(caret.prop('outerHTML'));
+                })
+                list.append(opt);
+                joinDates[entry.generation - 1] = entry.join_date;
+                allGeneration.push(entry.generation);
+            })
+
+            $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+                $.each(dataMembers, function (key, entry) {
+                    var endDate = new Date(entry.last_date);
+                    age = getAge(joinDates[entry.gen - 1], endDate);
+                    entry.days = age[0]
+                    entry.last_date_format = formatShortDate(entry.last_date)
+                    if (entry.link_graduation !== undefined) {
+                        var link = $("<a target='_blank'></a>");
+                        link.attr('href', entry.link_graduation);
+                        link.text("Link");
+                        entry.detail = link.prop('outerHTML');
+                    }
+                })
+
+                var filterStatus = [false];
+
+                $('#table-members').bootstrapTable({
+                    data: dataMembers,
+                    sortName: 'last_date',
+                    sortOrder: 'desc',
+                    pagination: true,
+                    pageSize: 48,
+                });
+
+                $('#table-members').bootstrapTable('filterBy', {
+                    active: filterStatus,
+                });
+
+            });
+
+            $('#list-all-generation').click(function () {
+                $('#filter-generation').val("");
+                $('#button-generation').text("Semua Gen" + " ").append(caret.prop('outerHTML'));
+            })
+
+            $('#list-generation').click(function () {
+                var generation = $('#filter-generation').val();
+                var filterGeneration = [];
+                if (generation != "") {
+                    filterGeneration.push(parseInt(generation));
+                } else {
+                    filterGeneration = allGeneration;
+                }
+                var filterStatus = [false];
+
+                $('#table-members').bootstrapTable('filterBy', {
+                    active: filterStatus,
+                    gen: filterGeneration,
+                });
+            })
+        });
+    });
+</script>

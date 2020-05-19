@@ -1,0 +1,12 @@
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">© BOT48. Pembaruan Terakhir: <span id="last_update"></span>
+  </div>
+</footer>
+
+<script>
+  $("document").ready(function () {
+    $.getJSON('data/metadata.json?' + getShortDate(), function (metadata) {
+      $('#last_update').html(formatLongDate(metadata.last_update));
+    });
+  });
+</script>

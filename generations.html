@@ -1,0 +1,49 @@
+<h3>Generasi</h3>
+
+<table data-toggle="table" class="display table table-bordered" id="table-generations">
+    <thead>
+        <tr>
+            <th data-field="generation">Generasi</th>
+            <th data-field="join_date">Tanggal Pengumuman</th>
+            <th data-field="age">Umur</th>
+            <th data-field="total_member">Jumlah Member</th>
+            <th data-field="currently_active">Masih Aktif</th>
+        </tr>
+    </thead>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('data/generations.json?' + getShortDate(), function (dataGeneration) {
+            var allGeneration = [];
+            var allActiveGeneration = [];
+            for (i = 0; i < dataGeneration.length; i++) {
+                allGeneration[i] = 0;
+                allActiveGeneration[i] = 0;
+            }
+
+            $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+                $.each(dataMembers, function (key, entry) {
+                    allGeneration[entry.gen - 1] = allGeneration[entry.gen - 1] + 1;
+                    if (entry.active) {
+                        allActiveGeneration[entry.gen - 1] = allActiveGeneration[entry.gen - 1] + 1;
+                    }
+                })
+                var end = new Date();
+                $.each(dataGeneration, function (key, entry) {
+                    age = getAge(entry.join_date, end)
+                    entry.days = age[0]
+                    entry.age = age[1]
+                    entry.total_member = allGeneration[entry.generation - 1];
+                    entry.currently_active = allActiveGeneration[entry.generation - 1];
+                    entry.join_date = formatShortDate(entry.join_date)
+                })
+                $('#table-generations').bootstrapTable({
+                    data: dataGeneration,
+                });
+                $('#table-generations').bootstrapTable('hideLoading');
+            });
+        });
+    });
+
+</script>

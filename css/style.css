@@ -1,0 +1,38 @@
+#content {
+    margin: auto;
+    width: 80%;
+}
+
+#footer {
+    padding: 10px;
+}
+
+.navbar {
+    cursor: pointer;
+}
+
+.detail-modal {
+    cursor: pointer;
+}
+
+.dropdown {
+    padding: 10px 0;
+}
+
+.dropdown-menu {
+    margin-top: -10px;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f8f8f8;
+}
+
+/* .chart-container {
+    width: 80%;
+    height: 80%;
+} */
