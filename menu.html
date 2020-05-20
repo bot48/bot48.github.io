@@ -15,6 +15,13 @@
                 <li><a id="menu-members">Member</a></li>
                 <li><a id="menu-generations">Generasi</a></li>
                 <li><a id="menu-graduate">Graduate</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Social Media
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a id="menu-twitter">Twitter</a></li>
+                    </ul>
+                  </li>
                 <li><a id="menu-about">Tentang BOT48</a></li>
             </ul>
         </div>
@@ -36,6 +43,10 @@
 
     $('#menu-graduate').click(function () {
         $('#content').load('graduate.html?' + getShortDate());
+    });
+
+    $('#menu-twitter').click(function () {
+        $('#content').load('twitter.html?' + getShortDate());
     });
 
     $('#menu-about').click(function () {

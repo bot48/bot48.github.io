@@ -1,6 +1,6 @@
 #content {
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 #footer {
@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 
-.dropdown {
+.filter-dropdown {
     padding: 10px 0;
 }
 

@@ -138,7 +138,19 @@
             // data grad per bulan
             renderChartGradMonth(gradMonth, months)
 
-            // renderChartTwitter(gradMonth.sort(), months)
+            $.getJSON('data/twitter.json?' + getShortDate(), function (dataTwitter) {
+                usernameTwitter = []
+                followerTwitter = []
+                dataTwitter.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
+
+                $.each(dataTwitter, function (key, entry) {
+                    usernameTwitter.push(entry.username)
+                    followerTwitter.push(entry.follower)
+                })
+
+                renderChartTwitter(followerTwitter, usernameTwitter)
+            });
+
         });
 
     });
@@ -306,19 +318,16 @@
 
     }
 
-    function renderChartTwitter(data, month) {
+    function renderChartTwitter(data, members) {
+        responsiveData = data.slice(data.length - 10, data.length)
+        responsiveMember = members.slice(members.length - 10, members.length)
         var options = {
             series: [{
                 name: 'Follower',
                 data: data
             }],
             xaxis: {
-                categories: months,
-            },
-            yaxis: {
-                labels: {
-                    show: false
-                }
+                categories: members,
             },
             title: {
                 text: 'Jumlah Follower Twitter',
@@ -328,6 +337,9 @@
                 bar: {
                     horizontal: true,
                     distributed: true,
+                    dataLabels: {
+                        position: 'top'
+                    }
                 }
             },
             legend: {
@@ -336,28 +348,39 @@
             dataLabels: {
                 enabled: true,
                 style: {
-                    colors: ['#fff']
+                    colors: ['#000']
                 },
-                textAnchor: 'end',
-                formatter: function (val, opt) {
-                    return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+                formatter: function (val) {
+                    val = parseInt(val / 1000)
+                    return val + "K"
                 },
-                offsetX: 0,
+                offsetX: 40,
             },
             chart: {
                 type: 'bar',
                 toolbar: {
                     show: false
-                }
+                },
+                height: '1200px'
             },
             responsive: [{
                 breakpoint: 480,
                 options: {
+                    series: [{
+                        data: responsiveData
+                    }],
                     title: {
+                        text: '10 Twitter Follower Terbanyak',
                         style: {
                             fontSize: '12',
                         }
-                    }
+                    },
+                    chart: {
+                        height: '400px'
+                    },
+                    xaxis: {
+                        categories: responsiveMember,
+                    },
                 }
             }]
         };

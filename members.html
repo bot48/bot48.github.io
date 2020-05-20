@@ -1,7 +1,7 @@
 <h3>Member</h3>
 
 <div class="filter">
-    <div class="dropdown col-sm-4">
+    <div class="filter-dropdown col-sm-4">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
             id="button-generation">Semua Gen
             <span class="caret"></span></button>
@@ -10,7 +10,7 @@
             <li id="list-all-generation">Semua Gen</li>
         </ul>
     </div>
-    <div class="dropdown col-sm-4">
+    <div class="filter-dropdown col-sm-4">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
             id="button-status">Aktif
             <span class="caret"></span></button>
@@ -21,7 +21,7 @@
             <li val="false">Graduate</li>
         </ul>
     </div>
-    <div class="dropdown col-sm-4">
+    <div class="filter-dropdown col-sm-4">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
             id="button-team">Semua Team
             <span class="caret"></span></button>
@@ -132,6 +132,7 @@
                     appender(div, 'Lama di JKT48', data.age_jkt);
                     if (data.active) {
                         appender(div, 'Team', data.teams);
+                        appenderLink(div, 'Twitter', 'https://twitter.com/' + data.twitter.replace('@', ''));
                     } else {
                         appender(div, 'Tanggal Graduate', formatShortDate(data.last_date));
                         appenderLink(div, 'Link Graduate', data.link_graduation);
