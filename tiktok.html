@@ -35,6 +35,7 @@
             <th data-field="following" data-sortable="true">Following</th>
             <th data-field="posts" data-sortable="true">Posts</th>
             <th data-field="likes" data-sortable="true">Likes</th>
+            <th data-field="likes_post" data-sortable="true">Likes/Post</th>
         </tr>
     </thead>
 </table>
@@ -77,6 +78,11 @@
                     if (tiktokMember[entry.username] !== undefined) {
                         entry.gen = tiktokMember[entry.username].gen
                         entry.teams = tiktokMember[entry.username].teams.join(" & ")
+                        if (entry.posts != 0) {
+                            entry.likes_post = parseInt(entry.likes / entry.posts)
+                        } else {
+                            entry.likes_post = 0
+                        }
                     }
                 })
 
