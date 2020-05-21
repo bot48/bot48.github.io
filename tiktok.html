@@ -1,0 +1,130 @@
+<h3>TikTok</h3>
+
+<div class="filter">
+    <div class="filter-dropdown col-sm-6">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
+            id="button-generation">Semua Gen
+            <span class="caret"></span></button>
+        <input type="hidden" id="filter-generation" name="gen">
+        <ul class="dropdown-menu" id="list-generation">
+            <li id="list-all-generation">Semua Gen</li>
+        </ul>
+    </div>
+    <div class="filter-dropdown col-sm-6">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="button-team">Semua Team
+            <span class="caret"></span></button>
+        <input type="hidden" id="filter-team" name="team"
+            value="Team J,Team KIII,Academy Class A,Academy Class B,Team J & Team KIII">
+        <ul class="dropdown-menu" id="list-team">
+            <li val="Team J,Team KIII,Academy Class A,Academy Class B,Team J & Team KIII">Semua Team</li>
+            <li val="Team J,Team J & Team KIII">Team J</li>
+            <li val="Team KIII,Team J & Team KIII">Team KIII</li>
+            <li val="Academy Class A">Academy Class A</li>
+            <li val="Academy Class B">Academy Class B</li>
+        </ul>
+    </div>
+</div>
+
+<table data-toggle="table" class="display table table-bordered" id="table-tiktok">
+    <thead>
+        <tr>
+            <th data-field="username">Username</th>
+            <th data-field="gen" data-sortable="true">Generasi</th>
+            <th data-field="teams">Team</th>
+            <th data-field="follower" data-sortable="true">Follower</th>
+            <th data-field="following" data-sortable="true">Following</th>
+            <th data-field="posts" data-sortable="true">Posts</th>
+            <th data-field="likes" data-sortable="true">Likes</th>
+        </tr>
+    </thead>
+</table>
+
+<div>Pembaruan Terakhir
+    <span id="last_update"></span>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var allGeneration = [];
+        var caret = $("<span class='caret'></span>")
+        var tiktokMember = [];
+
+        let list = $('#list-generation');
+        $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+            $.each(dataMembers, function (key, entry) {
+                if (allGeneration.indexOf(entry.gen) === -1) {
+                    allGeneration.push(parseInt(entry.gen))
+                }
+                if (entry.tiktok !== undefined) {
+                    tiktokMember[entry.tiktok] = entry
+                }
+            })
+            allGeneration.sort()
+            allGeneration.forEach(function (value) {
+                var opt = $("<li></li>");
+                opt.text('Gen ' + value);
+                opt.click(function () {
+                    console.log(value)
+                    $('#filter-generation').val(value);
+                    $('#button-generation').text('Gen ' + value + ' ').append(caret.prop('outerHTML'));
+                    filter();
+                })
+                list.append(opt);
+            })
+
+            $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
+                $.each(dataTiktok.members, function (key, entry) {
+                    if (tiktokMember[entry.username] !== undefined) {
+                        entry.gen = tiktokMember[entry.username].gen
+                        entry.teams = tiktokMember[entry.username].teams.join(" & ")
+                    }
+                })
+
+                $('#table-tiktok').bootstrapTable({
+                    data: dataTiktok.members,
+                    sortName: 'gen',
+                    sortOrder: 'asc',
+                    pagination: true,
+                    pageSize: 48,
+                });
+
+                $('#last_update').html(formatLongDate(dataTiktok.last_update));
+            });
+
+            $('#list-all-generation').click(function () {
+                $('#filter-generation').val("");
+                $('#button-generation').text("Semua Gen" + " ").append(caret.prop('outerHTML'));
+
+                filter();
+            })
+
+        });
+
+        $('#list-team').children('li').each(function () {
+            $(this).click(function () {
+                $('#filter-team').val($(this).attr('val'));
+                $('#button-team').text($(this).text() + ' ').append(caret.prop('outerHTML'));
+
+                filter();
+            });
+        });
+
+        function filter() {
+            var generation = $('#filter-generation').val();
+            var filterGeneration = [];
+            if (generation != "") {
+                filterGeneration.push(parseInt(generation));
+            } else {
+                filterGeneration = allGeneration;
+            }
+
+            var team = $('#filter-team').val();
+            var filterTeam = team.split(",");
+
+            $('#table-tiktok').bootstrapTable('filterBy', {
+                gen: filterGeneration,
+                teams: filterTeam,
+            });
+        }
+    });
+</script>

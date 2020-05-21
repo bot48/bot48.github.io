@@ -133,7 +133,8 @@
                     if (data.active) {
                         appender(div, 'Team', data.teams);
                         appenderLink(div, 'Twitter', 'https://twitter.com/' + data.twitter.replace('@', ''));
-                        appenderLink(div, 'Instagram', 'https://instagram.com/' + data.twitter.replace('@', ''));
+                        appenderLink(div, 'Instagram', 'https://instagram.com/' + data.instagram.replace('@', ''));
+                        appenderLink(div, 'TikTok', 'https://www.tiktok.com/' + data.tiktok);
                     } else {
                         appender(div, 'Tanggal Graduate', formatShortDate(data.last_date));
                         appenderLink(div, 'Link Graduate', data.link_graduation);

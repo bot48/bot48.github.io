@@ -16,6 +16,10 @@
 <div class="chart-container col-md-12">
     <div id="chart-instagram"></div>
 </div>
+<div class="chart-container col-md-12">
+    <div id="chart-tiktok"></div>
+</div>
+
 <script>
     var colorTeamMap = {
         "Team J": 'rgba(202, 23, 29, 1)',
@@ -173,6 +177,23 @@
                 usernameInstagram = usernameInstagram.slice(usernameInstagram.length - 16, usernameInstagram.length)
 
                 renderChartInstagram(followerInstagram, usernameInstagram)
+            });
+
+            $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
+                dataTiktok = dataTiktok.members
+                usernameTiktok = []
+                followerTiktok = []
+                dataTiktok.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
+
+                $.each(dataTiktok, function (key, entry) {
+                    usernameTiktok.push(entry.username)
+                    followerTiktok.push(entry.follower)
+                })
+
+                followerTiktok = followerTiktok.slice(followerTiktok.length - 16, followerTiktok.length)
+                usernameTiktok = usernameTiktok.slice(usernameTiktok.length - 16, usernameTiktok.length)
+
+                renderChartTiktok(followerTiktok, usernameTiktok)
             });
 
         });
@@ -461,6 +482,67 @@
         };
 
         var chart = new ApexCharts(document.querySelector("#chart-instagram"), options);
+        chart.render();
+    }
+
+    function renderChartTiktok(data, members) {
+        var options = {
+            series: [{
+                name: 'Follower',
+                data: data
+            }],
+            xaxis: {
+                categories: members,
+            },
+            title: {
+                text: '16 Akun TikTok dengan Follower Terbanyak',
+                align: 'center'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    distributed: true,
+                    dataLabels: {
+                        position: 'top'
+                    }
+                }
+            },
+            legend: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: true,
+                style: {
+                    colors: ['#000']
+                },
+                formatter: function (val) {
+                    val = parseInt(val / 1000)
+                    return val + "K"
+                },
+                offsetX: 40,
+            },
+            chart: {
+                type: 'bar',
+                toolbar: {
+                    show: false
+                },
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    },
+                    chart: {
+                        height: '600px'
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-tiktok"), options);
         chart.render();
     }
 </script>

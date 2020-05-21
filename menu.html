@@ -21,6 +21,7 @@
                     <ul class="dropdown-menu">
                       <li><a id="menu-twitter">Twitter</a></li>
                       <li><a id="menu-instagram">Instagram</a></li>
+                      <li><a id="menu-tiktok">TikTok</a></li>
                     </ul>
                   </li>
                 <li><a id="menu-about">Tentang BOT48</a></li>
@@ -52,6 +53,10 @@
 
     $('#menu-instagram').click(function () {
         $('#content').load('instagram.html?' + getShortDate());
+    });
+
+    $('#menu-tiktok').click(function () {
+        $('#content').load('tiktok.html?' + getShortDate());
     });
 
     $('#menu-about').click(function () {
