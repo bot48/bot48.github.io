@@ -139,6 +139,7 @@
             renderChartGradMonth(gradMonth, months)
 
             $.getJSON('data/twitter.json?' + getShortDate(), function (dataTwitter) {
+                dataTwitter = dataTwitter.members
                 usernameTwitter = []
                 followerTwitter = []
                 dataTwitter.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
@@ -147,6 +148,9 @@
                     usernameTwitter.push(entry.username)
                     followerTwitter.push(entry.follower)
                 })
+
+                followerTwitter = followerTwitter.slice(followerTwitter.length - 16, followerTwitter.length)
+                usernameTwitter = usernameTwitter.slice(usernameTwitter.length - 16, usernameTwitter.length)
 
                 renderChartTwitter(followerTwitter, usernameTwitter)
             });
@@ -319,8 +323,6 @@
     }
 
     function renderChartTwitter(data, members) {
-        responsiveData = data.slice(data.length - 10, data.length)
-        responsiveMember = members.slice(members.length - 10, members.length)
         var options = {
             series: [{
                 name: 'Follower',
@@ -330,7 +332,7 @@
                 categories: members,
             },
             title: {
-                text: 'Jumlah Follower Twitter',
+                text: '16 Akun Twiiter dengan Follower Terbanyak',
                 align: 'center'
             },
             plotOptions: {
@@ -361,26 +363,18 @@
                 toolbar: {
                     show: false
                 },
-                height: '1200px'
             },
             responsive: [{
                 breakpoint: 480,
                 options: {
-                    series: [{
-                        data: responsiveData
-                    }],
                     title: {
-                        text: '10 Twitter Follower Terbanyak',
                         style: {
                             fontSize: '12',
                         }
                     },
                     chart: {
-                        height: '400px'
-                    },
-                    xaxis: {
-                        categories: responsiveMember,
-                    },
+                        height: '600px'
+                    }
                 }
             }]
         };

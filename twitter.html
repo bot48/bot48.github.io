@@ -28,7 +28,7 @@
 <table data-toggle="table" class="display table table-bordered" id="table-twitter">
     <thead>
         <tr>
-            <th data-field="username" data-sortable="true">Username</th>
+            <th data-field="username">Username</th>
             <th data-field="gen" data-sortable="true">Generasi</th>
             <th data-field="teams">Team</th>
             <th data-field="follower" data-sortable="true">Follower</th>
@@ -38,6 +38,10 @@
         </tr>
     </thead>
 </table>
+
+<div>Pembaruan Terakhir
+    <span id="last_update"></span>
+</div>
 
 <script>
     $(document).ready(function () {
@@ -69,7 +73,7 @@
             })
 
             $.getJSON('data/twitter.json?' + getShortDate(), function (dataTwitter) {
-                $.each(dataTwitter, function (key, entry) {
+                $.each(dataTwitter.members, function (key, entry) {
                     if (twitterMember[entry.username] !== undefined) {
                         entry.gen = twitterMember[entry.username].gen
                         entry.teams = twitterMember[entry.username].teams.join(" & ")
@@ -77,12 +81,14 @@
                 })
 
                 $('#table-twitter').bootstrapTable({
-                    data: dataTwitter,
+                    data: dataTwitter.members,
                     sortName: 'gen',
                     sortOrder: 'asc',
                     pagination: true,
                     pageSize: 48,
                 });
+
+                $('#last_update').html(formatLongDate(dataTwitter.last_update));
             });
 
             $('#list-all-generation').click(function () {
