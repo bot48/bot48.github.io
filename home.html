@@ -13,6 +13,9 @@
 <div class="chart-container col-md-12">
     <div id="chart-twitter"></div>
 </div>
+<div class="chart-container col-md-12">
+    <div id="chart-instagram"></div>
+</div>
 <script>
     var colorTeamMap = {
         "Team J": 'rgba(202, 23, 29, 1)',
@@ -153,6 +156,23 @@
                 usernameTwitter = usernameTwitter.slice(usernameTwitter.length - 16, usernameTwitter.length)
 
                 renderChartTwitter(followerTwitter, usernameTwitter)
+            });
+
+            $.getJSON('data/instagram.json?' + getShortDate(), function (dataInstagram) {
+                dataInstagram = dataInstagram.members
+                usernameInstagram = []
+                followerInstagram = []
+                dataInstagram.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
+
+                $.each(dataInstagram, function (key, entry) {
+                    usernameInstagram.push(entry.username)
+                    followerInstagram.push(entry.follower)
+                })
+
+                followerInstagram = followerInstagram.slice(followerInstagram.length - 16, followerInstagram.length)
+                usernameInstagram = usernameInstagram.slice(usernameInstagram.length - 16, usernameInstagram.length)
+
+                renderChartInstagram(followerInstagram, usernameInstagram)
             });
 
         });
@@ -380,6 +400,67 @@
         };
 
         var chart = new ApexCharts(document.querySelector("#chart-twitter"), options);
+        chart.render();
+    }
+
+    function renderChartInstagram(data, members) {
+        var options = {
+            series: [{
+                name: 'Follower',
+                data: data
+            }],
+            xaxis: {
+                categories: members,
+            },
+            title: {
+                text: '16 Akun Instagram dengan Follower Terbanyak',
+                align: 'center'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    distributed: true,
+                    dataLabels: {
+                        position: 'top'
+                    }
+                }
+            },
+            legend: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: true,
+                style: {
+                    colors: ['#000']
+                },
+                formatter: function (val) {
+                    val = parseInt(val / 1000)
+                    return val + "K"
+                },
+                offsetX: 40,
+            },
+            chart: {
+                type: 'bar',
+                toolbar: {
+                    show: false
+                },
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    },
+                    chart: {
+                        height: '600px'
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-instagram"), options);
         chart.render();
     }
 </script>
