@@ -5,6 +5,9 @@
     <div id="chart-team-gen"></div>
 </div>
 <div class="chart-container col-md-6">
+    <div id="chart-age"></div>
+</div>
+<div class="chart-container col-md-6">
     <div id="chart-grad-year"></div>
 </div>
 <div class="chart-container col-md-6">
@@ -31,14 +34,23 @@
 
     $(document).ready(function () {
         $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+            var generation = [];
+            var year = [];
+
             var teamName = [];
             var teamCount = [];
-            var generation = [];
             var teamGen = [];
-            var year = [];
+
             var gradYear = [];
             var gradMonth = [];
-            gradYear['All Gen'] = [];
+
+            var ageActive = [];
+            var ageNonActive = [];
+            var minAge = 0;
+            var maxAge = 0;
+
+            gradYear['Semua Gen'] = [];
+            var end = new Date();
             $.each(dataMembers, function (key, entry) {
                 if (generation.indexOf('Gen ' + entry.gen) === -1) {
                     generation.push('Gen ' + entry.gen)
@@ -66,9 +78,9 @@
                     var dtMonth = dt.getMonth();
                     if (year.indexOf(dtYear) === -1) {
                         year.push(dtYear)
-                        gradYear['All Gen'][dtYear] = 1
+                        gradYear['Semua Gen'][dtYear] = 1
                     } else {
-                        gradYear['All Gen'][dtYear] = gradYear['All Gen'][dtYear] + 1
+                        gradYear['Semua Gen'][dtYear] = gradYear['Semua Gen'][dtYear] + 1
                     }
 
                     if (gradYear[entry.gen] === undefined) {
@@ -86,6 +98,41 @@
                         gradMonth[dtMonth] = 1
                     } else {
                         gradMonth[dtMonth] = gradMonth[dtMonth] + 1
+                    }
+                    endDate = new Date(entry.last_date);
+                    age = getYears(entry.birth_date, endDate);
+                    if (ageNonActive[age] == undefined) {
+                        ageNonActive[age] = 1
+                    } else {
+                        ageNonActive[age] = ageNonActive[age] + 1
+                    }
+                    if (minAge == 0) {
+                        minAge = age
+                    } else if (minAge != 0 && age < minAge) {
+                        minAge = age
+                    }
+                    if (maxAge == 0) {
+                        maxAge = age
+                    } else if (maxAge != 0 && age > maxAge) {
+                        maxAge = age
+                    }
+                } else {
+                    var endDate = end;
+                    age = getYears(entry.birth_date, endDate);
+                    if (ageActive[age] == undefined) {
+                        ageActive[age] = 1
+                    } else {
+                        ageActive[age] = ageActive[age] + 1
+                    }
+                    if (minAge == 0) {
+                        minAge = age
+                    } else if (minAge != 0 && age < minAge) {
+                        minAge = age
+                    }
+                    if (maxAge == 0) {
+                        maxAge = age
+                    } else if (maxAge != 0 && age > maxAge) {
+                        maxAge = age
                     }
                 }
             })
@@ -120,6 +167,25 @@
             }
             renderChartTeamGen(dataTeamGen, generation, colorTeam)
 
+            // data sebaran umur member
+            var ages = []
+            var dataAgeActive = []
+            var dataAgeNonActive = []
+            for (i = minAge; i <= maxAge; i++) {
+                ages.push(i)
+                if (ageActive[i] === undefined) {
+                    dataAgeActive.push(0)
+                } else {
+                    dataAgeActive.push(ageActive[i])
+                }
+                if (ageNonActive[i] === undefined) {
+                    dataAgeNonActive.push(0)
+                } else {
+                    dataAgeNonActive.push(ageNonActive[i])
+                }
+            }
+            renderChartAge(dataAgeActive, dataAgeNonActive, ages)
+
             // data grad per tahun
             year.sort();
             dataGradYear = []
@@ -132,7 +198,7 @@
                         dataSeries.push(gradYear[gen][year[i]])
                     }
                 }
-                if (gen != "All Gen") {
+                if (gen != "Semua Gen") {
                     gen = "Gen " + gen
                 }
                 dataGradYear.push({
@@ -229,12 +295,9 @@
                             fontSize: '12',
                         }
                     },
-                    legend: {
-                        show: false,
-                    },
                     chart: {
                         height: '200',
-                    },
+                    }
                 }
             }]
         };
@@ -271,9 +334,6 @@
                         style: {
                             fontSize: '12',
                         }
-                    },
-                    legend: {
-                        show: false,
                     }
                 }
             }]
@@ -281,6 +341,50 @@
 
         var chart = new ApexCharts(document.querySelector("#chart-team-gen"), options);
         chart.render();
+    }
+
+    function renderChartAge(dataActive, dataNonActive, ages) {
+        var options = {
+            series: [{
+                name: 'Member Aktif',
+                data: dataActive
+            },
+            {
+                name: 'Saat Graduate',
+                data: dataNonActive
+            }],
+            xaxis: {
+                categories: ages,
+            },
+            title: {
+                text: 'Sebaran Umur Member',
+                align: 'center'
+            },
+            legend: {
+                position: 'top',
+            },
+            chart: {
+                type: 'bar',
+                height: 300,
+                toolbar: {
+                    show: false
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-age"), options);
+        chart.render();
+
     }
 
     function renderChartGradYear(data, year) {
@@ -314,9 +418,6 @@
                         style: {
                             fontSize: '12',
                         }
-                    },
-                    legend: {
-                        show: false,
                     }
                 }
             }]
@@ -394,8 +495,7 @@
                     colors: ['#000']
                 },
                 formatter: function (val) {
-                    val = parseInt(val / 1000)
-                    return val + "K"
+                    return convertK(val)
                 },
                 offsetX: 40,
             },
@@ -415,7 +515,15 @@
                     },
                     chart: {
                         height: '600px'
-                    }
+                    },
+                    xaxis: {
+                        labels: {
+                            show: true,
+                            formatter: function (val) {
+                                return convertK(val)
+                            },
+                        },
+                    },
                 }
             }]
         };
@@ -455,8 +563,7 @@
                     colors: ['#000']
                 },
                 formatter: function (val) {
-                    val = parseInt(val / 1000)
-                    return val + "K"
+                    return convertK(val)
                 },
                 offsetX: 40,
             },
@@ -476,7 +583,15 @@
                     },
                     chart: {
                         height: '600px'
-                    }
+                    },
+                    xaxis: {
+                        labels: {
+                            show: true,
+                            formatter: function (val) {
+                                return convertK(val)
+                            },
+                        },
+                    },
                 }
             }]
         };
@@ -516,10 +631,9 @@
                     colors: ['#000']
                 },
                 formatter: function (val) {
-                    val = parseInt(val / 1000)
-                    return val + "K"
+                    return convertK(val)
                 },
-                offsetX: 40,
+                offsetX: 35,
             },
             chart: {
                 type: 'bar',
@@ -537,12 +651,29 @@
                     },
                     chart: {
                         height: '600px'
-                    }
+                    },
+                    xaxis: {
+                        labels: {
+                            show: true,
+                            formatter: function (val) {
+                                return convertK(val)
+                            },
+                        },
+                    },
                 }
             }]
         };
 
         var chart = new ApexCharts(document.querySelector("#chart-tiktok"), options);
         chart.render();
+    }
+
+    function convertK(val) {
+        val = parseInt(val / 1000)
+        if (val == 0) {
+            return val
+        } else {
+            return val + "K"
+        }
     }
 </script>

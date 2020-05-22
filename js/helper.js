@@ -22,6 +22,14 @@ function format_two_digits(n) {
     return n < 10 ? '0' + n : n;
 }
 
+function getYears(startDate, endDate) {
+    var start = new Date(startDate);
+    var age = new Date(endDate - start);
+    var age_dt = new Date(age);
+
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
 function getAge(startDate, endDate) {
     var start = new Date(startDate);
     var age = new Date(endDate - start);
