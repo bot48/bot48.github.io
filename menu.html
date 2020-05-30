@@ -33,33 +33,48 @@
 <script>
     $('#menu-home').click(function () {
         $('#content').load('home.html');
+        closeNav();
     });
 
     $('#menu-members').click(function () {
         $('#content').load('members.html?' + getShortDate());
+        closeNav();
     });
 
     $('#menu-generations').click(function () {
         $('#content').load('generations.html?' + getShortDate());
+        closeNav();
     });
 
     $('#menu-graduate').click(function () {
         $('#content').load('graduate.html?' + getShortDate());
+        closeNav();
     });
 
     $('#menu-twitter').click(function () {
         $('#content').load('twitter.html?' + getShortDate());
+        closeNav();
     });
 
     $('#menu-instagram').click(function () {
         $('#content').load('instagram.html?' + getShortDate());
+        closeNav();
     });
 
     $('#menu-tiktok').click(function () {
         $('#content').load('tiktok.html?' + getShortDate());
+        closeNav();
     });
 
     $('#menu-about').click(function () {
         $('#content').load('about.html?' + getShortDate());
+        closeNav();
     });
+
+    function closeNav() {
+        $(".navbar-collapse").stop().animate({'height': 0},300, function () {
+            $('.navbar-collapse').removeClass('in').addClass("collapse");
+        });
+        $(".navbar-toggle").stop().removeClass('collapsed');
+    }
 </script>

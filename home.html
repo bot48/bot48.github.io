@@ -15,12 +15,15 @@
 </div>
 <div class="chart-container col-md-12">
     <div id="chart-twitter"></div>
+    <span id="detail-twitter"><a>Lihat Akun Twitter Selengkapnya</a></span>
 </div>
 <div class="chart-container col-md-12">
     <div id="chart-instagram"></div>
+    <span id="detail-instagram"><a>Lihat Akun Instagram Selengkapnya</a></span>
 </div>
 <div class="chart-container col-md-12">
     <div id="chart-tiktok"></div>
+    <span id="detail-tiktok"><a>Lihat Akun TikTok Selengkapnya</a></span>
 </div>
 
 <script>
@@ -31,6 +34,18 @@
         "Academy Class A": 'rgba(27, 200, 248, 1)',
         "Academy Class B": 'rgba(27, 200, 248, 1)'
     }
+
+    $('#detail-twitter').click(function () {
+        $('#content').load('twitter.html?' + getShortDate());
+    });
+
+    $('#detail-instagram').click(function () {
+        $('#content').load('instagram.html?' + getShortDate());
+    });
+
+    $('#detail-tiktok').click(function () {
+        $('#content').load('tiktok.html?' + getShortDate());
+    });
 
     $(document).ready(function () {
         $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
