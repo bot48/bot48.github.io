@@ -25,11 +25,12 @@
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
             id="button-team">Semua Team
             <span class="caret"></span></button>
-        <input type="hidden" id="filter-team" name="team" value="Team J,Team KIII,Academy Class A,Academy Class B,-,Team J & Team KIII">
+        <input type="hidden" id="filter-team" name="team" value="Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII">
         <ul class="dropdown-menu" id="list-team">
-            <li val="Team J,Team KIII,Academy Class A,Academy Class B,-,Team J & Team KIII">Semua Team</li>
+            <li val="Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII">Semua Team</li>
             <li val="Team J,Team J & Team KIII">Team J</li>
             <li val="Team KIII,Team J & Team KIII">Team KIII</li>
+            <li val="Team T">Team T</li>
             <li val="Academy Class A">Academy Class A</li>
             <li val="Academy Class B">Academy Class B</li>
         </ul>
@@ -164,7 +165,7 @@
         $('#list-status').children('li').each(function () {
             $(this).click(function () {
                 if (!$(this).val()) {
-                    $('#filter-team').val("Team J,Team KIII,Academy Class A,Academy Class B,-,Team J & Team KIII");
+                    $('#filter-team').val("Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII");
                     $('#button-team').text("Semua Team" + ' ').append(caret.prop('outerHTML'));
                 }
                 $('#filter-status').val($(this).attr('val'));
