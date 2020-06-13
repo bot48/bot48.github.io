@@ -11,8 +11,7 @@
         </ul>
     </div>
     <div class="filter-dropdown col-sm-4">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
-            id="button-status">Aktif
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="button-status">Aktif
             <span class="caret"></span></button>
         <input type="hidden" id="filter-status" name="status" value="true">
         <ul class="dropdown-menu" id="list-status">
@@ -22,12 +21,13 @@
         </ul>
     </div>
     <div class="filter-dropdown col-sm-4">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
-            id="button-team">Semua Team
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="button-team">Semua Team
             <span class="caret"></span></button>
-        <input type="hidden" id="filter-team" name="team" value="Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII & Team T & Team T">
+        <input type="hidden" id="filter-team" name="team"
+            value="Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII & Team T & Team T">
         <ul class="dropdown-menu" id="list-team">
-            <li val="Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII & Team T">Semua Team</li>
+            <li val="Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII & Team T">Semua Team
+            </li>
             <li val="Team J,Team J & Team KIII & Team T">Team J</li>
             <li val="Team KIII,Team J & Team KIII & Team T">Team KIII</li>
             <li val="Team T,Team J & Team KIII & Team T">Team T</li>
@@ -36,7 +36,6 @@
         </ul>
     </div>
 </div>
-
 
 <table data-toggle="table" class="display table table-bordered" id="table-members">
     <thead>
@@ -94,63 +93,93 @@
                 allGeneration.push(entry.generation);
             })
 
-            $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
-                var end = new Date();
-                $.each(dataMembers, function (key, entry) {
-                    var endDate = end;
-                    if (entry.active) {
-                        entry.status = "Aktif"
-                        entry.teams = entry.teams.join(" & ")
-                    } else {
-                        entry.status = "Graduate"
-                        endDate = new Date(entry.last_date);
-                        entry.teams = "-"
+            $.getJSON('data/singles.json?' + getShortDate(), function (dataSingle) {
+                var allSenbatsu = []
+                $.each(dataSingle, function (key, entry) {
+                    for (i = 0; i < entry.members.length; i++) {
+                        if (!allSenbatsu[entry.members[i]]) {
+                            var senbatsu = []
+                            senbatsu.senbatsu = 1
+                            senbatsu.center = 0
+                            allSenbatsu[entry.members[i]] = senbatsu
+                        } else {
+                            allSenbatsu[entry.members[i]].senbatsu = allSenbatsu[entry.members[i]].senbatsu + 1
+                        }
                     }
-                    age = getAge(entry.birth_date, end);
-                    age = age[1].split(" ")
-                    entry.age = age[0]
-                    entry.birth_date = formatShortDate(entry.birth_date);
-                    age = getAge(joinDates[entry.gen - 1], endDate);
-                    entry.days = age[0]
-                    entry.age_jkt = age[1]
-                    var button = $("<a class='detail-modal'></a>");
-                    button.text('Detil');
-                    button.attr('data-toggle', "modal");
-                    button.attr('data-target', "#detail-member");
-                    button.attr('data-key', key);
-                    entry.detail = button.prop('outerHTML');
-                })
-
-                $('body').on('click', 'a.detail-modal', function () {
-                    var key = $(this).attr('data-key');
-                    var data = dataMembers[key];
-                    $('#modal-title').text(data.name);
-                    var div = $("<div class='detail-member'></div>");
-                    appender(div, 'Nama', data.name);
-                    appender(div, 'Generasi', data.gen);
-                    appender(div, 'Tanggal Lahir', data.birth_date);
-                    appender(div, 'Status', data.status);
-                    appender(div, 'Lama di JKT48', data.age_jkt);
-                    if (data.active) {
-                        appender(div, 'Team', data.teams);
-                        appenderLink(div, 'Twitter', 'https://twitter.com/' + data.twitter.replace('@', ''));
-                        appenderLink(div, 'Instagram', 'https://instagram.com/' + data.instagram.replace('@', ''));
-                        appenderLink(div, 'TikTok', 'https://www.tiktok.com/' + data.tiktok);
-                    } else {
-                        appender(div, 'Tanggal Graduate', formatShortDate(data.last_date));
-                        appenderLink(div, 'Link Graduate', data.link_graduation);
+                    for (i = 0; i < entry.centers.length; i++) {
+                        allSenbatsu[entry.centers[i]].center = allSenbatsu[entry.centers[i]].center + 1
                     }
-                    $('#modal-body').html(div);
                 });
-                var filterStatus = [true];
 
-                $('#table-members').bootstrapTable({
-                    data: dataMembers,
-                    pagination: true,
-                    pageSize: 48,
-                });
-                $('#table-members').bootstrapTable('filterBy', {
-                    active: filterStatus,
+                $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+                    var end = new Date();
+                    $.each(dataMembers, function (key, entry) {
+                        var endDate = end;
+                        if (entry.active) {
+                            entry.status = "Aktif"
+                            entry.teams = entry.teams.join(" & ")
+                        } else {
+                            entry.status = "Graduate"
+                            endDate = new Date(entry.last_date);
+                            entry.teams = "-"
+                        }
+                        age = getAge(entry.birth_date, end);
+                        age = age[1].split(" ")
+                        entry.age = age[0]
+                        entry.birth_date = formatShortDate(entry.birth_date);
+                        age = getAge(joinDates[entry.gen - 1], endDate);
+                        entry.days = age[0]
+                        entry.age_jkt = age[1]
+                        var button = $("<a class='detail-modal'></a>");
+                        button.text('Detil');
+                        button.attr('data-toggle', "modal");
+                        button.attr('data-target', "#detail-member");
+                        button.attr('data-key', key);
+                        entry.detail = button.prop('outerHTML');
+                    })
+
+                    $('body').on('click', 'a.detail-modal', function () {
+                        var key = $(this).attr('data-key');
+                        var data = dataMembers[key];
+                        $('#modal-title').text(data.name);
+                        var div = $("<div class='detail-member'></div>");
+                        appender(div, 'Nama', data.name);
+                        appender(div, 'Generasi', data.gen);
+                        appender(div, 'Tanggal Lahir', data.birth_date);
+                        appender(div, 'Status', data.status);
+                        appender(div, 'Lama di JKT48', data.age_jkt);
+                        if (allSenbatsu[data.name]) {
+                            if (allSenbatsu[data.name].senbatsu > 0) {
+                                appender(div, 'Senbatsu', allSenbatsu[data.name].senbatsu + "x");
+                            }
+                            if (allSenbatsu[data.name].center > 0) {
+                                appender(div, 'Center', allSenbatsu[data.name].center + "x");
+                            }
+                        }
+
+                        if (data.active) {
+                            appender(div, 'Team', data.teams);
+                            appenderLink(div, 'Twitter', 'https://twitter.com/' + data.twitter.replace('@', ''));
+                            appenderLink(div, 'Instagram', 'https://instagram.com/' + data.instagram.replace('@', ''));
+                            if (data.tiktok) {
+                                appenderLink(div, 'TikTok', 'https://www.tiktok.com/' + data.tiktok);
+                            }
+                        } else {
+                            appender(div, 'Tanggal Graduate', formatShortDate(data.last_date));
+                            appenderLink(div, 'Link Graduate', data.link_graduation);
+                        }
+                        $('#modal-body').html(div);
+                    });
+                    var filterStatus = [true];
+
+                    $('#table-members').bootstrapTable({
+                        data: dataMembers,
+                        pagination: true,
+                        pageSize: 48,
+                    });
+                    $('#table-members').bootstrapTable('filterBy', {
+                        active: filterStatus,
+                    });
                 });
             });
         });
@@ -191,7 +220,7 @@
             });
         });
 
-        function filter(){
+        function filter() {
             var generation = $('#filter-generation').val();
             var filterGeneration = [];
             if (generation != "") {
@@ -223,14 +252,16 @@
         }
 
         function appenderLink(div, text, value) {
-            if (value !== undefined) {
+            if (value) {
                 var p = $("<p></p>");
+                var span = $("<span><span>");
                 var link = $("<a target='_blank'></a>");
                 link.attr('href', value);
                 link.text(value);
-                p.text(text + ': ');
+                span.text(text + ': ')
+                p.append(span);
+                p.append(link);
                 div.append(p);
-                div.append(link);
             }
         }
     });

@@ -58,7 +58,7 @@
                 if (allGeneration.indexOf(entry.gen) === -1) {
                     allGeneration.push(parseInt(entry.gen))
                 }
-                if (entry.tiktok !== undefined) {
+                if (entry.tiktok) {
                     tiktokMember[entry.tiktok] = entry
                 }
             })
@@ -67,7 +67,6 @@
                 var opt = $("<li></li>");
                 opt.text('Gen ' + value);
                 opt.click(function () {
-                    console.log(value)
                     $('#filter-generation').val(value);
                     $('#button-generation').text('Gen ' + value + ' ').append(caret.prop('outerHTML'));
                     filter();
@@ -77,7 +76,7 @@
 
             $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
                 $.each(dataTiktok.members, function (key, entry) {
-                    if (tiktokMember[entry.username] !== undefined) {
+                    if (tiktokMember[entry.username]) {
                         entry.gen = tiktokMember[entry.username].gen
                         entry.teams = tiktokMember[entry.username].teams.join(" & ")
                         if (entry.posts != 0) {

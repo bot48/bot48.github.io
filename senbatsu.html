@@ -1,0 +1,115 @@
+<h3>Senbatsu & Center</h3>
+
+<div class="filter">
+    <div class="filter-dropdown col-sm-3">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
+            id="button-generation">Semua
+            Gen
+            <span class="caret"></span></button>
+        <input type="hidden" id="filter-generation" name="gen">
+        <ul class="dropdown-menu" id="list-generation">
+            <li id="list-all-generation">Semua Gen</li>
+        </ul>
+    </div>
+</div>
+
+<table data-toggle="table" class="display table table-bordered" id="table-senbatsu">
+    <thead>
+        <tr>
+            <th data-field="name">Nama</th>
+            <th data-field="gen" data-sortable="true">Generasi</th>
+            <th data-field="senbatsu" data-sortable="true">Senbatsu</th>
+            <th data-field="center" data-sortable="true">Center</th>
+        </tr>
+    </thead>
+</table>
+<br>
+<div class="alert alert-info" role="alert">
+    Member yang senbatsu di double single UZA & Everyday, Kachuusa dihitung untuk masing2 single.
+</div>
+
+<script>
+    $(document).ready(function () {
+        var allGeneration = [];
+        var caret = $("<span class='caret'></span>")
+
+        let list = $('#list-generation');
+        $.getJSON('data/generations.json?' + getShortDate(), function (dataGeneration) {
+            $.each(dataGeneration, function (key, entry) {
+                var opt = $("<li></li>");
+                opt.text('Gen ' + entry.generation);
+                opt.click(function () {
+                    $('#filter-generation').val(entry.generation);
+                    $('#button-generation').text('Gen ' + entry.generation + ' ').append(caret.prop('outerHTML'));
+                })
+                list.append(opt);
+                allGeneration.push(entry.generation);
+            })
+        });
+
+        $.getJSON('data/singles.json?' + getShortDate(), function (dataSingle) {
+            var allSenbatsu = []
+            $.each(dataSingle, function (key, entry) {
+                for (i = 0; i < entry.members.length; i++) {
+                    if (!allSenbatsu[entry.members[i]]) {
+                        var senbatsu = []
+                        senbatsu.senbatsu = 1
+                        senbatsu.gen = "-"
+                        senbatsu.center = 0
+                        allSenbatsu[entry.members[i]] = senbatsu
+                    } else {
+                        allSenbatsu[entry.members[i]].senbatsu = allSenbatsu[entry.members[i]].senbatsu + 1
+                    }
+                }
+                for (i = 0; i < entry.centers.length; i++) {
+                    allSenbatsu[entry.centers[i]].center = allSenbatsu[entry.centers[i]].center + 1
+                }
+            });
+
+            $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+                $.each(dataMembers, function (key, entry) {
+                    if (allSenbatsu[entry.name]) {
+                        allSenbatsu[entry.name].gen = entry.gen
+                    }
+                })
+
+                var dataSenbatsu = []
+                for (var name in allSenbatsu) {
+                    allSenbatsu[name].name = name
+                    dataSenbatsu.push(allSenbatsu[name])
+                }
+
+                $('#table-senbatsu').bootstrapTable({
+                    data: dataSenbatsu,
+                    pagination: true,
+                    pageSize: 48,
+                });
+
+            })
+
+
+        })
+
+
+        $('#list-all-generation').click(function () {
+            $('#filter-generation').val("");
+            $('#button-generation').text("Semua Gen" + " ").append(caret.prop('outerHTML'));
+        })
+
+        $('#list-generation').click(function () {
+            var generation = $('#filter-generation').val();
+            var filterGeneration = [];
+            if (generation != "") {
+                filterGeneration.push(parseInt(generation));
+            } else {
+                filterGeneration = allGeneration;
+                filterGeneration.push("-")
+            }
+
+            $('#table-senbatsu').bootstrapTable('filterBy', {
+                gen: filterGeneration,
+            });
+        });
+
+    });
+</script>

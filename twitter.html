@@ -57,7 +57,7 @@
                 if (allGeneration.indexOf(entry.gen) === -1) {
                     allGeneration.push(parseInt(entry.gen))
                 }
-                if (entry.twitter !== undefined) {
+                if (entry.twitter) {
                     twitterMember[entry.twitter] = entry
                 }
             })
@@ -66,7 +66,6 @@
                 var opt = $("<li></li>");
                 opt.text('Gen ' + value);
                 opt.click(function () {
-                    console.log(value)
                     $('#filter-generation').val(value);
                     $('#button-generation').text('Gen ' + value + ' ').append(caret.prop('outerHTML'));
                     filter();
@@ -76,7 +75,7 @@
 
             $.getJSON('data/twitter.json?' + getShortDate(), function (dataTwitter) {
                 $.each(dataTwitter.members, function (key, entry) {
-                    if (twitterMember[entry.username] !== undefined) {
+                    if (twitterMember[entry.username]) {
                         entry.gen = twitterMember[entry.username].gen
                         entry.teams = twitterMember[entry.username].teams.join(" & ")
                     }

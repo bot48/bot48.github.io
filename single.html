@@ -1,0 +1,111 @@
+<h3>Single</h3>
+
+<div class="filter">
+    <div class="filter-dropdown col-sm-3">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="button-year">Semua
+            Tahun
+            <span class="caret"></span></button>
+        <input type="hidden" id="filter-year" name="gen">
+        <ul class="dropdown-menu" id="list-year">
+            <li id="list-all-year">Semua Tahun</li>
+        </ul>
+    </div>
+</div>
+
+<table data-toggle="table" class="display table table-bordered" id="table-singles">
+    <thead>
+        <tr>
+            <th data-field="title">Judul</th>
+            <th data-field="year">Tahun Release</th>
+            <th data-field="centers">Center</th>
+            <th data-field="members">Member</th>
+        </tr>
+    </thead>
+</table>
+<br>
+<div class="alert alert-info" role="alert">
+    Double single dihitung sebagai release masing-masing.
+</div>
+
+<script>
+    $(document).ready(function () {
+        var caret = $("<span class='caret'></span>")
+        var nickname = []
+        $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
+            $.each(dataMembers, function (key, entry) {
+                nickname[entry.name] = entry.nickname
+            })
+
+            $.getJSON('data/singles.json?' + getShortDate(), function (dataSingle) {
+                allYear = []
+                $.each(dataSingle, function (key, entry) {
+                    if (entry.original_title) {
+                        entry.title = entry.title + " (" + entry.original_title + ")"
+                    }
+                    var dt = new Date(entry.release_date);
+                    entry.year = dt.getFullYear();
+                    if (allYear.indexOf(entry.year) === -1) {
+                        allYear.push(entry.year)
+                    }
+                    entry.release_date = formatShortDate(entry.release_date)
+
+                    for (i = 0; i < entry.members.length; i++) {
+                        if (nickname[entry.members[i]]) {
+                            entry.members[i] = nickname[entry.members[i]]
+                        } else {
+                            nick = entry.members[i].split(" ")
+                            entry.members[i] = nick[0]
+                        }
+                    }
+                    for (i = 0; i < entry.centers.length; i++) {
+                        if (nickname[entry.centers[i]]) {
+                            entry.centers[i] = nickname[entry.centers[i]]
+                        } else {
+                            nick = entry.centers[i].split(" ")
+                            entry.centers[i] = nick[0]
+                        }
+                    }
+
+                    entry.centers = entry.centers.join(", ")
+                    entry.members = entry.members.join(", ")
+                });
+
+                allYear.sort();
+                let list = $('#list-year');
+                allYear.forEach(function (value) {
+                    var opt = $("<li></li>");
+                    opt.text(value);
+                    opt.click(function () {
+                        $('#filter-year').val(value);
+                        $('#button-year').text(value + ' ').append(caret.prop('outerHTML'));
+                    })
+                    list.append(opt);
+                })
+
+                $('#table-singles').bootstrapTable({
+                    data: dataSingle,
+                    pageSize: 48,
+                });
+
+                $('#list-all-year').click(function () {
+                    $('#filter-year').val("");
+                    $('#button-year').text("Semua Tahun ").append(caret.prop('outerHTML'));
+                })
+
+                $('#list-year').click(function () {
+                    var year = $('#filter-year').val();
+                    var filterYear = [];
+                    if (year != "") {
+                        filterYear.push(parseInt(year));
+                    } else {
+                        filterYear = allYear;
+                    }
+
+                    $('#table-singles').bootstrapTable('filterBy', {
+                        year: filterYear
+                    });
+                })
+            });
+        });
+    });
+</script>

@@ -1,29 +1,91 @@
-<div class="chart-container col-md-6">
-    <div id="chart-team"></div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="number-container">
+            <span id="number-member-active" class="number-value"></span>
+            <span class="number-text">
+                <i class="fa fa-user"></i> Member Aktif
+            </span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="number-container">
+            <span id="number-member-all" class="number-value"></span>
+            <span class="number-text">
+                <i class="fa fa-users"></i> Member Aktif & Member Graduate
+            </span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="number-container">
+            <span id="number-age" class="number-value"></span>
+            <span class="number-text">
+                <i class="fa fa-clock-o"></i> Rata-rata Umur Member Aktif
+            </span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="number-container">
+            <span id="number-single" class="number-value"></span>
+            <span class="number-text">
+                <i class="fa fa-music"></i> Single
+            </span>
+        </div>
+    </div>
 </div>
-<div class="chart-container col-md-6">
-    <div id="chart-team-gen"></div>
+
+<div class="col-md-6">
+    <div class="chart-container">
+        <div id="chart-team"></div>
+    </div>
 </div>
-<div class="chart-container col-md-6">
-    <div id="chart-age"></div>
+<div class="col-md-6">
+    <div class="chart-container">
+        <div id="chart-team-gen"></div>
+    </div>
 </div>
-<div class="chart-container col-md-6">
-    <div id="chart-grad-year"></div>
+<div class="col-md-6">
+    <div class="chart-container">
+        <div id="chart-grad-year"></div>
+    </div>
 </div>
-<div class="chart-container col-md-6">
-    <div id="chart-grad-month"></div>
+<div class="col-md-6">
+    <div class="chart-container">
+        <div id="chart-grad-month"></div>
+    </div>
 </div>
-<div class="chart-container col-md-12">
-    <div id="chart-twitter"></div>
-    <span id="detail-twitter"><a>Lihat Akun Twitter Selengkapnya</a></span>
+<div class="col-md-6">
+    <div class="chart-container">
+        <div id="chart-age"></div>
+    </div>
 </div>
-<div class="chart-container col-md-12">
-    <div id="chart-instagram"></div>
-    <span id="detail-instagram"><a>Lihat Akun Instagram Selengkapnya</a></span>
+<div class="col-md-6">
+    <div class="chart-container">
+        <div id="chart-single"></div>
+    </div>
 </div>
-<div class="chart-container col-md-12">
-    <div id="chart-tiktok"></div>
-    <span id="detail-tiktok"><a>Lihat Akun TikTok Selengkapnya</a></span>
+<div class="col-md-12">
+    <div class="chart-container">
+        <div id="chart-senbatsu"></div>
+        <a id="detail-senbatsu" class="chart-detail"></a>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="chart-container">
+        <div id="chart-twitter"></div>
+        <a id="detail-twitter" class="chart-detail"></a>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="chart-container">
+        <div id="chart-instagram"></div>
+        <a id="detail-instagram" class="chart-detail"></a>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="chart-container">
+        <div id="chart-tiktok"></div>
+        <a id="detail-tiktok" class="chart-detail"></a>
+    </div>
 </div>
 
 <script>
@@ -34,18 +96,6 @@
         "Academy Class A": 'rgba(27, 200, 248, 1)',
         "Academy Class B": 'rgba(27, 200, 248, 1)'
     }
-
-    $('#detail-twitter').click(function () {
-        $('#content').load('twitter.html?' + getShortDate());
-    });
-
-    $('#detail-instagram').click(function () {
-        $('#content').load('instagram.html?' + getShortDate());
-    });
-
-    $('#detail-tiktok').click(function () {
-        $('#content').load('tiktok.html?' + getShortDate());
-    });
 
     $(document).ready(function () {
         $.getJSON('data/members.json?' + getShortDate(), function (dataMembers) {
@@ -64,9 +114,15 @@
             var minAge = 0;
             var maxAge = 0;
 
+            var activeMember = 0;
+            var activeMemberAge = 0;
+
             gradYear['Semua Gen'] = [];
             var end = new Date();
+            var nickname = []
+
             $.each(dataMembers, function (key, entry) {
+                nickname[entry.name] = entry.nickname
                 if (generation.indexOf('Gen ' + entry.gen) === -1) {
                     generation.push('Gen ' + entry.gen)
                 }
@@ -79,7 +135,7 @@
                             teamGen[entry.teams[i]][entry.gen] = 1
                         } else {
                             teamCount[entry.teams[i]] = teamCount[entry.teams[i]] + 1;
-                            if (teamGen[entry.teams[i]][entry.gen] === undefined) {
+                            if (!teamGen[entry.teams[i]][entry.gen]) {
                                 teamGen[entry.teams[i]][entry.gen] = 1
                             } else {
                                 teamGen[entry.teams[i]][entry.gen] = teamGen[entry.teams[i]][entry.gen] + 1
@@ -98,25 +154,25 @@
                         gradYear['Semua Gen'][dtYear] = gradYear['Semua Gen'][dtYear] + 1
                     }
 
-                    if (gradYear[entry.gen] === undefined) {
+                    if (!gradYear[entry.gen]) {
                         gradYear[entry.gen] = []
                         gradYear[entry.gen][dtYear] = 1
                     } else {
-                        if (gradYear[entry.gen][dtYear] == undefined) {
+                        if (!gradYear[entry.gen][dtYear]) {
                             gradYear[entry.gen][dtYear] = 1
                         } else {
                             gradYear[entry.gen][dtYear] = gradYear[entry.gen][dtYear] + 1
                         }
                     }
 
-                    if (gradMonth[dtMonth] === undefined) {
+                    if (!gradMonth[dtMonth]) {
                         gradMonth[dtMonth] = 1
                     } else {
                         gradMonth[dtMonth] = gradMonth[dtMonth] + 1
                     }
                     endDate = new Date(entry.last_date);
                     age = getYears(entry.birth_date, endDate);
-                    if (ageNonActive[age] == undefined) {
+                    if (!ageNonActive[age]) {
                         ageNonActive[age] = 1
                     } else {
                         ageNonActive[age] = ageNonActive[age] + 1
@@ -132,9 +188,11 @@
                         maxAge = age
                     }
                 } else {
+                    activeMember = activeMember + 1;
                     var endDate = end;
                     age = getYears(entry.birth_date, endDate);
-                    if (ageActive[age] == undefined) {
+                    activeMemberAge = activeMemberAge + age
+                    if (!ageActive[age]) {
                         ageActive[age] = 1
                     } else {
                         ageActive[age] = ageActive[age] + 1
@@ -152,6 +210,98 @@
                 }
             })
 
+            $.getJSON('data/singles.json?' + getShortDate(), function (dataSingle) {
+                singleYear = []
+                minYear = 0;
+                maxYear = 0;
+                allSenbatsu = []
+
+                $.each(dataSingle, function (key, entry) {
+                    for (i = 0; i < entry.members.length; i++) {
+                        if (!allSenbatsu[entry.members[i]]) {
+                            var senbatsu = []
+                            senbatsu.senbatsu = 1
+                            senbatsu.center = 0
+                            allSenbatsu[entry.members[i]] = senbatsu
+                        } else {
+                            allSenbatsu[entry.members[i]].senbatsu = allSenbatsu[entry.members[i]].senbatsu + 1
+                        }
+                    }
+                    for (i = 0; i < entry.centers.length; i++) {
+                        allSenbatsu[entry.centers[i]].center = allSenbatsu[entry.centers[i]].center + 1
+                    }
+
+                    if (entry.title == "UZA") {
+                        return
+                    }
+                    var dt = new Date(entry.release_date);
+                    year = dt.getFullYear();
+                    if (!singleYear[year]) {
+                        singleYear[year] = 1
+                    } else {
+                        singleYear[year] = singleYear[year] + 1
+                    }
+                    if (minYear == 0) {
+                        minYear = year
+                    } else if (minYear != 0 && year < minYear) {
+                        minYear = year
+                    }
+                    if (maxYear == 0) {
+                        maxYear = year
+                    } else if (maxYear != 0 && year > maxYear) {
+                        maxYear = year
+                    }
+                });
+
+                var year = []
+                var dataYear = []
+                for (i = minYear; i <= maxYear; i++) {
+                    year.push(i)
+                    if (!singleYear[i]) {
+                        dataYear.push(0)
+                    } else {
+                        dataYear.push(singleYear[i])
+                    }
+                }
+                renderChartSingle(dataYear, year)
+
+                //transform to array
+                arrSenbatsu = []
+                for (var member in allSenbatsu) {
+                    data = allSenbatsu[member]
+                    data.name = member
+                    arrSenbatsu.push(data)
+                }
+                arrSenbatsu.sort((a, b) => (a.senbatsu > b.senbatsu) ? 1 : -1)
+
+                // console.log(arrSenbatsu)
+                names = []
+                senbatsuCount = []
+                centerCount = []
+                $.each(arrSenbatsu, function (key, entry) {
+                    if (nickname[entry.name]) {
+                        names.push(nickname[entry.name])
+                    } else {
+                        nick = entry.name.split(" ")
+                        names.push(nick[0])
+                    }
+                    senbatsuCount.push(entry.senbatsu)
+                    centerCount.push(entry.center)
+                })
+
+                names = names.slice(names.length - 16, names.length)
+                senbatsuCount = senbatsuCount.slice(senbatsuCount.length - 16, senbatsuCount.length)
+                centerCount = centerCount.slice(centerCount.length - 16, centerCount.length)
+
+                renderChartSenbatsu(senbatsuCount, centerCount, names)
+
+                $('#number-single').text(dataSingle.length - 1)
+            });
+
+            $('#number-member-active').text(activeMember)
+            $('#number-member-all').text(dataMembers.length)
+            $('#number-age').text((activeMemberAge / activeMember).toFixed(1))
+
             // data team
             var dataTeam = []
             var colorTeam = []
@@ -168,7 +318,7 @@
             for (var team in teamGen) {
                 var dataSeries = []
                 for (i = 0; i < generation.length; i++) {
-                    if (teamGen[team][i + 1] === undefined) {
+                    if (!teamGen[team][i + 1]) {
                         dataSeries.push(0)
                     } else {
                         dataSeries.push(teamGen[team][i + 1])
@@ -182,18 +332,18 @@
             }
             renderChartTeamGen(dataTeamGen, generation, colorTeam)
 
-            // data sebaran umur member
+            // data umur member
             var ages = []
             var dataAgeActive = []
             var dataAgeNonActive = []
             for (i = minAge; i <= maxAge; i++) {
                 ages.push(i)
-                if (ageActive[i] === undefined) {
+                if (!ageActive[i]) {
                     dataAgeActive.push(0)
                 } else {
                     dataAgeActive.push(ageActive[i])
                 }
-                if (ageNonActive[i] === undefined) {
+                if (!ageNonActive[i]) {
                     dataAgeNonActive.push(0)
                 } else {
                     dataAgeNonActive.push(ageNonActive[i])
@@ -207,7 +357,7 @@
             for (var gen in gradYear) {
                 var dataSeries = []
                 for (i = 0; i < year.length; i++) {
-                    if (gradYear[gen][year[i]] === undefined) {
+                    if (!gradYear[gen][year[i]]) {
                         dataSeries.push(0)
                     } else {
                         dataSeries.push(gradYear[gen][year[i]])
@@ -378,7 +528,7 @@
                 categories: ages,
             },
             title: {
-                text: 'Sebaran Umur Member',
+                text: 'Umur Member',
                 align: 'center'
             },
             legend: {
@@ -407,6 +557,52 @@
         };
 
         var chart = new ApexCharts(document.querySelector("#chart-age"), options);
+        chart.render();
+        chart.toggleSeries('Saat Graduate')
+    }
+
+    function renderChartSingle(data, years) {
+        var options = {
+            series: [{
+                name: 'Single',
+                data: data
+            }],
+            xaxis: {
+                categories: years,
+            },
+            yaxis: [
+                {
+                    labels: {
+                        formatter: function (val) {
+                            return val.toFixed(0);
+                        }
+                    }
+                }
+            ],
+            title: {
+                text: 'Rilis Single dari Tahun ke Tahun',
+                align: 'center'
+            },
+            chart: {
+                type: 'bar',
+                height: 300,
+                toolbar: {
+                    show: false
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-single"), options);
         chart.render();
 
     }
@@ -491,6 +687,66 @@
 
     }
 
+    function renderChartSenbatsu(dataSenbatsu, dataCenter, members) {
+        var options = {
+            series: [{
+                name: 'Senbatsu',
+                data: dataSenbatsu
+            },
+            {
+                name: 'Center',
+                data: dataCenter
+            }],
+            xaxis: {
+                categories: members,
+            },
+            title: {
+                text: 'Member Senbatsu Terbanyak',
+                align: 'center'
+            },
+            legend: {
+                position: 'top',
+            },
+            chart: {
+                type: 'bar',
+                toolbar: {
+                    show: false
+                },
+                events: {
+                    mounted: function (chartContext, config) {
+                        $('#detail-senbatsu').click(function () {
+                            $('#content').load('senbatsu.html?' + getShortDate());
+                        });
+                        $('#detail-senbatsu').text("Lihat Daftar Senbatsu Selengkapnya")
+                    }
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    dataLabels: {
+                        position: 'top',
+                    },
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    legend: {
+                        fontSize: '10'
+                    },
+                    chart: {
+                        height: '600px'
+                    },
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-senbatsu"), options);
+        chart.render();
+        chart.toggleSeries("Center");
+    }
+
     function renderChartTwitter(data, members) {
         var options = {
             series: [{
@@ -531,6 +787,14 @@
                 toolbar: {
                     show: false
                 },
+                events: {
+                    mounted: function (chartContext, config) {
+                        $('#detail-twitter').click(function () {
+                            $('#content').load('twitter.html?' + getShortDate());
+                        });
+                        $('#detail-twitter').text("Lihat Akun Twitter Selengkapnya")
+                    }
+                }
             },
             responsive: [{
                 breakpoint: 480,
@@ -599,6 +863,14 @@
                 toolbar: {
                     show: false
                 },
+                events: {
+                    mounted: function (chartContext, config) {
+                        $('#detail-instagram').click(function () {
+                            $('#content').load('instagram.html?' + getShortDate());
+                        });
+                        $('#detail-instagram').text("Lihat Akun Instagram Selengkapnya")
+                    }
+                }
             },
             responsive: [{
                 breakpoint: 480,
@@ -667,6 +939,14 @@
                 toolbar: {
                     show: false
                 },
+                events: {
+                    mounted: function (chartContext, config) {
+                        $('#detail-tiktok').click(function () {
+                            $('#content').load('tiktok.html?' + getShortDate());
+                        });
+                        $('#detail-tiktok').text("Lihat Akun TikTok Selengkapnya")
+                    }
+                }
             },
             responsive: [{
                 breakpoint: 480,

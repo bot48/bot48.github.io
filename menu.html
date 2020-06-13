@@ -16,6 +16,14 @@
                 <li><a id="menu-generations">Generasi</a></li>
                 <li><a id="menu-graduate">Graduate</a></li>
                 <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Single
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a id="menu-single">Single</a></li>
+                      <li><a id="menu-senbatsu">Senbatsu & Center</a></li>
+                    </ul>
+                  </li>
+                <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Social Media
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -48,6 +56,16 @@
 
     $('#menu-graduate').click(function () {
         $('#content').load('graduate.html?' + getShortDate());
+        closeNav();
+    });
+
+    $('#menu-single').click(function () {
+        $('#content').load('single.html?' + getShortDate());
+        closeNav();
+    });
+
+    $('#menu-senbatsu').click(function () {
+        $('#content').load('senbatsu.html?' + getShortDate());
         closeNav();
     });
 

@@ -55,7 +55,7 @@
                     age = getAge(joinDates[entry.gen - 1], endDate);
                     entry.days = age[0]
                     entry.last_date_format = formatShortDate(entry.last_date)
-                    if (entry.link_graduation !== undefined) {
+                    if (entry.link_graduation) {
                         var link = $("<a target='_blank'></a>");
                         link.attr('href', entry.link_graduation);
                         link.text("Link");
