@@ -81,12 +81,12 @@
         <a id="detail-instagram" class="chart-detail"></a>
     </div>
 </div>
-<!-- <div class="col-md-12">
+<div class="col-md-12">
     <div class="chart-container">
         <div id="chart-tiktok"></div>
         <a id="detail-tiktok" class="chart-detail"></a>
     </div>
-</div> -->
+</div>
 
 <script>
     var colorTeamMap = {
@@ -410,23 +410,22 @@
                 renderChartInstagram(followerInstagram, usernameInstagram)
             });
 
-            // $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
-            //     dataTiktok = dataTiktok.members
-            //     usernameTiktok = []
-            //     followerTiktok = []
-            //     dataTiktok.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
+            $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
+                dataTiktok = dataTiktok.members
+                usernameTiktok = []
+                followerTiktok = []
+                dataTiktok.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
 
-            //     $.each(dataTiktok, function (key, entry) {
-            //         usernameTiktok.push(entry.username)
-            //         followerTiktok.push(entry.follower)
-            //     })
+                $.each(dataTiktok, function (key, entry) {
+                    usernameTiktok.push(entry.username)
+                    followerTiktok.push(entry.follower)
+                })
 
-            //     followerTiktok = followerTiktok.slice(followerTiktok.length - 16, followerTiktok.length)
-            //     usernameTiktok = usernameTiktok.slice(usernameTiktok.length - 16, usernameTiktok.length)
+                followerTiktok = followerTiktok.slice(followerTiktok.length - 16, followerTiktok.length)
+                usernameTiktok = usernameTiktok.slice(usernameTiktok.length - 16, usernameTiktok.length)
 
-            //     renderChartTiktok(followerTiktok, usernameTiktok)
-            // });
-
+                renderChartTiktok(followerTiktok, usernameTiktok)
+            });
         });
 
     });
@@ -558,7 +557,6 @@
 
         var chart = new ApexCharts(document.querySelector("#chart-age"), options);
         chart.render();
-        chart.toggleSeries('Saat Graduate')
     }
 
     function renderChartSingle(data, years) {
@@ -744,7 +742,6 @@
 
         var chart = new ApexCharts(document.querySelector("#chart-senbatsu"), options);
         chart.render();
-        chart.toggleSeries("Center");
     }
 
     function renderChartTwitter(data, members) {
@@ -899,81 +896,81 @@
         chart.render();
     }
 
-    // function renderChartTiktok(data, members) {
-    //     var options = {
-    //         series: [{
-    //             name: 'Follower',
-    //             data: data
-    //         }],
-    //         xaxis: {
-    //             categories: members,
-    //         },
-    //         title: {
-    //             text: '16 Akun TikTok dengan Follower Terbanyak',
-    //             align: 'center'
-    //         },
-    //         plotOptions: {
-    //             bar: {
-    //                 horizontal: true,
-    //                 distributed: true,
-    //                 dataLabels: {
-    //                     position: 'top'
-    //                 }
-    //             }
-    //         },
-    //         legend: {
-    //             show: false,
-    //         },
-    //         dataLabels: {
-    //             enabled: true,
-    //             style: {
-    //                 colors: ['#000']
-    //             },
-    //             formatter: function (val) {
-    //                 return convertK(val)
-    //             },
-    //             offsetX: 35,
-    //         },
-    //         chart: {
-    //             type: 'bar',
-    //             toolbar: {
-    //                 show: false
-    //             },
-    //             events: {
-    //                 mounted: function (chartContext, config) {
-    //                     $('#detail-tiktok').click(function () {
-    //                         $('#content').load('tiktok.html?' + getShortDate());
-    //                     });
-    //                     $('#detail-tiktok').text("Lihat Akun TikTok Selengkapnya")
-    //                 }
-    //             }
-    //         },
-    //         responsive: [{
-    //             breakpoint: 480,
-    //             options: {
-    //                 title: {
-    //                     style: {
-    //                         fontSize: '12',
-    //                     }
-    //                 },
-    //                 chart: {
-    //                     height: '600px'
-    //                 },
-    //                 xaxis: {
-    //                     labels: {
-    //                         show: true,
-    //                         formatter: function (val) {
-    //                             return convertK(val)
-    //                         },
-    //                     },
-    //                 }
-    //             }
-    //         }]
-    //     };
+    function renderChartTiktok(data, members) {
+        var options = {
+            series: [{
+                name: 'Follower',
+                data: data
+            }],
+            xaxis: {
+                categories: members,
+            },
+            title: {
+                text: '16 Akun TikTok dengan Follower Terbanyak',
+                align: 'center'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    distributed: true,
+                    dataLabels: {
+                        position: 'top'
+                    }
+                }
+            },
+            legend: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: true,
+                style: {
+                    colors: ['#000']
+                },
+                formatter: function (val) {
+                    return convertK(val)
+                },
+                offsetX: 35,
+            },
+            chart: {
+                type: 'bar',
+                toolbar: {
+                    show: false
+                },
+                events: {
+                    mounted: function (chartContext, config) {
+                        $('#detail-tiktok').click(function () {
+                            $('#content').load('tiktok.html?' + getShortDate());
+                        });
+                        $('#detail-tiktok').text("Lihat Akun TikTok Selengkapnya")
+                    }
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    title: {
+                        style: {
+                            fontSize: '12',
+                        }
+                    },
+                    chart: {
+                        height: '600px'
+                    },
+                    xaxis: {
+                        labels: {
+                            show: true,
+                            formatter: function (val) {
+                                return convertK(val)
+                            },
+                        },
+                    }
+                }
+            }]
+        };
 
-    //     var chart = new ApexCharts(document.querySelector("#chart-tiktok"), options);
-    //     chart.render();
-    // }
+        var chart = new ApexCharts(document.querySelector("#chart-tiktok"), options);
+        chart.render();
+    }
 
     function convertK(val) {
         val = parseInt(val / 1000)
