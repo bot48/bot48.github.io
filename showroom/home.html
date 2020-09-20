@@ -1,0 +1,46 @@
+<div class="col-md-12">
+    <div class="live-container">
+        <h3>Jadwal Live</h3>
+        <h4>Hari Ini</h4>
+        <ul id="list-live-today"></ul>
+        <h4>Jadwal Selanjutnya</h4>
+        <ul id="list-live-upcoming"></ul>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        let listToday = $('#list-live-today');
+        let listUpcoming = $('#list-live-upcoming');
+        $.getJSON('../data/showroom.json?' + getShortDate(), function (dataRoom) {
+            arrLive = []
+            $.each(dataRoom.members, function (key, entry) {
+                if (entry.live_date) {
+                    entry.live_date = parseInt(entry.live_date)
+                    arrLive.push(entry)
+                }
+            })
+
+            arrLive.sort((a, b) => (a.live_date > b.live_date) ? 1 : -1)
+
+            $.each(arrLive, function (key, entry) {
+                var opt = $("<li></li>")
+                var link = $("<a target='_blank'></a>")
+                var icon = $("<i class=\"fa fa-video-camera\"></i>")
+                link.attr('href', "https://www.showroom-live.com/" + entry.name)
+                link.append(icon)
+                if (isToday(entry.live_date)) {
+                    opt.text(formatHourOnly(entry.live_date * 1000) + " : " + entry.name + " ")
+                    opt.append(link)
+                    listToday.append(opt)
+                } else {
+                    opt.text(formatLongDate(entry.live_date * 1000) + " : " + entry.name + " ")
+                    opt.append(link)
+                    listUpcoming.append(opt)
+                }
+            })
+
+        });
+    });
+</script>

@@ -30,6 +30,7 @@
                       <li><a id="menu-twitter">Twitter</a></li>
                       <li><a id="menu-instagram">Instagram</a></li>
                       <li><a id="menu-tiktok">TikTok</a></li>
+                      <li><a id="menu-showroom">Showroom</a></li>
                     </ul>
                   </li>
                 <li><a id="menu-about">Tentang BOT48</a></li>
@@ -82,6 +83,10 @@
     $('#menu-tiktok').click(function () {
         $('#content').load('tiktok.html?' + getShortDate());
         closeNav();
+    });
+
+    $('#menu-showroom').click(function () {
+        document.location.href="showroom";
     });
 
     $('#menu-about').click(function () {

@@ -6,6 +6,12 @@ function getShortDate() {
     return time;
 }
 
+function formatHourOnly(dateInput) {
+    var dt = new Date(dateInput);
+    var time = format_two_digits(dt.getHours()) + ":" + format_two_digits(dt.getMinutes());
+    return time;
+}
+
 function formatShortDate(dateInput) {
     var dt = new Date(dateInput);
     var time = dt.getDate() + " " + months[dt.getMonth()] + " " + dt.getFullYear();
@@ -52,4 +58,11 @@ function getAge(startDate, endDate) {
         }
     }
     return [parseInt(days), ext];
+}
+
+function isToday(input) {
+    var now = new Date()
+    now.setHours(23,59,59)
+    compare = Math.round(now.getTime()/1000)
+    return input < compare
 }

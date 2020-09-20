@@ -1,0 +1,79 @@
+<h3>Room</h3>
+
+<table data-toggle="table" class="display table table-bordered" id="table-room">
+    <thead>
+        <tr>
+            <th data-field="name">Room</th>
+            <th data-field="followers">Follower</th>
+            <th data-field="room_level">Room Level</th>
+            <th data-field="live_date">Tanggal Live</th>
+            <th data-field="detail">Ranking Kumulatif</th>
+        </tr>
+    </thead>
+</table>
+
+<div class="alert alert-info" role="alert">
+    Pembaruan Terakhir
+    <span id="last_update"></span>.
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="detail-room">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../data/showroom.json?' + getShortDate(), function (dataRoom) {
+            dataMember = dataRoom.members
+            $.each(dataMember, function (key, entry) {
+                if (entry.live_date) {
+                    entry.live_date = parseInt(entry.live_date)
+                    entry.live_date = formatLongDate(entry.live_date * 1000)
+                }
+
+                if (entry.ranking) {
+                    var button = $("<a class='detail-room'></a>");
+                    button.text('Detil');
+                    button.attr('data-toggle', "modal");
+                    button.attr('data-target', "#detail-room");
+                    button.attr('data-key', key);
+                    entry.detail = button.prop('outerHTML');
+                }
+            })
+
+            $('body').on('click', 'a.detail-room', function () {
+                var key = $(this).attr('data-key');
+                var data = dataRoom.members[key];
+                $('#modal-title').text("Ranking Kumulatif Room " + data.name);
+                var div = $("<div class='detail-rank'></div>");
+                $.each(data.ranking, function (key, entry) {
+                    var p = $("<p></p>");
+                    text = entry.position + ". " + entry.name + ': ' + entry.point + " point " + entry.visit_count + "x visit room"
+                    p.text(text);
+                    div.append(p);
+                })
+                $('#modal-body').html(div);
+            });
+
+            $('#table-room').bootstrapTable({
+                data: dataMember,
+                pagination: true,
+                pageSize: 48,
+            });
+
+            $('#last_update').html(formatLongDate(dataRoom.last_update));
+                    
+        });
+    });
+</script>

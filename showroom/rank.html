@@ -1,0 +1,60 @@
+<h3>Ranking</h3>
+
+<table data-toggle="table" class="display table table-bordered" id="table-rank">
+    <thead>
+        <tr>
+            <th data-field="name">Username</th>
+            <th data-field="total_point" data-sortable="true">Total Point</th>
+            <th data-field="highest_position" data-sortable="true">Posisi Tertinggi</th>
+            <th data-field="total_visit" data-sortable="true">Total Kemunculan di Ranking Kumulatif Member</th>
+        </tr>
+    </thead>
+</table>
+
+<div class="alert alert-danger" role="alert">
+    Data total point hanya dihitung dari yang muncul di ranking kumulatif.
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../data/showroom.json?' + getShortDate(), function (dataRoom) {
+            dataMember = dataRoom.members
+            dataRanking = []
+
+            $.each(dataMember, function (key, entry) {
+                if (entry.ranking) {
+                    $.each(entry.ranking, function (key, entry) {
+                        if (!dataRanking[entry.name]) {
+                            ranking = {
+                                name: entry.name,
+                                total_point: parseInt(entry.point),
+                                highest_position: parseInt(entry.position),
+                                total_visit: 1,
+                            }
+                            dataRanking[entry.name] = ranking
+                        } else {
+                            if (dataRanking[entry.name].highest_position > parseInt(entry.position)) {
+                                dataRanking[entry.name].highest_position = parseInt(entry.position)
+                            }
+                            dataRanking[entry.name].total_point = dataRanking[entry.name].total_point + parseInt(entry.point)
+                            dataRanking[entry.name].total_visit = dataRanking[entry.name].total_visit + 1
+                        }
+                    })
+                }
+            })
+            finalData = []
+            for (var data in dataRanking) {
+                finalData.push(dataRanking[data])
+            }
+
+            $('#table-rank').bootstrapTable({
+                data: finalData,
+                sortName: 'total_point',
+                sortOrder: 'desc',
+                pagination: true,
+                pageSize: 48,
+            });
+                    
+        });
+    });
+</script>
