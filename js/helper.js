@@ -8,8 +8,8 @@ function getShortDate() {
 
 function getLongDate() {
     var dt = new Date();
-    var time = dt.getFullYear() + "" + dt.getMonth() + "" + dt.getDate() + "" + format_two_digits(dt.getHours());
-    return time;
+    var time = dt.getFullYear() + "" + dt.getMonth() + "" + dt.getDate() + "" + format_two_digits(dt.getHours()) + "" + format_two_digits(dt.getMinutes());
+    return time.substr(0,time.length-1);
 }
 
 function formatHourOnly(dateInput) {
