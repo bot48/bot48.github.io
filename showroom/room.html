@@ -4,8 +4,8 @@
     <thead>
         <tr>
             <th data-field="name">Room</th>
-            <th data-field="followers">Follower</th>
-            <th data-field="room_level">Room Level</th>
+            <th data-field="followers" data-sortable="true">Follower</th>
+            <th data-field="room_level" data-sortable="true">Room Level</th>
             <th data-field="live_date">Tanggal Live</th>
             <th data-field="detail">Ranking Kumulatif</th>
         </tr>
@@ -36,6 +36,7 @@
     $(document).ready(function () {
         $.getJSON('../data/showroom.json?' + getShortDate(), function (dataRoom) {
             dataMember = dataRoom.members
+            copyDataMember = []
             $.each(dataMember, function (key, entry) {
                 if (entry.live_date) {
                     entry.live_date = parseInt(entry.live_date)
@@ -43,31 +44,73 @@
                 }
 
                 if (entry.ranking) {
-                    var button = $("<a class='detail-room'></a>");
+                    var button = $("<a class='detail-modal'></a>");
                     button.text('Detil');
                     button.attr('data-toggle', "modal");
                     button.attr('data-target', "#detail-room");
-                    button.attr('data-key', key);
+                    button.attr('data-key', entry.name);
                     entry.detail = button.prop('outerHTML');
                 }
+                copyDataMember[entry.name] = entry
             })
 
-            $('body').on('click', 'a.detail-room', function () {
-                var key = $(this).attr('data-key');
-                var data = dataRoom.members[key];
-                $('#modal-title').text("Ranking Kumulatif Room " + data.name);
-                var div = $("<div class='detail-rank'></div>");
+            $('body').on('click', 'a.detail-modal', function () {
+                var key = $(this).attr('data-key')
+                var data = copyDataMember[key]
+                $('#modal-title').text("Ranking Kumulatif Room " + data.name)
+                var table = $("<table class='detail-rank'></table>")
+                var head = $("<tr></tr>")
+                var column1 = $("<td></td>").text("Posisi")
+                var column2 = $("<td></td>").text("Username")
+                var column3 = $("<td></td>").text("Jumlah Poin")
+                var column4 = $("<td></td>").text("Jumlah Kehadiran")
+                head.append(column1)
+                head.append(column2)
+                head.append(column3)
+                head.append(column4)
+                table.append(head)
+
                 $.each(data.ranking, function (key, entry) {
-                    var p = $("<p></p>");
-                    text = entry.position + ". " + entry.name + ': ' + entry.point + " point " + entry.visit_count + "x visit room"
-                    p.text(text);
-                    div.append(p);
+                    var row = $("<tr></tr>")
+                    var column1 = $("<td></td>").text(entry.position + " ")
+                    var column2 = $("<td></td>").text(entry.name)
+                    var column3 = $("<td></td>").text(entry.point)
+                    var column4 = $("<td></td>").text(entry.visit_count)
+
+                    if (entry.last_position == 0) {
+                        var icon = $("<i></i>").addClass("fa fa-sign-in")
+                        column1.append(icon)
+                    } else {
+                        if (entry.last_position == entry.position) {
+                            var icon = $("<i></i>").addClass("fa fa-minus")
+                            column1.append(icon)
+                        } else if (entry.last_position > entry.position) {
+                            var icon = $("<i></i>").addClass("fa fa-angle-up")
+                            column1.append(icon)
+                        } else {
+                            var icon = $("<i></i>").addClass("fa fa-angle-down")
+                            column1.append(icon)
+                        }
+                    }
+
+                    if (entry.last_point != 0) {
+                        column3.text(entry.point + " (+" + (parseInt(entry.point) - parseInt(entry.last_point)) + ")")
+                    }
+
+                    row.append(column1)
+                    row.append(column2)
+                    row.append(column3)
+                    row.append(column4)
+                    table.append(row)
                 })
-                $('#modal-body').html(div);
+
+                $('#modal-body').html(table)
             });
 
             $('#table-room').bootstrapTable({
                 data: dataMember,
+                sortName: 'followers',
+                sortOrder: 'desc',
                 pagination: true,
                 pageSize: 48,
             });

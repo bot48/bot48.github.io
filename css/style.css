@@ -101,3 +101,28 @@ body {
     margin: 0;
     padding: 0;
 }
+
+table.detail-rank {
+    width: 100%;
+}
+
+table.detail-rank td {
+    border: 1px solid rgb(221, 221, 221);
+    padding: .75rem;
+}
+
+.fa-sign-in{
+    color: blue;
+}
+
+.fa-angle-up{
+    color: green;
+}
+
+.fa-angle-down{
+    color: red;
+}
+
+.fa-minus{
+    color: yellow;
+}
