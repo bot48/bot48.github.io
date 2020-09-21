@@ -6,6 +6,12 @@ function getShortDate() {
     return time;
 }
 
+function getLongDate() {
+    var dt = new Date();
+    var time = dt.getFullYear() + "" + dt.getMonth() + "" + dt.getDate() + "" + format_two_digits(dt.getHours());
+    return time;
+}
+
 function formatHourOnly(dateInput) {
     var dt = new Date(dateInput);
     var time = format_two_digits(dt.getHours()) + ":" + format_two_digits(dt.getMinutes());
