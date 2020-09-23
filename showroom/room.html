@@ -62,7 +62,7 @@
             $('body').on('click', 'a.detail-modal', function () {
                 var key = $(this).attr('data-key')
                 var data = copyDataMember[key]
-                $('#modal-room-title').text("Ranking Kumulatif Room " + data.name)
+                $('#modal-room-title').text("Ranking Kumulatif Room " + key)
                 var table = $("<table class='detail-rank'></table>")
                 var head = $("<tr></tr>")
                 var column1 = $("<td></td>").text("Posisi")

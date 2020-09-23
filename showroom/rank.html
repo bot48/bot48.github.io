@@ -81,7 +81,7 @@
             $('body').on('click', 'a.detail-modal', function () {
                 var key = $(this).attr('data-key')
                 var data = dataRanking[key]
-                $('#modal-rank-title').text("Kemunculan Top 30  " + data.name)
+                $('#modal-rank-title').text("Kemunculan Top 30  " + key)
                 var table = $("<table class='detail-rank'></table>")
                 var head = $("<tr></tr>")
                 var column1 = $("<td></td>").text("Member")
