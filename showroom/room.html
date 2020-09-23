@@ -6,6 +6,7 @@
             <th data-field="name">Room</th>
             <th data-field="followers" data-sortable="true">Follower</th>
             <th data-field="room_level" data-sortable="true">Room Level</th>
+            <th data-field="gift_points" data-sortable="true">Total Gift (Top 30)</th>
             <th data-field="live_date">Tanggal Live</th>
             <th data-field="detail">Ranking Kumulatif</th>
         </tr>
@@ -50,6 +51,10 @@
                     button.attr('data-target', "#detail-room");
                     button.attr('data-key', entry.name);
                     entry.detail = button.prop('outerHTML');
+                    entry.gift_points = 0;
+                    $.each(entry.ranking, function (k, e) {
+                        entry.gift_points = entry.gift_points + parseInt(e.point)
+                    })
                 }
                 copyDataMember[entry.name] = entry
             })
