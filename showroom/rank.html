@@ -69,7 +69,7 @@
             })
             finalData = []
             for (var data in dataRanking) {
-                var button = $("<a class='detail-modal'></a>");
+                var button = $("<a class='detail-rank-modal'></a>");
                 button.text('Detil');
                 button.attr('data-toggle', "modal");
                 button.attr('data-target', "#detail-rank");
@@ -78,7 +78,7 @@
                 finalData.push(dataRanking[data])
             }
 
-            $('body').on('click', 'a.detail-modal', function () {
+            $('body').on('click', 'a.detail-rank-modal', function () {
                 var key = $(this).attr('data-key')
                 var data = dataRanking[key]
                 $('#modal-rank-title').text("Kemunculan Top 30  " + key)

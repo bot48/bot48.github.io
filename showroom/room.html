@@ -45,7 +45,7 @@
                 }
 
                 if (entry.ranking) {
-                    var button = $("<a class='detail-modal'></a>");
+                    var button = $("<a class='detail-room-modal'></a>");
                     button.text('Detil');
                     button.attr('data-toggle', "modal");
                     button.attr('data-target', "#detail-room");
@@ -59,7 +59,7 @@
                 copyDataMember[entry.name] = entry
             })
 
-            $('body').on('click', 'a.detail-modal', function () {
+            $('body').on('click', 'a.detail-room-modal', function () {
                 var key = $(this).attr('data-key')
                 var data = copyDataMember[key]
                 $('#modal-room-title').text("Ranking Kumulatif Room " + key)
