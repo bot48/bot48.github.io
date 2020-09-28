@@ -126,3 +126,7 @@ table.detail-rank td {
 .fa-minus{
     color: yellow;
 }
+
+sup {
+    color: red;
+}
