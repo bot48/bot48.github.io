@@ -3,8 +3,8 @@
     <thead>
         <tr>
             <th data-field="name">Username</th>
-            <th data-field="total_point" data-sortable="true">Total Point</th>
-            <th data-field="total_visit" data-sortable="true">Total Kemunculan di Ranking Kumulatif Member</th>
+            <th data-field="total_point" data-sortable="true">Total Poin<sup>*</sup></th>
+            <th data-field="total_visit" data-sortable="true">Total Kemunculan di Top 30</th>
             <th data-field="highest_position">Posisi Tertinggi</th>
             <th data-field="detail">Daftar Kemunculan</th>
         </tr>
@@ -12,7 +12,7 @@
 </table>
 
 <div class="alert alert-danger" role="alert">
-    Data total point hanya dihitung dari yang muncul di ranking kumulatif.
+    <sup>*</sup> Data total poin hanya dihitung dari yang muncul di Top 30.
 </div>
 
 <div class="modal" tabindex="-1" role="dialog" id="detail-rank">
@@ -86,7 +86,7 @@
                 var head = $("<tr></tr>")
                 var column1 = $("<td></td>").text("Member")
                 var column2 = $("<td></td>").text("Posisi")
-                var column3 = $("<td></td>").text("Point")
+                var column3 = $("<td></td>").text("Poin")
                 head.append(column1)
                 head.append(column2)
                 head.append(column3)
