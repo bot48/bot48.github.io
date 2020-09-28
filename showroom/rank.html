@@ -4,7 +4,8 @@
         <tr>
             <th data-field="name">Username</th>
             <th data-field="total_point" data-sortable="true">Total Poin<sup>*</sup></th>
-            <th data-field="total_visit" data-sortable="true">Total Kemunculan di Top 30</th>
+            <th data-field="total_visit" data-sortable="true">Total Kehadiran<sup>*</sup></th>
+            <th data-field="total_top_30" data-sortable="true">Total Kemunculan (Top 30)</th>
             <th data-field="highest_position">Posisi Tertinggi</th>
             <th data-field="detail">Daftar Kemunculan</th>
         </tr>
@@ -12,7 +13,7 @@
 </table>
 
 <div class="alert alert-danger" role="alert">
-    <sup>*</sup> Data total poin hanya dihitung dari yang muncul di Top 30.
+    <sup>*</sup> Data total poin dan kehadiran hanya dihitung dari yang muncul di Top 30.
 </div>
 
 <div class="modal" tabindex="-1" role="dialog" id="detail-rank">
@@ -44,11 +45,13 @@
                                 name: e.name,
                                 total_point: parseInt(e.point),
                                 highest_position: parseInt(e.position),
-                                total_visit: 1,
+                                total_top_30: 1,
+                                total_visit: parseInt(e.visit_count),
                                 rooms: [{
                                     name: entry.name,
                                     position: e.position,
-                                    point: parseInt(e.point)
+                                    point: parseInt(e.point),
+                                    visit_count: parseInt(e.visit_count)
                                 }]
                             }
                             dataRanking[e.name] = ranking
@@ -57,11 +60,13 @@
                                 dataRanking[e.name].highest_position = parseInt(e.position)
                             }
                             dataRanking[e.name].total_point = dataRanking[e.name].total_point + parseInt(e.point)
-                            dataRanking[e.name].total_visit = dataRanking[e.name].total_visit + 1
+                            dataRanking[e.name].total_top_30 = dataRanking[e.name].total_top_30 + 1
+                            dataRanking[e.name].total_visit = dataRanking[e.name].total_visit + parseInt(e.visit_count)
                             dataRanking[e.name].rooms.push({
                                 name: entry.name,
                                 position: e.position,
-                                point: parseInt(e.point)
+                                point: parseInt(e.point),
+                                visit_count: parseInt(e.visit_count)
                             })
                         }
                     })
@@ -87,9 +92,11 @@
                 var column1 = $("<td></td>").text("Member")
                 var column2 = $("<td></td>").text("Posisi")
                 var column3 = $("<td></td>").text("Poin")
+                var column4 = $("<td></td>").text("Jumlah Kehadiran")
                 head.append(column1)
                 head.append(column2)
                 head.append(column3)
+                head.append(column4)
                 table.append(head)
 
                 data.rooms.sort((a, b) => (a.point < b.point) ? 1 : -1)
@@ -99,10 +106,11 @@
                     var column1 = $("<td></td>").text(entry.name)
                     var column2 = $("<td></td>").text(entry.position)
                     var column3 = $("<td></td>").text(entry.point)
-
+                    var column4 = $("<td></td>").text(entry.visit_count)
                     row.append(column1)
                     row.append(column2)
                     row.append(column3)
+                    row.append(column4)
                     table.append(row)
                 })
 
