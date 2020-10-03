@@ -102,8 +102,9 @@
                         }
                     }
 
-                    if (entry.last_point != 0) {
-                        column3.text(entry.point + " (+" + (parseInt(entry.point) - parseInt(entry.last_point)) + ")")
+                    diff  = parseInt(entry.point) - parseInt(entry.last_point)
+                    if (entry.last_point != 0 && diff != 0) {
+                        column3.text(entry.point + " (+" + diff + ")")
                     }
 
                     row.append(column1)
