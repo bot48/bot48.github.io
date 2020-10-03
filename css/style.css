@@ -20,6 +20,10 @@ body {
     cursor: pointer;
 }
 
+.modal-title {
+    display: inline;
+}
+
 .filter-dropdown {
     padding: 10px 0;
 }
