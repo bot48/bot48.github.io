@@ -85,6 +85,7 @@
                     var column2 = $("<td></td>").text(entry.name)
                     var column3 = $("<td></td>").text(entry.point)
                     var column4 = $("<td></td>").text(entry.visit_count)
+                    entry.last_position = parseInt(entry.last_position)
 
                     if (entry.last_position == 0) {
                         var icon = $("<i></i>").addClass("fa fa-sign-in")
