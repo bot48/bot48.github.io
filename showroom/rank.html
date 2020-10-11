@@ -40,8 +40,9 @@
             $.each(dataMember, function (key, entry) {
                 if (entry.ranking) {
                     $.each(entry.ranking, function (k, e) {
-                        if (!dataRanking[e.name]) {
+                        if (!dataRanking[e.id]) {
                             ranking = {
+                                id: e.id,
                                 name: e.name,
                                 total_point: parseInt(e.point),
                                 highest_position: parseInt(e.position),
@@ -54,15 +55,15 @@
                                     visit_count: parseInt(e.visit_count)
                                 }]
                             }
-                            dataRanking[e.name] = ranking
+                            dataRanking[e.id] = ranking
                         } else {
-                            if (dataRanking[e.name].highest_position > parseInt(e.position)) {
-                                dataRanking[e.name].highest_position = parseInt(e.position)
+                            if (dataRanking[e.id].highest_position > parseInt(e.position)) {
+                                dataRanking[e.id].highest_position = parseInt(e.position)
                             }
-                            dataRanking[e.name].total_point = dataRanking[e.name].total_point + parseInt(e.point)
-                            dataRanking[e.name].total_top_30 = dataRanking[e.name].total_top_30 + 1
-                            dataRanking[e.name].total_visit = dataRanking[e.name].total_visit + parseInt(e.visit_count)
-                            dataRanking[e.name].rooms.push({
+                            dataRanking[e.id].total_point = dataRanking[e.id].total_point + parseInt(e.point)
+                            dataRanking[e.id].total_top_30 = dataRanking[e.id].total_top_30 + 1
+                            dataRanking[e.id].total_visit = dataRanking[e.id].total_visit + parseInt(e.visit_count)
+                            dataRanking[e.id].rooms.push({
                                 name: entry.name,
                                 position: e.position,
                                 point: parseInt(e.point),
@@ -86,7 +87,7 @@
             $('body').on('click', 'a.detail-rank-modal', function () {
                 var key = $(this).attr('data-key')
                 var data = dataRanking[key]
-                $('#modal-rank-title').text("Kemunculan Top 30  " + key)
+                $('#modal-rank-title').text("Kemunculan Top 30  " + data.name)
                 var table = $("<table class='detail-rank'></table>")
                 var head = $("<tr></tr>")
                 var column1 = $("<td></td>").text("Member")
