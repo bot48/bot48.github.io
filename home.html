@@ -75,12 +75,12 @@
         <a id="detail-twitter" class="chart-detail"></a>
     </div>
 </div>
-<div class="col-md-12">
+<!-- <div class="col-md-12">
     <div class="chart-container">
         <div id="chart-instagram"></div>
         <a id="detail-instagram" class="chart-detail"></a>
     </div>
-</div>
+</div> -->
 <div class="col-md-12">
     <div class="chart-container">
         <div id="chart-tiktok"></div>
@@ -393,22 +393,22 @@
                 renderChartTwitter(followerTwitter, usernameTwitter)
             });
 
-            $.getJSON('data/instagram.json?' + getShortDate(), function (dataInstagram) {
-                dataInstagram = dataInstagram.members
-                usernameInstagram = []
-                followerInstagram = []
-                dataInstagram.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
+            // $.getJSON('data/instagram.json?' + getShortDate(), function (dataInstagram) {
+            //     dataInstagram = dataInstagram.members
+            //     usernameInstagram = []
+            //     followerInstagram = []
+            //     dataInstagram.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
 
-                $.each(dataInstagram, function (key, entry) {
-                    usernameInstagram.push(entry.username)
-                    followerInstagram.push(entry.follower)
-                })
+            //     $.each(dataInstagram, function (key, entry) {
+            //         usernameInstagram.push(entry.username)
+            //         followerInstagram.push(entry.follower)
+            //     })
 
-                followerInstagram = followerInstagram.slice(followerInstagram.length - 16, followerInstagram.length)
-                usernameInstagram = usernameInstagram.slice(usernameInstagram.length - 16, usernameInstagram.length)
+            //     followerInstagram = followerInstagram.slice(followerInstagram.length - 16, followerInstagram.length)
+            //     usernameInstagram = usernameInstagram.slice(usernameInstagram.length - 16, usernameInstagram.length)
 
-                renderChartInstagram(followerInstagram, usernameInstagram)
-            });
+            //     renderChartInstagram(followerInstagram, usernameInstagram)
+            // });
 
             $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
                 dataTiktok = dataTiktok.members
@@ -820,81 +820,81 @@
         chart.render();
     }
 
-    function renderChartInstagram(data, members) {
-        var options = {
-            series: [{
-                name: 'Follower',
-                data: data
-            }],
-            xaxis: {
-                categories: members,
-            },
-            title: {
-                text: '16 Akun Instagram dengan Follower Terbanyak',
-                align: 'center'
-            },
-            plotOptions: {
-                bar: {
-                    horizontal: true,
-                    distributed: true,
-                    dataLabels: {
-                        position: 'top'
-                    }
-                }
-            },
-            legend: {
-                show: false,
-            },
-            dataLabels: {
-                enabled: true,
-                style: {
-                    colors: ['#000']
-                },
-                formatter: function (val) {
-                    return convertK(val)
-                },
-                offsetX: 40,
-            },
-            chart: {
-                type: 'bar',
-                toolbar: {
-                    show: false
-                },
-                events: {
-                    mounted: function (chartContext, config) {
-                        $('#detail-instagram').click(function () {
-                            $('#content').load('instagram.html?' + getShortDate());
-                        });
-                        $('#detail-instagram').text("Lihat Akun Instagram Selengkapnya")
-                    }
-                }
-            },
-            responsive: [{
-                breakpoint: 480,
-                options: {
-                    title: {
-                        style: {
-                            fontSize: '12',
-                        }
-                    },
-                    chart: {
-                        height: '600px'
-                    },
-                    xaxis: {
-                        labels: {
-                            show: true,
-                            formatter: function (val) {
-                                return convertK(val)
-                            },
-                        },
-                    }
-                }
-            }]
-        };
+    // function renderChartInstagram(data, members) {
+    //     var options = {
+    //         series: [{
+    //             name: 'Follower',
+    //             data: data
+    //         }],
+    //         xaxis: {
+    //             categories: members,
+    //         },
+    //         title: {
+    //             text: '16 Akun Instagram dengan Follower Terbanyak',
+    //             align: 'center'
+    //         },
+    //         plotOptions: {
+    //             bar: {
+    //                 horizontal: true,
+    //                 distributed: true,
+    //                 dataLabels: {
+    //                     position: 'top'
+    //                 }
+    //             }
+    //         },
+    //         legend: {
+    //             show: false,
+    //         },
+    //         dataLabels: {
+    //             enabled: true,
+    //             style: {
+    //                 colors: ['#000']
+    //             },
+    //             formatter: function (val) {
+    //                 return convertK(val)
+    //             },
+    //             offsetX: 40,
+    //         },
+    //         chart: {
+    //             type: 'bar',
+    //             toolbar: {
+    //                 show: false
+    //             },
+    //             events: {
+    //                 mounted: function (chartContext, config) {
+    //                     $('#detail-instagram').click(function () {
+    //                         $('#content').load('instagram.html?' + getShortDate());
+    //                     });
+    //                     $('#detail-instagram').text("Lihat Akun Instagram Selengkapnya")
+    //                 }
+    //             }
+    //         },
+    //         responsive: [{
+    //             breakpoint: 480,
+    //             options: {
+    //                 title: {
+    //                     style: {
+    //                         fontSize: '12',
+    //                     }
+    //                 },
+    //                 chart: {
+    //                     height: '600px'
+    //                 },
+    //                 xaxis: {
+    //                     labels: {
+    //                         show: true,
+    //                         formatter: function (val) {
+    //                             return convertK(val)
+    //                         },
+    //                     },
+    //                 }
+    //             }
+    //         }]
+    //     };
 
-        var chart = new ApexCharts(document.querySelector("#chart-instagram"), options);
-        chart.render();
-    }
+    //     var chart = new ApexCharts(document.querySelector("#chart-instagram"), options);
+    //     chart.render();
+    // }
 
     function renderChartTiktok(data, members) {
         var options = {
