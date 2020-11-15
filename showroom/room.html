@@ -9,7 +9,7 @@
             <th data-field="gift_points" data-sortable="true">Total Poin<sup>*</sup></th>
             <th data-field="total_live" data-sortable="true">Jumlah Live</th>
             <th data-field="live_date">Tanggal Live</th>
-            <th data-field="detail">Ranking Kumulatif</th>
+            <th data-field="detail">Top 30</th>
         </tr>
     </thead>
 </table>
@@ -62,6 +62,10 @@
                     })
                 }
                 copyDataMember[entry.name] = entry
+                var link = $("<a target='_blank'></a>")
+                link.attr('href', "https://www.showroom-live.com/" + entry.name)
+                link.text(entry.name)
+                entry.name = link.prop('outerHTML')
             })
 
             $('body').on('click', 'a.detail-room-modal', function () {

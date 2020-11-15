@@ -16,7 +16,7 @@ body {
     background-color: #ffffff;
 }
 
-.detail-modal, .chart-detail {
+.detail-modal, .chart-detail, .detail-room-modal, .detail-rank-modal {
     cursor: pointer;
 }
 
@@ -133,4 +133,8 @@ table.detail-rank td {
 
 sup {
     color: red;
+}
+
+tr.announce {
+    background-color: #dddddd;
 }

@@ -176,6 +176,7 @@
                         data: dataMembers,
                         pagination: true,
                         pageSize: 48,
+                        rowStyle: rowStyle,
                     });
                     $('#table-members').bootstrapTable('filterBy', {
                         active: filterStatus,
@@ -265,4 +266,13 @@
             }
         }
     });
+
+    function rowStyle(row, index) {
+        if (row.announce_grad) {
+            return {
+                classes: 'announce'
+            }
+        }
+        return {}
+    }
 </script>
