@@ -1,5 +1,5 @@
 {
-    "last_update": "2020-11-22T15:50:02",
+    "last_update": "2020-11-22T16:50:01",
     "members": [
         {
             "name": "JKT48_Lisa",
@@ -283,7 +283,7 @@
         },
         {
             "name": "JKT48_Anin",
-            "followers": "5509",
+            "followers": "5510",
             "room_level": "10",
             "league_label": "N",
             "live_date": null,
@@ -6985,8 +6985,8 @@
         },
         {
             "name": "JKT48_Eli",
-            "followers": "3359",
-            "room_level": "5",
+            "followers": "3364",
+            "room_level": "6",
             "league_label": "N",
             "live_date": null,
             "total_live": 4,
@@ -7013,7 +7013,7 @@
                     "id": "4742048",
                     "name": "HATTA",
                     "position": "3",
-                    "point": "15841",
+                    "point": "15842",
                     "visit_count": "4",
                     "last_position": "4",
                     "last_point": "10640"
@@ -7175,7 +7175,7 @@
                     "id": "392231",
                     "name": "Heikki \uff8d\uff72\uff6f\uff77",
                     "position": "22",
-                    "point": "4025",
+                    "point": "4026",
                     "visit_count": "4",
                     "last_position": "12",
                     "last_point": "4012"
@@ -7235,19 +7235,19 @@
                     "last_point": "3249"
                 },
                 {
-                    "id": "4838395",
-                    "name": "Rafly",
+                    "id": "4750640",
+                    "name": "TAKA-san",
                     "position": "29",
-                    "point": "3215",
+                    "point": "3219",
                     "visit_count": "3",
                     "last_position": "0",
                     "last_point": "0"
                 },
                 {
-                    "id": "4750640",
-                    "name": "TAKA-san",
+                    "id": "4838395",
+                    "name": "Rafly",
                     "position": "30",
-                    "point": "3171",
+                    "point": "3215",
                     "visit_count": "3",
                     "last_position": "0",
                     "last_point": "0"
@@ -9216,7 +9216,7 @@
         },
         {
             "name": "JKT48_Gracia",
-            "followers": "6475",
+            "followers": "6476",
             "room_level": "16",
             "league_label": "N",
             "live_date": null,
@@ -14530,7 +14530,7 @@
             "followers": "3585",
             "room_level": "14",
             "league_label": "N",
-            "live_date": null,
+            "live_date": "1606136400",
             "total_live": 6,
             "ranking": [
                 {
