@@ -123,10 +123,12 @@
                             endDate = new Date(entry.last_date);
                             entry.teams = "-"
                         }
-                        age = getAge(entry.birth_date, end);
-                        age = age[1].split(" ")
-                        entry.age = age[0]
-                        entry.birth_date = formatShortDate(entry.birth_date);
+                        if (entry.birth_date) {
+                            age = getAge(entry.birth_date, end);
+                            age = age[1].split(" ")
+                            entry.age = age[0]
+                            entry.birth_date = formatShortDate(entry.birth_date);
+                        }
                         age = getAge(joinDates[entry.gen - 1], endDate);
                         entry.days = age[0]
                         entry.age_jkt = age[1]
@@ -145,7 +147,9 @@
                         var div = $("<div class='detail-member'></div>");
                         appender(div, 'Nama', data.name);
                         appender(div, 'Generasi', data.gen);
-                        appender(div, 'Tanggal Lahir', data.birth_date);
+                        if (data.birth_date) {
+                            appender(div, 'Tanggal Lahir', data.birth_date);
+                        }
                         appender(div, 'Status', data.status);
                         appender(div, 'Lama di JKT48', data.age_jkt);
                         if (allSenbatsu[data.name]) {
