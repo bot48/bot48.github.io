@@ -40,10 +40,20 @@
                 })
                 $('#table-generations').bootstrapTable({
                     data: dataGeneration,
+                    rowStyle: rowStyle,
                 });
                 $('#table-generations').bootstrapTable('hideLoading');
             });
         });
     });
+
+    function rowStyle(row, index) {
+        if (row.currently_active == 0) {
+            return {
+                classes: 'announce'
+            }
+        }
+        return {}
+    }
 
 </script>
