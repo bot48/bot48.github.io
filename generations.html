@@ -17,6 +17,8 @@
         $.getJSON('data/generations.json?' + getShortDate(), function (dataGeneration) {
             var allGeneration = [];
             var allActiveGeneration = [];
+            var allEndDate = [];
+
             for (i = 0; i < dataGeneration.length; i++) {
                 allGeneration[i] = 0;
                 allActiveGeneration[i] = 0;
@@ -27,15 +29,31 @@
                     allGeneration[entry.gen - 1] = allGeneration[entry.gen - 1] + 1;
                     if (entry.active) {
                         allActiveGeneration[entry.gen - 1] = allActiveGeneration[entry.gen - 1] + 1;
+                    } else {
+                        last = new Date(entry.last_date);
+                        if (!allEndDate[entry.gen - 1]) {
+                            allEndDate[entry.gen - 1] = last;
+                        } else {
+                            if (last > allEndDate[entry.gen - 1]) {
+                                allEndDate[entry.gen - 1] = last;
+                            }
+                        }
                     }
                 })
-                var end = new Date();
+
                 $.each(dataGeneration, function (key, entry) {
+                    var end = new Date();
+                    entry.total_member = allGeneration[entry.generation - 1];
+                    entry.currently_active = allActiveGeneration[entry.generation - 1];
+                    if (entry.currently_active == 0) {
+                        if (!allEndDate[entry.gen - 1]) {
+                            end = allEndDate[key]
+                        }
+                    }
+
                     age = getAge(entry.join_date, end)
                     entry.days = age[0]
                     entry.age = age[1]
-                    entry.total_member = allGeneration[entry.generation - 1];
-                    entry.currently_active = allActiveGeneration[entry.generation - 1];
                     entry.join_date = formatShortDate(entry.join_date)
                 })
                 $('#table-generations').bootstrapTable({
