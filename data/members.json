@@ -733,13 +733,9 @@
         "nickname": "Aurel",
         "gen": 3,
         "birth_date": "1999-08-08",
-        "active": true,
-        "twitter": "@N_AurelJKT48",
-        "instagram": "@jkt48aurel",
-        "tiktok": "@aureljkt48",
-        "teams": [
-            "Team J"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1368?lang=id",
+        "last_date": "2020-12-13"
     },
     {
         "name": "Nina Hamidah",
