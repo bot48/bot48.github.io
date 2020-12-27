@@ -683,14 +683,9 @@
         "nickname": "Desy",
         "gen": 3,
         "birth_date": "1996-12-25",
-        "active": true,
-        "twitter": "@M_DesyJKT48",
-        "instagram": "@jkt48desy",
-        "tiktok": "@desy.jkt48",
-        "teams": [
-            "Team KIII"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1371?lang=id",
+        "last_date": "2020-12-26"
     },
     {
         "name": "Martha Graciela",
