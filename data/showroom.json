@@ -1,5 +1,5 @@
 {
-    "last_update": "2020-12-28T12:00:02",
+    "last_update": "2020-12-28T12:10:02",
     "members": [
         {
             "name": "JKT48_Lisa",
@@ -9737,9 +9737,18 @@
                     "last_point": "0"
                 },
                 {
+                    "id": "4743953",
+                    "name": "Mirza23",
+                    "position": "27",
+                    "point": "3825",
+                    "visit_count": "4",
+                    "last_position": "0",
+                    "last_point": "0"
+                },
+                {
                     "id": "834795",
                     "name": "Kitty",
-                    "position": "27",
+                    "position": "28",
                     "point": "3781",
                     "visit_count": "3",
                     "last_position": "11",
@@ -9748,7 +9757,7 @@
                 {
                     "id": "4751755",
                     "name": "David",
-                    "position": "28",
+                    "position": "29",
                     "point": "3699",
                     "visit_count": "2",
                     "last_position": "0",
@@ -9757,20 +9766,11 @@
                 {
                     "id": "4742375",
                     "name": "latravoskaaa",
-                    "position": "29",
+                    "position": "30",
                     "point": "3666",
                     "visit_count": "3",
                     "last_position": "0",
                     "last_point": "0"
-                },
-                {
-                    "id": "4882549",
-                    "name": "indragunity",
-                    "position": "30",
-                    "point": "3648",
-                    "visit_count": "2",
-                    "last_position": "25",
-                    "last_point": "2429"
                 }
             ]
         },
@@ -9779,7 +9779,7 @@
             "followers": "4759",
             "room_level": "8",
             "league_label": "",
-            "live_date": null,
+            "live_date": "1609157700",
             "total_live": 3,
             "ranking": [
                 {
