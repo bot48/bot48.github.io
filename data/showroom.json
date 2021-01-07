@@ -1,5 +1,5 @@
 {
-    "last_update": "2021-01-07T07:40:02",
+    "last_update": "2021-01-07T08:10:01",
     "members": [
         {
             "name": "JKT48_Lisa",
@@ -5028,7 +5028,7 @@
             "followers": "5879",
             "room_level": "13",
             "league_label": "",
-            "live_date": null,
+            "live_date": "1610197200",
             "total_live": 5,
             "ranking": [
                 {
@@ -6425,7 +6425,7 @@
         },
         {
             "name": "JKT48_Gita",
-            "followers": "3667",
+            "followers": "3668",
             "room_level": "11",
             "league_label": "",
             "live_date": null,
@@ -7256,7 +7256,7 @@
         },
         {
             "name": "JKT48_Indy",
-            "followers": "3233",
+            "followers": "3234",
             "room_level": "6",
             "league_label": "",
             "live_date": null,
@@ -11447,7 +11447,7 @@
         },
         {
             "name": "JKT48_Dey",
-            "followers": "5315",
+            "followers": "5319",
             "room_level": "22",
             "league_label": "",
             "live_date": null,
@@ -11571,9 +11571,18 @@
                     "last_point": "12964"
                 },
                 {
+                    "id": "4767911",
+                    "name": "Gustynvl",
+                    "position": "14",
+                    "point": "15564",
+                    "visit_count": "11",
+                    "last_position": "17",
+                    "last_point": "12734"
+                },
+                {
                     "id": "1875953",
                     "name": "Arzee",
-                    "position": "14",
+                    "position": "15",
                     "point": "15279",
                     "visit_count": "12",
                     "last_position": "16",
@@ -11582,20 +11591,11 @@
                 {
                     "id": "4755205",
                     "name": "A M R U L",
-                    "position": "15",
+                    "position": "16",
                     "point": "15261",
                     "visit_count": "11",
                     "last_position": "13",
                     "last_point": "13181"
-                },
-                {
-                    "id": "4767911",
-                    "name": "Gustynvl",
-                    "position": "16",
-                    "point": "15144",
-                    "visit_count": "11",
-                    "last_position": "17",
-                    "last_point": "12734"
                 },
                 {
                     "id": "4844979",
@@ -11619,7 +11619,7 @@
                     "id": "4767734",
                     "name": "Seven-Dwy",
                     "position": "19",
-                    "point": "13703",
+                    "point": "13704",
                     "visit_count": "12",
                     "last_position": "21",
                     "last_point": "11679"
@@ -11709,7 +11709,7 @@
                     "id": "4749965",
                     "name": "Riccothey",
                     "position": "29",
-                    "point": "9150",
+                    "point": "9155",
                     "visit_count": "12",
                     "last_position": "30",
                     "last_point": "8006"
