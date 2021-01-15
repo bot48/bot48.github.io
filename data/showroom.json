@@ -1,5 +1,5 @@
 {
-    "last_update": "2021-01-15T10:40:01",
+    "last_update": "2021-01-15T11:10:01",
     "members": [
         {
             "name": "JKT48_Lisa",
@@ -843,7 +843,7 @@
         },
         {
             "name": "JKT48_Yori",
-            "followers": "5696",
+            "followers": "5698",
             "room_level": "15",
             "league_label": "",
             "live_date": null,
@@ -1123,10 +1123,10 @@
         },
         {
             "name": "JKT48_Zee",
-            "followers": "6492",
+            "followers": "6493",
             "room_level": "12",
             "league_label": "",
-            "live_date": null,
+            "live_date": "1610712000",
             "total_live": 5,
             "ranking": [
                 {
@@ -1963,7 +1963,7 @@
         },
         {
             "name": "JKT48_Eve",
-            "followers": "5730",
+            "followers": "5731",
             "room_level": "9",
             "league_label": "",
             "live_date": null,
@@ -2243,7 +2243,7 @@
         },
         {
             "name": "JKT48_Feni",
-            "followers": "5709",
+            "followers": "5710",
             "room_level": "70",
             "league_label": "",
             "live_date": null,
@@ -3994,7 +3994,7 @@
                 },
                 {
                     "id": "4797840",
-                    "name": "PODOMAMPIR COFFEE",
+                    "name": "Aryan",
                     "position": "8",
                     "point": "12000",
                     "visit_count": "1",
@@ -4256,7 +4256,7 @@
                 },
                 {
                     "id": "4761793",
-                    "name": "RAmeliArt",
+                    "name": "CUPETONG",
                     "position": "6",
                     "point": "20293",
                     "visit_count": "5",
@@ -4766,7 +4766,7 @@
             "followers": "3838",
             "room_level": "16",
             "league_label": "",
-            "live_date": null,
+            "live_date": "1610712000",
             "total_live": 11,
             "ranking": [
                 {
@@ -6451,7 +6451,7 @@
                 },
                 {
                     "id": "4797840",
-                    "name": "PODOMAMPIR COFFEE",
+                    "name": "Aryan",
                     "position": "2",
                     "point": "48990",
                     "visit_count": "3",
@@ -6714,7 +6714,7 @@
         },
         {
             "name": "JKT48_Eli",
-            "followers": "4176",
+            "followers": "4180",
             "room_level": "11",
             "league_label": "",
             "live_date": null,
@@ -6796,16 +6796,16 @@
                     "id": "4755856",
                     "name": "Arieffahri \/ \u30a2\u30ea\u30a8\u30d5",
                     "position": "9",
-                    "point": "22159",
+                    "point": "22160",
                     "visit_count": "12",
                     "last_position": "9",
                     "last_point": "17777"
                 },
                 {
                     "id": "4764545",
-                    "name": "Celonya Kadey",
+                    "name": "Celonya",
                     "position": "10",
-                    "point": "18532",
+                    "point": "18533",
                     "visit_count": "9",
                     "last_position": "11",
                     "last_point": "13798"
@@ -6913,7 +6913,7 @@
                     "id": "4749751",
                     "name": "KoalaluvBear",
                     "position": "23",
-                    "point": "9095",
+                    "point": "9096",
                     "visit_count": "9",
                     "last_position": "26",
                     "last_point": "7279"
@@ -6922,7 +6922,7 @@
                     "id": "4751849",
                     "name": "Riyan YAW",
                     "position": "24",
-                    "point": "8447",
+                    "point": "8465",
                     "visit_count": "11",
                     "last_position": "20",
                     "last_point": "8271"
@@ -7554,11 +7554,11 @@
         },
         {
             "name": "JKT48_Muthe",
-            "followers": "4701",
+            "followers": "4702",
             "room_level": "14",
             "league_label": "",
             "live_date": null,
-            "total_live": 14,
+            "total_live": 15,
             "ranking": [
                 {
                     "id": "4835758",
@@ -7600,8 +7600,8 @@
                     "id": "4772222",
                     "name": "dr.Edea",
                     "position": "5",
-                    "point": "19488",
-                    "visit_count": "14",
+                    "point": "19905",
+                    "visit_count": "15",
                     "last_position": "5",
                     "last_point": "15391"
                 },
@@ -7609,8 +7609,8 @@
                     "id": "4751314",
                     "name": "Saffa",
                     "position": "6",
-                    "point": "18848",
-                    "visit_count": "14",
+                    "point": "19533",
+                    "visit_count": "15",
                     "last_position": "6",
                     "last_point": "15228"
                 },
@@ -7618,8 +7618,8 @@
                     "id": "4764588",
                     "name": "AdamDapo",
                     "position": "7",
-                    "point": "17221",
-                    "visit_count": "14",
+                    "point": "17605",
+                    "visit_count": "15",
                     "last_position": "8",
                     "last_point": "13081"
                 },
@@ -7732,9 +7732,18 @@
                     "last_point": "8574"
                 },
                 {
+                    "id": "5158215",
+                    "name": "Mr. X",
+                    "position": "20",
+                    "point": "8549",
+                    "visit_count": "6",
+                    "last_position": "0",
+                    "last_point": "0"
+                },
+                {
                     "id": "4753727",
                     "name": "Andhi_48",
-                    "position": "20",
+                    "position": "21",
                     "point": "8507",
                     "visit_count": "9",
                     "last_position": "0",
@@ -7743,27 +7752,18 @@
                 {
                     "id": "392231",
                     "name": "Heikki \uff8d\uff72\uff6f\uff77",
-                    "position": "21",
+                    "position": "22",
                     "point": "8343",
                     "visit_count": "9",
                     "last_position": "16",
                     "last_point": "8340"
                 },
                 {
-                    "id": "5158215",
-                    "name": "Mr. X",
-                    "position": "22",
-                    "point": "8317",
-                    "visit_count": "5",
-                    "last_position": "0",
-                    "last_point": "0"
-                },
-                {
                     "id": "4751006",
                     "name": "KUROISHIRT",
                     "position": "23",
-                    "point": "8286",
-                    "visit_count": "7",
+                    "point": "8290",
+                    "visit_count": "8",
                     "last_position": "0",
                     "last_point": "0"
                 },
@@ -7798,14 +7798,14 @@
                     "id": "4749606",
                     "name": "dimasss",
                     "position": "27",
-                    "point": "6862",
-                    "visit_count": "14",
+                    "point": "6922",
+                    "visit_count": "15",
                     "last_position": "0",
                     "last_point": "0"
                 },
                 {
                     "id": "4742375",
-                    "name": "latravoskaaa",
+                    "name": "Rawwwrrrrr",
                     "position": "28",
                     "point": "6227",
                     "visit_count": "13",
@@ -7816,8 +7816,8 @@
                     "id": "4770116",
                     "name": "uLMaul",
                     "position": "29",
-                    "point": "5903",
-                    "visit_count": "13",
+                    "point": "5908",
+                    "visit_count": "14",
                     "last_position": "0",
                     "last_point": "0"
                 },
@@ -8394,7 +8394,7 @@
         },
         {
             "name": "JKT48_Shani",
-            "followers": "9058",
+            "followers": "9060",
             "room_level": "39",
             "league_label": "",
             "live_date": null,
@@ -9341,7 +9341,7 @@
                 },
                 {
                     "id": "3056278",
-                    "name": "Aurel Mayori",
+                    "name": "Jeci jeci jeci kawaiii",
                     "position": "12",
                     "point": "16385",
                     "visit_count": "7",
@@ -9783,7 +9783,7 @@
                 },
                 {
                     "id": "4742375",
-                    "name": "latravoskaaa",
+                    "name": "Rawwwrrrrr",
                     "position": "30",
                     "point": "3666",
                     "visit_count": "3",
@@ -11292,7 +11292,7 @@
                 },
                 {
                     "id": "4797840",
-                    "name": "PODOMAMPIR COFFEE",
+                    "name": "Aryan",
                     "position": "11",
                     "point": "9200",
                     "visit_count": "3",
@@ -12025,7 +12025,7 @@
         },
         {
             "name": "JKT48_Bri",
-            "followers": "2836",
+            "followers": "2840",
             "room_level": "6",
             "league_label": "",
             "live_date": null,
@@ -12585,7 +12585,7 @@
         },
         {
             "name": "JKT48_Fiony",
-            "followers": "6152",
+            "followers": "6153",
             "room_level": "25",
             "league_label": "",
             "live_date": "1610803800",
@@ -13976,7 +13976,7 @@
         },
         {
             "name": "JKT48_Jessi",
-            "followers": "4482",
+            "followers": "4483",
             "room_level": "27",
             "league_label": "",
             "live_date": null,
@@ -16088,7 +16088,7 @@
                 },
                 {
                     "id": "3056278",
-                    "name": "Aurel Mayori",
+                    "name": "Jeci jeci jeci kawaiii",
                     "position": "17",
                     "point": "12023",
                     "visit_count": "7",
@@ -16233,7 +16233,7 @@
                 },
                 {
                     "id": "4797840",
-                    "name": "PODOMAMPIR COFFEE",
+                    "name": "Aryan",
                     "position": "2",
                     "point": "35760",
                     "visit_count": "4",
@@ -17714,7 +17714,7 @@
                 },
                 {
                     "id": "4797840",
-                    "name": "PODOMAMPIR COFFEE",
+                    "name": "Aryan",
                     "position": "11",
                     "point": "59680",
                     "visit_count": "2",
