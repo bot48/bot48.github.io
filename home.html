@@ -278,10 +278,11 @@
                     }
                 })
 
-                names = names.slice(names.length - 16, names.length)
-                senbatsuCount = senbatsuCount.slice(senbatsuCount.length - 16, senbatsuCount.length)
-                centerCount = centerCount.slice(centerCount.length - 16, centerCount.length)
-
+                if (names.length>16) {
+                    names = names.slice(names.length - 16, names.length)
+                    senbatsuCount = senbatsuCount.slice(senbatsuCount.length - 16, senbatsuCount.length)
+                    centerCount = centerCount.slice(centerCount.length - 16, centerCount.length)
+                }
                 renderChartSenbatsu(senbatsuCount, centerCount, names)
 
                 $('#number-single').text(dataSingle.length - 1)
