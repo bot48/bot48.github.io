@@ -20,7 +20,7 @@
             <li val="false">Graduate</li>
         </ul>
     </div>
-    <div class="filter-dropdown col-sm-4">
+    <!-- <div class="filter-dropdown col-sm-4">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="button-team">Semua Team
             <span class="caret"></span></button>
         <input type="hidden" id="filter-team" name="team"
@@ -34,7 +34,7 @@
             <li val="Academy Class A">Academy Class A</li>
             <li val="Academy Class B">Academy Class B</li>
         </ul>
-    </div>
+    </div> -->
 </div>
 
 <table data-toggle="table" class="display table table-bordered" id="table-members">
@@ -44,7 +44,7 @@
             <th data-field="gen" data-sortable="true">Generasi</th>
             <th data-field="age" data-sortable="true">Umur</th>
             <th data-field="status">Status</th>
-            <th data-field="teams">Team</th>
+            <!-- <th data-field="teams">Team</th> -->
             <th data-field="days" data-sortable="true">Jumlah Hari di JKT48</th>
             <th data-field="age_jkt">Lama di JKT48</th>
             <th data-field="detail"></th>
@@ -162,7 +162,7 @@
                         }
 
                         if (data.active) {
-                            appender(div, 'Team', data.teams);
+                            // appender(div, 'Team', data.teams);
                             appenderLink(div, 'Twitter', 'https://twitter.com/' + data.twitter.replace('@', ''));
                             appenderLink(div, 'Instagram', 'https://instagram.com/' + data.instagram.replace('@', ''));
                             if (data.tiktok) {
@@ -198,10 +198,10 @@
 
         $('#list-status').children('li').each(function () {
             $(this).click(function () {
-                if (!$(this).val()) {
-                    $('#filter-team').val("Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII & Team T");
-                    $('#button-team').text("Semua Team" + ' ').append(caret.prop('outerHTML'));
-                }
+                // if (!$(this).val()) {
+                //     $('#filter-team').val("Team J,Team KIII,Team T,Academy Class A,Academy Class B,-,Team J & Team KIII & Team T");
+                //     $('#button-team').text("Semua Team" + ' ').append(caret.prop('outerHTML'));
+                // }
                 $('#filter-status').val($(this).attr('val'));
                 $('#button-status').text($(this).text() + ' ').append(caret.prop('outerHTML'));
 
@@ -209,21 +209,21 @@
             });
         });
 
-        $('#list-team').children('li').each(function () {
-            $(this).click(function () {
-                if ($(this).index() != 0) {
-                    $('#filter-status').val("true");
-                    $('#button-status').text("Aktif" + ' ').append(caret.prop('outerHTML'));
-                } else {
-                    $('#filter-status').val("true,false");
-                    $('#button-status').text("Semua Status" + ' ').append(caret.prop('outerHTML'));
-                }
-                $('#filter-team').val($(this).attr('val'));
-                $('#button-team').text($(this).text() + ' ').append(caret.prop('outerHTML'));
+        // $('#list-team').children('li').each(function () {
+        //     $(this).click(function () {
+        //         if ($(this).index() != 0) {
+        //             $('#filter-status').val("true");
+        //             $('#button-status').text("Aktif" + ' ').append(caret.prop('outerHTML'));
+        //         } else {
+        //             $('#filter-status').val("true,false");
+        //             $('#button-status').text("Semua Status" + ' ').append(caret.prop('outerHTML'));
+        //         }
+        //         $('#filter-team').val($(this).attr('val'));
+        //         $('#button-team').text($(this).text() + ' ').append(caret.prop('outerHTML'));
 
-                filter();
-            });
-        });
+        //         filter();
+        //     });
+        // });
 
         function filter() {
             var generation = $('#filter-generation').val();
@@ -240,13 +240,13 @@
                 filterStatus[index] = (item == 'true');
             });
 
-            var team = $('#filter-team').val();
-            var filterTeam = team.split(",");
+            // var team = $('#filter-team').val();
+            // var filterTeam = team.split(",");
 
             $('#table-members').bootstrapTable('filterBy', {
                 gen: filterGeneration,
                 active: filterStatus,
-                teams: filterTeam,
+                // teams: filterTeam,
             });
         }
 

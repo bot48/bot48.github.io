@@ -846,14 +846,9 @@
         "nickname": "Lisa",
         "gen": 4,
         "birth_date": "2000-05-10",
-        "active": true,
-        "twitter": "@Elisabeth_JKT48",
-        "instagram": "@jkt48.lisa",
-        "tiktok": "@lisajkt48",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Christi",
@@ -882,14 +877,9 @@
         "nickname": "Fia",
         "gen": 4,
         "birth_date": "2001-03-19",
-        "active": true,
-        "twitter": "@Fidly_JKT48",
-        "instagram": "@jkt48fia",
-        "tiktok": "@fiajkt48",
-        "teams": [
-            "Team KIII"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-13"
     },
     {
         "name": "Jessica Berliana Ekawardani",
@@ -1009,14 +999,9 @@
         "nickname": "Diani",
         "gen": 5,
         "birth_date": "1999-01-05",
-        "active": true,
-        "twitter": "@Diani_JKT48",
-        "instagram": "@jkt48.diani",
-        "tiktok": "@dianijkt48",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Elizabeth Gloria Setiawan",
@@ -1072,14 +1057,9 @@
         "nickname": "Aya",
         "gen": 5,
         "birth_date": "1997-10-18",
-        "active": true,
-        "twitter": "@AyaJKT48_",
-        "instagram": "@jkt48.aya",
-        "tiktok": "@ayajkt48",
-        "teams": [
-            "Team KIII"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-13"
     },
     {
         "name": "Puti Nadhira Azalia",
@@ -1122,13 +1102,9 @@
         "nickname": "Julie",
         "gen": 5,
         "birth_date": "2001-07-18",
-        "active": true,
-        "twitter": "@Julie_JKT48",
-        "instagram": "@jkt48.julie",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Violeta Burhan",
@@ -1153,14 +1129,9 @@
         "nickname": "Tasya",
         "gen": 6,
         "birth_date": "2000-06-16",
-        "active": true,
-        "twitter": "@N_TasyaJKT48",
-        "instagram": "@jkt48tasya",
-        "tiktok": "@tasyajkt48",
-        "teams": [
-            "Team KIII"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-13"
     },
     {
         "name": "Ariella Calista Ichwan",
@@ -1237,13 +1208,9 @@
         "nickname": "Indy",
         "gen": 6,
         "birth_date": "2003-05-14",
-        "active": true,
-        "twitter": "@R_IndyJKT48",
-        "instagram": "@jkt48indy",
-        "teams": [
-            "Team KIII"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-13"
     },
     {
         "name": "Putri Cahyaning Anggraini",
@@ -1259,27 +1226,18 @@
         "nickname": "Nanda",
         "gen": 6,
         "birth_date": "2003-09-13",
-        "active": true,
-        "twitter": "@S_NandaJKT48",
-        "instagram": "@jkt48nanda",
-        "tiktok": "@nandajkt48",
-        "teams": [
-            "Team KIII"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-13"
     },
     {
         "name": "Riska Amelia Putri",
         "nickname": "Amel",
         "gen": 6,
         "birth_date": "2000-03-18",
-        "active": true,
-        "twitter": "@R_AmelJKT48",
-        "instagram": "@jkt48ramel",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Shalza Grasita",
@@ -1317,14 +1275,9 @@
         "nickname": "Yori",
         "gen": 7,
         "birth_date": "2006-05-14",
-        "active": true,
-        "twitter": "@A_YoriJKT48",
-        "instagram": "@jkt48.yori",
-        "tiktok": "@yorijkt48",
-        "teams": [
-            "Team T"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-12"
     },
     {
         "name": "Azizi Asadel",
@@ -1366,27 +1319,18 @@
         "nickname": "Febi",
         "gen": 7,
         "birth_date": "2000-02-03",
-        "active": true,
-        "twitter": "@K_FebiJKT48",
-        "instagram": "@jkt48.febi",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false, 
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Febrina Diponegoro",
         "nickname": "Bri",
         "gen": 7,
         "birth_date": "2002-02-17",
-        "active": true,
-        "twitter": "@F_BriJKT48",
-        "instagram": "@jkt48.bri",
-        "tiktok": "@brijkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Febriola Sinambela",
@@ -1419,14 +1363,9 @@
         "nickname": "Brielle",
         "gen": 7,
         "birth_date": "2004-07-17",
-        "active": true,
-        "twitter": "@G_BrielleJKT48",
-        "instagram": "@jkt48.brielle",
-        "tiktok": "@briellejkt48",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Helisma Putri",
@@ -1493,14 +1432,9 @@
         "nickname": "Lala",
         "gen": 7,
         "birth_date": "2000-12-29",
-        "active": true,
-        "twitter": "@N_LalaJKT48",
-        "instagram": "@jkt48.lala",
-        "tiktok": "@lalajkt48",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Rifa Fatmasari",
@@ -1516,13 +1450,9 @@
         "nickname": "Vivi",
         "gen": 7,
         "birth_date": "2000-11-08",
-        "active": true,
-        "twitter": "@F_ViviJKT48",
-        "instagram": "@jkt48.vivi",
-        "teams": [
-            "Team T"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-12"
     },
     {
         "name": "Yessica Tamara",
@@ -1542,14 +1472,9 @@
         "nickname": "Afiqah",
         "gen": 8,
         "birth_date": "2006-01-06",
-        "active": true,
-        "twitter": "@A_AfiqahJKT48",
-        "instagram": "@jkt48.afiqaah",
-        "tiktok": "@afiqahjkt48",
-        "teams": [
-            "Team J"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-14"
     },
     {
         "name": "Amirah Fatin",
@@ -1569,13 +1494,9 @@
         "nickname": "Nunu",
         "gen": 8,
         "birth_date": "2007-06-09",
-        "active": true,
-        "twitter": "@C_NunuJKT48",
-        "instagram": "@jkt48.nunu",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Cornelia Vanisa",
@@ -1638,28 +1559,18 @@
         "nickname": "Vany",
         "gen": 8,
         "birth_date": "2002-05-22",
-        "active": true,
-        "twitter": "@G_VanyJKT48",
-        "instagram": "@jkt48.vany",
-        "tiktok": "@vanyjkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Keisya Ramadhani",
         "nickname": "Keisya",
         "gen": 8,
         "birth_date": "2004-11-10",
-        "active": true,
-        "twitter": "@R_KeisyaJKT48",
-        "instagram": "@jkt48.keisya",
-        "tiktok": "@keisyajkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Lulu Salsabila",
@@ -1727,14 +1638,9 @@
         "nickname": "Ume",
         "gen": 8,
         "birth_date": "2004-03-27",
-        "active": true,
-        "twitter": "@M_UmeJKT48",
-        "instagram": "@jkt48.ume",
-        "tiktok": "@umejkt48",
-        "teams": [
-            "Team T"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-12"
     },
     {
         "name": "Zahra Nur",
@@ -1767,42 +1673,27 @@
         "nickname": "Caithlyn",
         "gen": 9,
         "birth_date": "2009-03-26",
-        "active": true,
-        "twitter": "@G_CaithlynJKT48",
-        "instagram": "@jkt48.caithlyn",
-        "tiktok": "@caithlynjkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Chalista Ellysia",
         "nickname": "Chalista",
         "gen": 9,
         "birth_date": "2006-03-01",
-        "active": true,
-        "twitter": "@E_ChalistaJKT48",
-        "instagram": "@jkt48.chalista",
-        "tiktok": "@chalistajkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Christabel Jocelyn",
         "nickname": "Abel",
         "gen": 9,
         "birth_date": "2007-08-17",
-        "active": true,
-        "twitter": "@J_AbelJKT48",
-        "instagram": "@jkt48.abel",
-        "tiktok": "@abeljkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Indah Cahya",
@@ -1856,14 +1747,9 @@
         "nickname": "Nabila",
         "gen": 9,
         "birth_date": "2005-06-22",
-        "active": true,
-        "twitter": "@GNabilaJKT48",
-        "instagram": "@jkt48nabila_",
-        "tiktok": "@nabila.jkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Olivia Payten",
@@ -1879,28 +1765,18 @@
         "nickname": "Zahra",
         "gen": 9,
         "birth_date": "2006-05-19",
-        "active": true,
-        "twitter": "@P_ZahraJKT48",
-        "instagram": "@jkt48zahra_",
-        "tiktok": "@jkt48zahra",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Shinta Devi",
         "nickname": "Shinta",
         "gen": 9,
         "birth_date": "2003-06-07",
-        "active": true,
-        "twitter": "@D_ShintaJKT48",
-        "instagram": "@jkt48.shinta",
-        "tiktok": "@shintajkt48",
-        "teams": [
-            "Academy Class A"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1383?lang=id",
+        "last_date": "2021-03-11"
     },
     {
         "name": "Tiara Sasi",

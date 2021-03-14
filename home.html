@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <div class="number-container">
             <span id="number-member-active" class="number-value"></span>
             <span class="number-text">
@@ -7,15 +7,15 @@
             </span>
         </div>
     </div>
-    <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
         <div class="number-container">
             <span id="number-member-announce-grad" class="number-value"></span>
             <span class="number-text">
                 <i class="fa fa-graduation-cap"></i> Member Mengumumkan Graduate
             </span>
         </div>
-    </div>
-    <div class="col-sm-3">
+    </div> -->
+    <div class="col-sm-4">
         <div class="number-container">
             <span id="number-age" class="number-value"></span>
             <span class="number-text">
@@ -23,7 +23,7 @@
             </span>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <div class="number-container">
             <span id="number-single" class="number-value"></span>
             <span class="number-text">
@@ -33,11 +33,11 @@
     </div>
 </div>
 
-<div class="col-md-6">
+<!-- <div class="col-md-6">
     <div class="chart-container">
         <div id="chart-team"></div>
     </div>
-</div>
+</div> -->
 <div class="col-md-6">
     <div class="chart-container">
         <div id="chart-team-gen"></div>
@@ -69,24 +69,6 @@
         <a id="detail-senbatsu" class="chart-detail"></a>
     </div>
 </div>
-<!-- <div class="col-md-12">
-    <div class="chart-container">
-        <div id="chart-twitter"></div>
-        <a id="detail-twitter" class="chart-detail"></a>
-    </div>
-</div> -->
-<!-- <div class="col-md-12">
-    <div class="chart-container">
-        <div id="chart-instagram"></div>
-        <a id="detail-instagram" class="chart-detail"></a>
-    </div>
-</div> -->
-<!-- <div class="col-md-12">
-    <div class="chart-container">
-        <div id="chart-tiktok"></div>
-        <a id="detail-tiktok" class="chart-detail"></a>
-    </div>
-</div> -->
 
 <script>
     var colorTeamMap = {
@@ -103,7 +85,7 @@
             var year = [];
 
             var teamName = [];
-            var teamCount = [];
+            // var teamCount = [];
             var teamGen = [];
 
             var gradYear = [];
@@ -115,7 +97,7 @@
             var maxAge = 0;
 
             var activeMember = 0;
-            var announceGrad = 0;
+            // var announceGrad = 0;
             var activeMemberAge = 0;
 
             gradYear['Semua Gen'] = [];
@@ -123,7 +105,10 @@
             var nickname = []
 
             $.each(dataMembers, function (key, entry) {
-                nickname[entry.name] = entry.nickname
+                if (entry.active) {
+                    nickname[entry.name] = entry.nickname
+                }
+                
                 if (generation.indexOf('Gen ' + entry.gen) === -1) {
                     generation.push('Gen ' + entry.gen)
                 }
@@ -131,11 +116,11 @@
                     for (i = 0; i < entry.teams.length; i++) {
                         if (teamName.indexOf(entry.teams[i]) === -1) {
                             teamName.push(entry.teams[i])
-                            teamCount[entry.teams[i]] = 1
+                            // teamCount[entry.teams[i]] = 1
                             teamGen[entry.teams[i]] = []
                             teamGen[entry.teams[i]][entry.gen] = 1
                         } else {
-                            teamCount[entry.teams[i]] = teamCount[entry.teams[i]] + 1;
+                            // teamCount[entry.teams[i]] = teamCount[entry.teams[i]] + 1;
                             if (!teamGen[entry.teams[i]][entry.gen]) {
                                 teamGen[entry.teams[i]][entry.gen] = 1
                             } else {
@@ -209,9 +194,9 @@
                         maxAge = age
                     }
                 }
-                if (entry.announce_grad) {
-                    announceGrad = announceGrad + 1;
-                }
+                // if (entry.announce_grad) {
+                //     announceGrad = announceGrad + 1;
+                // }
             })
 
             $.getJSON('data/singles.json?' + getShortDate(), function (dataSingle) {
@@ -284,12 +269,13 @@
                 $.each(arrSenbatsu, function (key, entry) {
                     if (nickname[entry.name]) {
                         names.push(nickname[entry.name])
-                    } else {
-                        nick = entry.name.split(" ")
-                        names.push(nick[0])
+                    // } else {
+                    //     nick = entry.name.split(" ")
+                    //     names.push(nick[0])
+                    // }
+                        senbatsuCount.push(entry.senbatsu)
+                        centerCount.push(entry.center)
                     }
-                    senbatsuCount.push(entry.senbatsu)
-                    centerCount.push(entry.center)
                 })
 
                 names = names.slice(names.length - 16, names.length)
@@ -302,19 +288,19 @@
             });
 
             $('#number-member-active').text(activeMember)
-            $('#number-member-announce-grad').text(announceGrad)
+            // $('#number-member-announce-grad').text(announceGrad)
             $('#number-age').text((activeMemberAge / activeMember).toFixed(1))
 
             // data team
-            var dataTeam = []
+            // var dataTeam = []
             var colorTeam = []
-            var labelTeam = []
-            for (var key in teamCount) {
-                dataTeam.push(teamCount[key])
-                colorTeam.push(colorTeamMap[key])
-                labelTeam.push(key)
-            }
-            renderChartTeam(dataTeam, labelTeam, colorTeam)
+            // var labelTeam = []
+            // for (var key in teamCount) {
+            //     dataTeam.push(teamCount[key])
+            //     colorTeam.push(colorTeamMap[key])
+            //     labelTeam.push(key)
+            // }
+            // renderChartTeam(dataTeam, labelTeam, colorTeam)
 
             // data team per gen
             var dataTeamGen = []
@@ -346,11 +332,11 @@
                 } else {
                     dataAgeActive.push(ageActive[i])
                 }
-                if (!ageNonActive[i]) {
-                    dataAgeNonActive.push(0)
-                } else {
-                    dataAgeNonActive.push(ageNonActive[i])
-                }
+                // if (!ageNonActive[i]) {
+                //     dataAgeNonActive.push(0)
+                // } else {
+                //     dataAgeNonActive.push(ageNonActive[i])
+                // }
             }
             renderChartAge(dataAgeActive, dataAgeNonActive, ages)
 
@@ -379,102 +365,52 @@
             // data grad per bulan
             renderChartGradMonth(gradMonth, months)
 
-            // $.getJSON('data/twitter.json?' + getShortDate(), function (dataTwitter) {
-            //     dataTwitter = dataTwitter.members
-            //     usernameTwitter = []
-            //     followerTwitter = []
-            //     dataTwitter.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
-
-            //     $.each(dataTwitter, function (key, entry) {
-            //         usernameTwitter.push(entry.username)
-            //         followerTwitter.push(entry.follower)
-            //     })
-
-            //     followerTwitter = followerTwitter.slice(followerTwitter.length - 16, followerTwitter.length)
-            //     usernameTwitter = usernameTwitter.slice(usernameTwitter.length - 16, usernameTwitter.length)
-
-            //     renderChartTwitter(followerTwitter, usernameTwitter)
-            // });
-
-            // $.getJSON('data/instagram.json?' + getShortDate(), function (dataInstagram) {
-            //     dataInstagram = dataInstagram.members
-            //     usernameInstagram = []
-            //     followerInstagram = []
-            //     dataInstagram.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
-
-            //     $.each(dataInstagram, function (key, entry) {
-            //         usernameInstagram.push(entry.username)
-            //         followerInstagram.push(entry.follower)
-            //     })
-
-            //     followerInstagram = followerInstagram.slice(followerInstagram.length - 16, followerInstagram.length)
-            //     usernameInstagram = usernameInstagram.slice(usernameInstagram.length - 16, usernameInstagram.length)
-
-            //     renderChartInstagram(followerInstagram, usernameInstagram)
-            // });
-
-            // $.getJSON('data/tiktok.json?' + getShortDate(), function (dataTiktok) {
-            //     dataTiktok = dataTiktok.members
-            //     usernameTiktok = []
-            //     followerTiktok = []
-            //     dataTiktok.sort((a, b) => (a.follower > b.follower) ? 1 : -1)
-
-            //     $.each(dataTiktok, function (key, entry) {
-            //         usernameTiktok.push(entry.username)
-            //         followerTiktok.push(entry.follower)
-            //     })
-
-            //     followerTiktok = followerTiktok.slice(followerTiktok.length - 16, followerTiktok.length)
-            //     usernameTiktok = usernameTiktok.slice(usernameTiktok.length - 16, usernameTiktok.length)
-
-            //     renderChartTiktok(followerTiktok, usernameTiktok)
-            // });
         });
 
     });
 
-    function renderChartTeam(data, labels, colors) {
-        var options = {
-            series: data,
-            colors: colors,
-            labels: labels,
-            chart: {
-                height: '300',
-                type: 'pie',
-            },
-            title: {
-                text: 'Jumlah Member per Team',
-                align: 'center'
-            },
-            legend: {
-                position: 'top',
-            },
-            dataLabels: {
-                formatter: function (val, opts) {
-                    return opts.w.config.series[opts.seriesIndex]
-                },
-            },
-            responsive: [{
-                breakpoint: 480,
-                options: {
-                    title: {
-                        style: {
-                            fontSize: '12',
-                        }
-                    },
-                    legend: {
-                        fontSize: '10'
-                    },
-                    chart: {
-                        height: '200',
-                    }
-                }
-            }]
-        };
+    // function renderChartTeam(data, labels, colors) {
+    //     var options = {
+    //         series: data,
+    //         colors: colors,
+    //         labels: labels,
+    //         chart: {
+    //             height: '300',
+    //             type: 'pie',
+    //         },
+    //         title: {
+    //             text: 'Jumlah Member per Team',
+    //             align: 'center'
+    //         },
+    //         legend: {
+    //             position: 'top',
+    //         },
+    //         dataLabels: {
+    //             formatter: function (val, opts) {
+    //                 return opts.w.config.series[opts.seriesIndex]
+    //             },
+    //         },
+    //         responsive: [{
+    //             breakpoint: 480,
+    //             options: {
+    //                 title: {
+    //                     style: {
+    //                         fontSize: '12',
+    //                     }
+    //                 },
+    //                 legend: {
+    //                     fontSize: '10'
+    //                 },
+    //                 chart: {
+    //                     height: '200',
+    //                 }
+    //             }
+    //         }]
+    //     };
 
-        var chart = new ApexCharts(document.querySelector("#chart-team"), options);
-        chart.render();
-    }
+    //     var chart = new ApexCharts(document.querySelector("#chart-team"), options);
+    //     chart.render();
+    // }
 
     function renderChartTeamGen(data, gen, colors) {
         var options = {
@@ -491,12 +427,13 @@
                 }
             },
             title: {
-                text: 'Jumlah Member Team per Generasi',
+                text: 'Jumlah Member per Generasi',
+                // text: 'Jumlah Member Team per Generasi',
                 align: 'center'
             },
-            legend: {
-                position: 'top',
-            },
+            // legend: {
+            //     position: 'top',
+            // },
             responsive: [{
                 breakpoint: 480,
                 options: {
@@ -522,10 +459,11 @@
                 name: 'Member Aktif',
                 data: dataActive
             },
-            {
-                name: 'Saat Graduate',
-                data: dataNonActive
-            }],
+            // {
+            //     name: 'Saat Graduate',
+            //     data: dataNonActive
+            // }
+            ],
             xaxis: {
                 categories: ages,
             },
@@ -746,234 +684,6 @@
         var chart = new ApexCharts(document.querySelector("#chart-senbatsu"), options);
         chart.render();
     }
-
-    // function renderChartTwitter(data, members) {
-    //     var options = {
-    //         series: [{
-    //             name: 'Follower',
-    //             data: data
-    //         }],
-    //         xaxis: {
-    //             categories: members,
-    //         },
-    //         title: {
-    //             text: '16 Akun Twiiter dengan Follower Terbanyak',
-    //             align: 'center'
-    //         },
-    //         plotOptions: {
-    //             bar: {
-    //                 horizontal: true,
-    //                 distributed: true,
-    //                 dataLabels: {
-    //                     position: 'top'
-    //                 }
-    //             }
-    //         },
-    //         legend: {
-    //             show: false,
-    //         },
-    //         dataLabels: {
-    //             enabled: true,
-    //             style: {
-    //                 colors: ['#000']
-    //             },
-    //             formatter: function (val) {
-    //                 return convertK(val)
-    //             },
-    //             offsetX: 40,
-    //         },
-    //         chart: {
-    //             type: 'bar',
-    //             toolbar: {
-    //                 show: false
-    //             },
-    //             events: {
-    //                 mounted: function (chartContext, config) {
-    //                     $('#detail-twitter').click(function () {
-    //                         $('#content').load('twitter.html?' + getShortDate());
-    //                     });
-    //                     $('#detail-twitter').text("Lihat Akun Twitter Selengkapnya")
-    //                 }
-    //             }
-    //         },
-    //         responsive: [{
-    //             breakpoint: 480,
-    //             options: {
-    //                 title: {
-    //                     style: {
-    //                         fontSize: '12',
-    //                     }
-    //                 },
-    //                 chart: {
-    //                     height: '600px'
-    //                 },
-    //                 xaxis: {
-    //                     labels: {
-    //                         show: true,
-    //                         formatter: function (val) {
-    //                             return convertK(val)
-    //                         },
-    //                     },
-    //                 }
-    //             }
-    //         }]
-    //     };
-
-    //     var chart = new ApexCharts(document.querySelector("#chart-twitter"), options);
-    //     chart.render();
-    // }
-
-    // function renderChartInstagram(data, members) {
-    //     var options = {
-    //         series: [{
-    //             name: 'Follower',
-    //             data: data
-    //         }],
-    //         xaxis: {
-    //             categories: members,
-    //         },
-    //         title: {
-    //             text: '16 Akun Instagram dengan Follower Terbanyak',
-    //             align: 'center'
-    //         },
-    //         plotOptions: {
-    //             bar: {
-    //                 horizontal: true,
-    //                 distributed: true,
-    //                 dataLabels: {
-    //                     position: 'top'
-    //                 }
-    //             }
-    //         },
-    //         legend: {
-    //             show: false,
-    //         },
-    //         dataLabels: {
-    //             enabled: true,
-    //             style: {
-    //                 colors: ['#000']
-    //             },
-    //             formatter: function (val) {
-    //                 return convertK(val)
-    //             },
-    //             offsetX: 40,
-    //         },
-    //         chart: {
-    //             type: 'bar',
-    //             toolbar: {
-    //                 show: false
-    //             },
-    //             events: {
-    //                 mounted: function (chartContext, config) {
-    //                     $('#detail-instagram').click(function () {
-    //                         $('#content').load('instagram.html?' + getShortDate());
-    //                     });
-    //                     $('#detail-instagram').text("Lihat Akun Instagram Selengkapnya")
-    //                 }
-    //             }
-    //         },
-    //         responsive: [{
-    //             breakpoint: 480,
-    //             options: {
-    //                 title: {
-    //                     style: {
-    //                         fontSize: '12',
-    //                     }
-    //                 },
-    //                 chart: {
-    //                     height: '600px'
-    //                 },
-    //                 xaxis: {
-    //                     labels: {
-    //                         show: true,
-    //                         formatter: function (val) {
-    //                             return convertK(val)
-    //                         },
-    //                     },
-    //                 }
-    //             }
-    //         }]
-    //     };
-
-    //     var chart = new ApexCharts(document.querySelector("#chart-instagram"), options);
-    //     chart.render();
-    // }
-
-    // function renderChartTiktok(data, members) {
-    //     var options = {
-    //         series: [{
-    //             name: 'Follower',
-    //             data: data
-    //         }],
-    //         xaxis: {
-    //             categories: members,
-    //         },
-    //         title: {
-    //             text: '16 Akun TikTok dengan Follower Terbanyak',
-    //             align: 'center'
-    //         },
-    //         plotOptions: {
-    //             bar: {
-    //                 horizontal: true,
-    //                 distributed: true,
-    //                 dataLabels: {
-    //                     position: 'top'
-    //                 }
-    //             }
-    //         },
-    //         legend: {
-    //             show: false,
-    //         },
-    //         dataLabels: {
-    //             enabled: true,
-    //             style: {
-    //                 colors: ['#000']
-    //             },
-    //             formatter: function (val) {
-    //                 return convertK(val)
-    //             },
-    //             offsetX: 35,
-    //         },
-    //         chart: {
-    //             type: 'bar',
-    //             toolbar: {
-    //                 show: false
-    //             },
-    //             events: {
-    //                 mounted: function (chartContext, config) {
-    //                     $('#detail-tiktok').click(function () {
-    //                         $('#content').load('tiktok.html?' + getShortDate());
-    //                     });
-    //                     $('#detail-tiktok').text("Lihat Akun TikTok Selengkapnya")
-    //                 }
-    //             }
-    //         },
-    //         responsive: [{
-    //             breakpoint: 480,
-    //             options: {
-    //                 title: {
-    //                     style: {
-    //                         fontSize: '12',
-    //                     }
-    //                 },
-    //                 chart: {
-    //                     height: '600px'
-    //                 },
-    //                 xaxis: {
-    //                     labels: {
-    //                         show: true,
-    //                         formatter: function (val) {
-    //                             return convertK(val)
-    //                         },
-    //                     },
-    //                 }
-    //             }
-    //         }]
-    //     };
-
-    //     var chart = new ApexCharts(document.querySelector("#chart-tiktok"), options);
-    //     chart.render();
-    // }
 
     function convertK(val) {
         val = parseInt(val / 1000)
