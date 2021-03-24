@@ -1,5 +1,5 @@
 {
-    "last_update": "2021-03-24T04:40:01",
+    "last_update": "2021-03-24T04:50:01",
     "members": [
         {
             "name": "JKT48_Anin",
@@ -846,7 +846,7 @@
             "followers": "6455",
             "room_level": "32",
             "league_label": "",
-            "live_date": "",
+            "live_date": "1616561061",
             "total_live": 24,
             "ranking": [
                 {
@@ -2883,7 +2883,7 @@
                 },
                 {
                     "id": "5158215",
-                    "name": "Wooyoung",
+                    "name": "Cindy",
                     "position": "9",
                     "point": "19114",
                     "visit_count": "12",
@@ -3262,7 +3262,7 @@
                 },
                 {
                     "id": "5158215",
-                    "name": "Wooyoung",
+                    "name": "Cindy",
                     "position": "20",
                     "point": "24747",
                     "visit_count": "16",
@@ -3705,7 +3705,7 @@
                 },
                 {
                     "id": "5158215",
-                    "name": "Wooyoung",
+                    "name": "Cindy",
                     "position": "7",
                     "point": "24942",
                     "visit_count": "18",
@@ -8115,7 +8115,7 @@
                     "id": "4746813",
                     "name": "eksanto milikku",
                     "position": "1",
-                    "point": "55380",
+                    "point": "55484",
                     "visit_count": "28",
                     "last_position": "1",
                     "last_point": "54140"
@@ -8124,7 +8124,7 @@
                     "id": "4749065",
                     "name": "FADILL",
                     "position": "2",
-                    "point": "52353",
+                    "point": "52356",
                     "visit_count": "28",
                     "last_position": "2",
                     "last_point": "52028"
@@ -8157,9 +8157,18 @@
                     "last_point": "41828"
                 },
                 {
+                    "id": "4754534",
+                    "name": "Qinan",
+                    "position": "6",
+                    "point": "40004",
+                    "visit_count": "28",
+                    "last_position": "7",
+                    "last_point": "38994"
+                },
+                {
                     "id": "4787841",
                     "name": "Hasbi LH",
-                    "position": "6",
+                    "position": "7",
                     "point": "39876",
                     "visit_count": "23",
                     "last_position": "6",
@@ -8168,20 +8177,11 @@
                 {
                     "id": "4753761",
                     "name": "Jen",
-                    "position": "7",
-                    "point": "39796",
+                    "position": "8",
+                    "point": "39802",
                     "visit_count": "25",
                     "last_position": "8",
                     "last_point": "38596"
-                },
-                {
-                    "id": "4754534",
-                    "name": "Qinan",
-                    "position": "8",
-                    "point": "39644",
-                    "visit_count": "28",
-                    "last_position": "7",
-                    "last_point": "38994"
                 },
                 {
                     "id": "4741904",
@@ -8232,7 +8232,7 @@
                     "id": "4743809",
                     "name": "Dimas Alviniozta",
                     "position": "14",
-                    "point": "28062",
+                    "point": "28130",
                     "visit_count": "25",
                     "last_position": "14",
                     "last_point": "27400"
@@ -8241,7 +8241,7 @@
                     "id": "4953819",
                     "name": "RIFAI IS BACK!",
                     "position": "15",
-                    "point": "27650",
+                    "point": "27815",
                     "visit_count": "23",
                     "last_position": "16",
                     "last_point": "26520"
@@ -8286,7 +8286,7 @@
                     "id": "4750586",
                     "name": "Creeper|\u30af\u30ea\u30fc\u30d1\u30fc|\ud06c\ub9ac\ud37c",
                     "position": "20",
-                    "point": "24948",
+                    "point": "25023",
                     "visit_count": "19",
                     "last_position": "20",
                     "last_point": "23837"
@@ -8295,7 +8295,7 @@
                     "id": "4757896",
                     "name": "B\u03b1y\u03c5 nya C\u03b1ithlyn",
                     "position": "21",
-                    "point": "23880",
+                    "point": "24420",
                     "visit_count": "22",
                     "last_position": "21",
                     "last_point": "23289"
@@ -8349,7 +8349,7 @@
                     "id": "2526853",
                     "name": "Ucup",
                     "position": "27",
-                    "point": "21358",
+                    "point": "21361",
                     "visit_count": "20",
                     "last_position": "29",
                     "last_point": "20161"
@@ -8358,7 +8358,7 @@
                     "id": "4752376",
                     "name": "amatir_mutaqin",
                     "position": "28",
-                    "point": "21297",
+                    "point": "21298",
                     "visit_count": "25",
                     "last_position": "27",
                     "last_point": "21297"
