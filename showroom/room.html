@@ -44,6 +44,10 @@
             var end = new Date();
             end.setHours(23,59,59)
             $.each(dataMember, function (key, entry) {
+                if (entry.live_date == entry.last_live) {
+                    entry.last_live = null
+                }
+
                 if (entry.live_date) {
                     entry.live_date = parseInt(entry.live_date)
                     entry.live_date = formatLongDate(entry.live_date * 1000)
@@ -57,7 +61,6 @@
                     } else {
                         entry.last_live = formatHourOnly(entry.last_live * 1000)
                     }
-                    
                 }
 
                 if (entry.ranking) {
