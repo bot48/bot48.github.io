@@ -1,0 +1,105 @@
+<h3>Event Rank</h3>
+
+<table data-toggle="table" class="display table table-bordered" id="table-room">
+    <thead>
+        <tr>
+            <th data-field="name">Room</th>
+            <th data-field="position" data-sortable="true">Rank</th>
+            <th data-field="point" data-sortable="true">Total Point Event</th>
+            <th data-field="gift_points" data-sortable="true">Total Poin Top 100</th>
+            <!-- <th data-field="percentage" data-sortable="true">Persentase Di Luar Top 100</th> -->
+            <th data-field="detail">Top 100</th>
+        </tr>
+    </thead>
+</table>
+
+<div class="alert alert-info" role="alert">
+    Pembaruan Terakhir
+    <span id="last_update"></span>.
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="detail-room">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-room-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-room-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../data/showroom-rank.json?' + getLongDate(), function (dataRoom) {
+            dataMember = dataRoom.members
+            copyDataMember = []
+            $.each(dataMember, function (key, entry) {
+                if (entry.ranking && entry.point !=0) {
+                    var button = $("<a class='detail-room-modal'></a>");
+                    button.text('Detail');
+                    button.attr('data-toggle', "modal");
+                    button.attr('data-target', "#detail-room");
+                    button.attr('data-key', entry.name);
+                    entry.detail = button.prop('outerHTML');
+                    entry.gift_points = 0;
+                    $.each(entry.ranking, function (k, e) {
+                        entry.gift_points = entry.gift_points + parseInt(e.point)
+                    })
+                    // entry.percentage = (((entry.point - entry.gift_points)/entry.point) * 100).toFixed(2)
+                }
+                copyDataMember[entry.name] = entry
+                var link = $("<a target='_blank'></a>")
+                link.attr('href', "https://www.showroom-live.com/" + entry.name)
+                link.text(entry.name)
+                entry.name = link.prop('outerHTML')
+            })
+
+            $('body').on('click', 'a.detail-room-modal', function () {
+                var key = $(this).attr('data-key')
+                var data = copyDataMember[key]
+                $('#modal-room-title').text("Ranking Top 100 Room " + key)
+                var table = $("<table class='detail-rank'></table>")
+                var head = $("<tr></tr>")
+                var column1 = $("<td></td>").text("Posisi")
+                var column2 = $("<td></td>").text("Username")
+                var column3 = $("<td></td>").text("Jumlah Poin")
+                head.append(column1)
+                head.append(column2)
+                head.append(column3)
+                table.append(head)
+
+                $.each(data.ranking, function (key, entry) {
+                    var row = $("<tr></tr>")
+                    var column1 = $("<td></td>").text(entry.position + " ")
+                    var column2 = $("<td></td>").text(entry.name)
+                    var column3 = $("<td></td>").text(entry.point)
+                    entry.last_position = parseInt(entry.last_position)
+
+                    row.append(column1)
+                    row.append(column2)
+                    row.append(column3)
+                    table.append(row)
+
+                })
+
+                $('#modal-room-body').html(table)
+
+            });
+
+            $('#table-room').bootstrapTable({
+                data: dataMember,
+                sortName: 'position',
+                sortOrder: 'asc',
+                pagination: true,
+                pageSize: 48,
+            });
+
+            $('#last_update').html(formatLongDate(dataRoom.last_update));
+        });
+    });
+</script>

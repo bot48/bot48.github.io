@@ -1,0 +1,122 @@
+<h3>Event Ranking Fans</h3>
+<table data-toggle="table" class="display table table-bordered" data-search="true" id="table-rank">
+    <thead>
+        <tr>
+            <th data-field="name">Username</th>
+            <th data-field="total_point" data-sortable="true">Total Poin<sup>*</sup></th>
+            <th data-field="total_top_100" data-sortable="true">Total Kemunculan (Top 100)</th>
+            <th data-field="highest_position">Posisi Tertinggi</th>
+            <th data-field="detail">Daftar Kemunculan</th>
+        </tr>
+    </thead>
+</table>
+
+<div class="alert alert-danger" role="alert">
+    <sup>*</sup> Data total poin dan kehadiran hanya dihitung dari yang muncul di Top 100.
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="detail-rank">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-rank-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-rank-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../data/showroom-rank.json?' + getLongDate(), function (dataRoom) {
+            dataMember = dataRoom.members
+            dataRanking = []
+
+            $.each(dataMember, function (key, entry) {
+                if (entry.ranking && entry.point !=0) {
+                    $.each(entry.ranking, function (k, e) {
+                        if (!dataRanking[e.id]) {
+                            ranking = {
+                                id: e.id,
+                                name: e.name,
+                                total_point: parseInt(e.point),
+                                highest_position: parseInt(e.position),
+                                total_top_100: 1,
+                                rooms: [{
+                                    name: entry.name,
+                                    position: e.position,
+                                    point: parseInt(e.point),
+                                }]
+                            }
+                            dataRanking[e.id] = ranking
+                        } else {
+                            if (dataRanking[e.id].highest_position > parseInt(e.position)) {
+                                dataRanking[e.id].highest_position = parseInt(e.position)
+                            }
+                            dataRanking[e.id].total_point = dataRanking[e.id].total_point + parseInt(e.point)
+                            dataRanking[e.id].total_top_100 = dataRanking[e.id].total_top_100 + 1
+                            dataRanking[e.id].rooms.push({
+                                name: entry.name,
+                                position: e.position,
+                                point: parseInt(e.point),
+                            })
+                        }
+                    })
+                }
+            })
+            finalData = []
+            for (var data in dataRanking) {
+                var button = $("<a class='detail-rank-modal'></a>");
+                button.text('Detail');
+                button.attr('data-toggle', "modal");
+                button.attr('data-target', "#detail-rank");
+                button.attr('data-key', data);
+                dataRanking[data].detail = button.prop('outerHTML');
+                finalData.push(dataRanking[data])
+            }
+
+            $('body').on('click', 'a.detail-rank-modal', function () {
+                var key = $(this).attr('data-key')
+                var data = dataRanking[key]
+                $('#modal-rank-title').text("Kemunculan Top 100  " + data.name)
+                var table = $("<table class='detail-rank'></table>")
+                var head = $("<tr></tr>")
+                var column1 = $("<td></td>").text("Member")
+                var column2 = $("<td></td>").text("Posisi")
+                var column3 = $("<td></td>").text("Poin")
+                head.append(column1)
+                head.append(column2)
+                head.append(column3)
+                table.append(head)
+
+                data.rooms.sort((a, b) => (a.point < b.point) ? 1 : -1)
+
+                $.each(data.rooms, function (k, entry) {
+                    var row = $("<tr></tr>")
+                    var column1 = $("<td></td>").text(entry.name)
+                    var column2 = $("<td></td>").text(entry.position)
+                    var column3 = $("<td></td>").text(entry.point)
+                    row.append(column1)
+                    row.append(column2)
+                    row.append(column3)
+                    table.append(row)
+                })
+
+                $('#modal-rank-body').html(table)
+            });
+
+            $('#table-rank').bootstrapTable({
+                data: finalData,
+                sortName: 'total_point',
+                sortOrder: 'desc',
+                pagination: true,
+                pageSize: 48,
+            });
+                    
+        });
+    });
+</script>
