@@ -92,7 +92,7 @@
                 var row = $("<tr class='announce'></tr>")
                 var column1 = $("<td></td>").text("101 - ...")
                 var column2 = $("<td></td>").text("Di Luar Top 100")
-                var column3 = $("<td></td>").text(data.gift_points)
+                var column3 = $("<td></td>").text(data.point - data.gift_points)
                 var column4 = $("<td></td>").text((((data.point - data.gift_points)/data.point) * 100).toFixed(2) + "%")
 
                 row.append(column1)
