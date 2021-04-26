@@ -68,24 +68,38 @@
                 var column1 = $("<td></td>").text("Posisi")
                 var column2 = $("<td></td>").text("Username")
                 var column3 = $("<td></td>").text("Jumlah Poin")
+                var column4 = $("<td></td>").text("Persentase")
                 head.append(column1)
                 head.append(column2)
                 head.append(column3)
+                head.append(column4)
                 table.append(head)
 
                 $.each(data.ranking, function (key, entry) {
                     var row = $("<tr></tr>")
-                    var column1 = $("<td></td>").text(entry.position + " ")
+                    var column1 = $("<td></td>").text(entry.position)
                     var column2 = $("<td></td>").text(entry.name)
                     var column3 = $("<td></td>").text(entry.point)
-                    entry.last_position = parseInt(entry.last_position)
+                    var column4 = $("<td></td>").text(((entry.point/data.point) * 100).toFixed(2) + "%")
 
                     row.append(column1)
                     row.append(column2)
                     row.append(column3)
+                    row.append(column4)
                     table.append(row)
-
                 })
+
+                var row = $("<tr class='announce'></tr>")
+                var column1 = $("<td></td>").text("101 - ...")
+                var column2 = $("<td></td>").text("Di Luar Top 100")
+                var column3 = $("<td></td>").text(data.gift_points)
+                var column4 = $("<td></td>").text((((data.point - data.gift_points)/data.point) * 100).toFixed(2) + "%")
+
+                row.append(column1)
+                row.append(column2)
+                row.append(column3)
+                row.append(column4)
+                table.append(row)
 
                 $('#modal-room-body').html(table)
 
