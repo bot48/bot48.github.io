@@ -1,11 +1,619 @@
 {
-    "last_update": "2021-04-30T10:15:02",
+    "last_update": "2021-04-30T10:20:01",
     "members": [
         {
-            "name": "JKT48_Gracia",
+            "name": "JKT48_Sisca",
             "position": "1",
+            "point": "10148433",
+            "gap": "635870",
+            "ranking": [
+                {
+                    "id": "4793722",
+                    "name": "RanggaWidigda",
+                    "position": "1",
+                    "point": "735468"
+                },
+                {
+                    "id": "4741769",
+                    "name": "adreN ACKERMAN",
+                    "position": "2",
+                    "point": "600552"
+                },
+                {
+                    "id": "785616",
+                    "name": "\u0ed2gaku\ua4b1\u26f1\ufe0fA\u03d6\u03d6a\u26a1\ufe0f\u2618\ufe0f\u13ca\u26d1\ufe0f",
+                    "position": "3",
+                    "point": "519050"
+                },
+                {
+                    "id": "5291534",
+                    "name": "Mencarisesuatuyg.hilang",
+                    "position": "4",
+                    "point": "346750"
+                },
+                {
+                    "id": "4984569",
+                    "name": "KakanyaElmo",
+                    "position": "5",
+                    "point": "294645"
+                },
+                {
+                    "id": "3277867",
+                    "name": "\u3010\u5fdc\u63f4\u611f\u8b1d\u3011MARINA\u2661\u304f\u3082\u3055\u307e\/Eve\/D's\/\u26f1",
+                    "position": "6",
+                    "point": "227502"
+                },
+                {
+                    "id": "4743712",
+                    "name": "FMI",
+                    "position": "7",
+                    "point": "169071"
+                },
+                {
+                    "id": "5114357",
+                    "name": "HA[Z]MI",
+                    "position": "8",
+                    "point": "162257"
+                },
+                {
+                    "id": "4758156",
+                    "name": "Japanese JKT48 fan",
+                    "position": "9",
+                    "point": "141942"
+                },
+                {
+                    "id": "4995137",
+                    "name": "Erilis\u2022Metiuw",
+                    "position": "10",
+                    "point": "129672"
+                },
+                {
+                    "id": "4830566",
+                    "name": "muLya",
+                    "position": "11",
+                    "point": "125277"
+                },
+                {
+                    "id": "4776057",
+                    "name": "DIKASSSnya Dey",
+                    "position": "12",
+                    "point": "106445"
+                },
+                {
+                    "id": "4755242",
+                    "name": "appcoustic",
+                    "position": "13",
+                    "point": "91999"
+                },
+                {
+                    "id": "2960315",
+                    "name": "\u30b4\u30f3\u5409\u2600\u264fhr\u968a69 @\u30dd\u30e1",
+                    "position": "14",
+                    "point": "87061"
+                },
+                {
+                    "id": "4919492",
+                    "name": "Dudung Somplak",
+                    "position": "15",
+                    "point": "85989"
+                },
+                {
+                    "id": "4856345",
+                    "name": "Strygwyr",
+                    "position": "16",
+                    "point": "83430"
+                },
+                {
+                    "id": "1442023",
+                    "name": "cold",
+                    "position": "17",
+                    "point": "81637"
+                },
+                {
+                    "id": "4749790",
+                    "name": "RIVULS",
+                    "position": "18",
+                    "point": "79660"
+                },
+                {
+                    "id": "1782401",
+                    "name": "\u96f2\u5c71\u3051\u3044\u3053\u273f\u5409\u4e95\u512a\u592aJUNON\u4e8c\u6b21\u5be9\u67fb\u4e2d\/\u6cc9\u7a42\/\u3081\u3044\/\u5927\u667a",
+                    "position": "19",
+                    "point": "71935"
+                },
+                {
+                    "id": "4883911",
+                    "name": "Fikih",
+                    "position": "20",
+                    "point": "60603"
+                },
+                {
+                    "id": "4748936",
+                    "name": "Ilham Akbar",
+                    "position": "21",
+                    "point": "60299"
+                },
+                {
+                    "id": "4751989",
+                    "name": "Nova INUZUKA",
+                    "position": "22",
+                    "point": "53936"
+                },
+                {
+                    "id": "4749465",
+                    "name": "kuli_coding",
+                    "position": "23",
+                    "point": "51476"
+                },
+                {
+                    "id": "4750409",
+                    "name": "Taufik Tri S.k",
+                    "position": "24",
+                    "point": "46961"
+                },
+                {
+                    "id": "4749074",
+                    "name": "Izdi",
+                    "position": "25",
+                    "point": "46433"
+                },
+                {
+                    "id": "4749972",
+                    "name": "zaen49",
+                    "position": "26",
+                    "point": "35176"
+                },
+                {
+                    "id": "4923834",
+                    "name": "MSK",
+                    "position": "27",
+                    "point": "31849"
+                },
+                {
+                    "id": "4749312",
+                    "name": "Tasyatepe\u2728",
+                    "position": "28",
+                    "point": "31195"
+                },
+                {
+                    "id": "3955324",
+                    "name": "FADIL Indonesia BebyOshi",
+                    "position": "29",
+                    "point": "30532"
+                },
+                {
+                    "id": "4749968",
+                    "name": "Akasyah\u5d50.Lichess",
+                    "position": "30",
+                    "point": "30247"
+                },
+                {
+                    "id": "4781018",
+                    "name": "Hutamiyaa~",
+                    "position": "31",
+                    "point": "30175"
+                },
+                {
+                    "id": "5401319",
+                    "name": "SKY",
+                    "position": "32",
+                    "point": "30005"
+                },
+                {
+                    "id": "5109810",
+                    "name": "Saga",
+                    "position": "33",
+                    "point": "26597"
+                },
+                {
+                    "id": "4782491",
+                    "name": "Aprizqiani",
+                    "position": "34",
+                    "point": "25556"
+                },
+                {
+                    "id": "4751472",
+                    "name": "Achdyma",
+                    "position": "35",
+                    "point": "24712"
+                },
+                {
+                    "id": "5290714",
+                    "name": "iza",
+                    "position": "36",
+                    "point": "24040"
+                },
+                {
+                    "id": "4755838",
+                    "name": "Hamzah",
+                    "position": "37",
+                    "point": "23427"
+                },
+                {
+                    "id": "4924238",
+                    "name": "Kaze00",
+                    "position": "38",
+                    "point": "23410"
+                },
+                {
+                    "id": "1578231",
+                    "name": "\u307f\u305a\u304c\u3081(MIZUGAME)\u2652\u24cf\u5ca9\u6238\u9065\u2661MeeL\u2740",
+                    "position": "39",
+                    "point": "22020"
+                },
+                {
+                    "id": "4749042",
+                    "name": "Mas Bumi",
+                    "position": "40",
+                    "point": "21658"
+                },
+                {
+                    "id": "4745802",
+                    "name": "Misgi_103",
+                    "position": "41",
+                    "point": "21630"
+                },
+                {
+                    "id": "4746548",
+                    "name": "Arlc.Arif GetLaks U",
+                    "position": "42",
+                    "point": "21483"
+                },
+                {
+                    "id": "4761975",
+                    "name": "jipo",
+                    "position": "43",
+                    "point": "21220"
+                },
+                {
+                    "id": "4759521",
+                    "name": "Erlangga FeriK",
+                    "position": "44",
+                    "point": "20452"
+                },
+                {
+                    "id": "4775041",
+                    "name": "Patricias",
+                    "position": "45",
+                    "point": "20448"
+                },
+                {
+                    "id": "4751930",
+                    "name": "Dont[AD] JKT48",
+                    "position": "46",
+                    "point": "20060"
+                },
+                {
+                    "id": "4764352",
+                    "name": "Jess \u30b8\u30a7\u30b9",
+                    "position": "47",
+                    "point": "19835"
+                },
+                {
+                    "id": "5115356",
+                    "name": "Araditumh",
+                    "position": "48",
+                    "point": "19631"
+                },
+                {
+                    "id": "5295401",
+                    "name": "kopeyy (\uff7a\uff8d\uff9f\uff72\uff70)",
+                    "position": "49",
+                    "point": "19616"
+                },
+                {
+                    "id": "5178258",
+                    "name": "Fauzan Alfansa",
+                    "position": "50",
+                    "point": "19364"
+                },
+                {
+                    "id": "5252196",
+                    "name": "Hamster geprek",
+                    "position": "51",
+                    "point": "19262"
+                },
+                {
+                    "id": "4741857",
+                    "name": "Babaii",
+                    "position": "52",
+                    "point": "19200"
+                },
+                {
+                    "id": "4756968",
+                    "name": "Nyoman Insan",
+                    "position": "53",
+                    "point": "19131"
+                },
+                {
+                    "id": "4831720",
+                    "name": "\u273f\u01ddz\u0250\u029e\u0250\u0279n\u029e\u0250s",
+                    "position": "54",
+                    "point": "18997"
+                },
+                {
+                    "id": "4760154",
+                    "name": "thehasya",
+                    "position": "55",
+                    "point": "18792"
+                },
+                {
+                    "id": "4745911",
+                    "name": "KESAYANGAN",
+                    "position": "56",
+                    "point": "18749"
+                },
+                {
+                    "id": "4748323",
+                    "name": "RizkaMd",
+                    "position": "57",
+                    "point": "18680"
+                },
+                {
+                    "id": "4758514",
+                    "name": "Lana",
+                    "position": "58",
+                    "point": "18641"
+                },
+                {
+                    "id": "4741993",
+                    "name": "Riza",
+                    "position": "59",
+                    "point": "18530"
+                },
+                {
+                    "id": "4748856",
+                    "name": "Gus owen",
+                    "position": "60",
+                    "point": "18439"
+                },
+                {
+                    "id": "4753322",
+                    "name": "rkz SARUTOBI.",
+                    "position": "61",
+                    "point": "18154"
+                },
+                {
+                    "id": "5302214",
+                    "name": "bukan purrr",
+                    "position": "62",
+                    "point": "18114"
+                },
+                {
+                    "id": "4742071",
+                    "name": "LIS.",
+                    "position": "63",
+                    "point": "17975"
+                },
+                {
+                    "id": "5018896",
+                    "name": "andriawan98",
+                    "position": "64",
+                    "point": "17730"
+                },
+                {
+                    "id": "4759321",
+                    "name": "Desfaa",
+                    "position": "65",
+                    "point": "17443"
+                },
+                {
+                    "id": "5221830",
+                    "name": "Giveyourbest",
+                    "position": "66",
+                    "point": "17309"
+                },
+                {
+                    "id": "4769801",
+                    "name": "Ele",
+                    "position": "67",
+                    "point": "17023"
+                },
+                {
+                    "id": "4940773",
+                    "name": "Kid",
+                    "position": "68",
+                    "point": "17015"
+                },
+                {
+                    "id": "4852064",
+                    "name": "Evelice - Official",
+                    "position": "69",
+                    "point": "16952"
+                },
+                {
+                    "id": "4787841",
+                    "name": "Hasbi LH",
+                    "position": "70",
+                    "point": "16780"
+                },
+                {
+                    "id": "4849545",
+                    "name": "akbarfy",
+                    "position": "71",
+                    "point": "16575"
+                },
+                {
+                    "id": "4749412",
+                    "name": "Aksarakaa SisOne",
+                    "position": "72",
+                    "point": "16561"
+                },
+                {
+                    "id": "5339369",
+                    "name": "Teh Tarik Sis",
+                    "position": "73",
+                    "point": "16328"
+                },
+                {
+                    "id": "4759858",
+                    "name": "Novita Febri",
+                    "position": "74",
+                    "point": "16299"
+                },
+                {
+                    "id": "1519498",
+                    "name": "mayuyu \u304a\u3057",
+                    "position": "75",
+                    "point": "16064"
+                },
+                {
+                    "id": "4751322",
+                    "name": "Ipull",
+                    "position": "76",
+                    "point": "16004"
+                },
+                {
+                    "id": "4762314",
+                    "name": "Agustinus Bunyau",
+                    "position": "77",
+                    "point": "15979"
+                },
+                {
+                    "id": "4746774",
+                    "name": "Afi",
+                    "position": "78",
+                    "point": "15808"
+                },
+                {
+                    "id": "4749765",
+                    "name": "khoiru",
+                    "position": "79",
+                    "point": "15709"
+                },
+                {
+                    "id": "4927423",
+                    "name": "Rebornian48",
+                    "position": "80",
+                    "point": "15701"
+                },
+                {
+                    "id": "4750511",
+                    "name": "  Felix-Jordan",
+                    "position": "81",
+                    "point": "15680"
+                },
+                {
+                    "id": "4748811",
+                    "name": "Hirumi",
+                    "position": "82",
+                    "point": "15456"
+                },
+                {
+                    "id": "5179054",
+                    "name": "gflyrinn",
+                    "position": "83",
+                    "point": "15430"
+                },
+                {
+                    "id": "4752241",
+                    "name": "Tio Pradana",
+                    "position": "84",
+                    "point": "15421"
+                },
+                {
+                    "id": "4753295",
+                    "name": "KaptenYadi",
+                    "position": "85",
+                    "point": "15414"
+                },
+                {
+                    "id": "5110108",
+                    "name": "Alventtt",
+                    "position": "86",
+                    "point": "15379"
+                },
+                {
+                    "id": "4750014",
+                    "name": "Wisnu BS [\u30a6\u30a3\u30b9\u30cc]",
+                    "position": "87",
+                    "point": "15210"
+                },
+                {
+                    "id": "4751528",
+                    "name": "Niaa",
+                    "position": "88",
+                    "point": "15187"
+                },
+                {
+                    "id": "4742870",
+                    "name": "crispychicken",
+                    "position": "89",
+                    "point": "15010"
+                },
+                {
+                    "id": "4755155",
+                    "name": "daemon",
+                    "position": "90",
+                    "point": "14981"
+                },
+                {
+                    "id": "4755379",
+                    "name": "Podcast Diagonal",
+                    "position": "91",
+                    "point": "14961"
+                },
+                {
+                    "id": "4769358",
+                    "name": "Alif Julian",
+                    "position": "92",
+                    "point": "14878"
+                },
+                {
+                    "id": "4750898",
+                    "name": "nads",
+                    "position": "93",
+                    "point": "14747"
+                },
+                {
+                    "id": "4846611",
+                    "name": "Netha",
+                    "position": "94",
+                    "point": "14646"
+                },
+                {
+                    "id": "4942526",
+                    "name": "Heppiiiiiii",
+                    "position": "95",
+                    "point": "14644"
+                },
+                {
+                    "id": "4745844",
+                    "name": "purrr-ke-DEL",
+                    "position": "96",
+                    "point": "14600"
+                },
+                {
+                    "id": "4769886",
+                    "name": "Wahyu",
+                    "position": "97",
+                    "point": "14577"
+                },
+                {
+                    "id": "4772634",
+                    "name": "anggi_wirza",
+                    "position": "98",
+                    "point": "14416"
+                },
+                {
+                    "id": "4936482",
+                    "name": "yovie \u1d55\u0308",
+                    "position": "99",
+                    "point": "14243"
+                },
+                {
+                    "id": "641260",
+                    "name": "Wildan",
+                    "position": "100",
+                    "point": "14223"
+                }
+            ]
+        },
+        {
+            "name": "JKT48_Gracia",
+            "position": "2",
             "point": "9512563",
-            "gap": "128245",
+            "gap": "635870",
             "ranking": [
                 {
                     "id": "4909993",
@@ -51,7 +659,7 @@
                 },
                 {
                     "id": "4751971",
-                    "name": "Noey 26 kawan gracia",
+                    "name": "Noey 26 kawanya Gracia",
                     "position": "8",
                     "point": "51433"
                 },
@@ -610,618 +1218,10 @@
             ]
         },
         {
-            "name": "JKT48_Sisca",
-            "position": "2",
-            "point": "9384318",
-            "gap": "128245",
-            "ranking": [
-                {
-                    "id": "785616",
-                    "name": "\u0ed2gaku\ua4b1\u26f1\ufe0fA\u03d6\u03d6a\u26a1\ufe0f\u2618\ufe0f\u13ca\u26d1\ufe0f",
-                    "position": "1",
-                    "point": "519050"
-                },
-                {
-                    "id": "4741769",
-                    "name": "adreN ACKERMAN",
-                    "position": "2",
-                    "point": "505549"
-                },
-                {
-                    "id": "4793722",
-                    "name": "RanggaWidigda",
-                    "position": "3",
-                    "point": "435465"
-                },
-                {
-                    "id": "4984569",
-                    "name": "KakanyaElmo",
-                    "position": "4",
-                    "point": "294641"
-                },
-                {
-                    "id": "3277867",
-                    "name": "\u3010\u5fdc\u63f4\u611f\u8b1d\u3011MARINA\u2661\u304f\u3082\u3055\u307e\/Eve\/D's\/\u26f1",
-                    "position": "5",
-                    "point": "227502"
-                },
-                {
-                    "id": "4743712",
-                    "name": "FMI",
-                    "position": "6",
-                    "point": "169069"
-                },
-                {
-                    "id": "5114357",
-                    "name": "HA[Z]MI",
-                    "position": "7",
-                    "point": "162253"
-                },
-                {
-                    "id": "4758156",
-                    "name": "Japanese JKT48 fan",
-                    "position": "8",
-                    "point": "141942"
-                },
-                {
-                    "id": "4995137",
-                    "name": "Erilis\u2022Metiuw",
-                    "position": "9",
-                    "point": "129672"
-                },
-                {
-                    "id": "4830566",
-                    "name": "muLya",
-                    "position": "10",
-                    "point": "124977"
-                },
-                {
-                    "id": "4776057",
-                    "name": "DIKASSSnya Dey",
-                    "position": "11",
-                    "point": "106445"
-                },
-                {
-                    "id": "4755242",
-                    "name": "appcoustic",
-                    "position": "12",
-                    "point": "91759"
-                },
-                {
-                    "id": "2960315",
-                    "name": "\u30b4\u30f3\u5409\u2600\u264fhr\u968a69 @\u30dd\u30e1",
-                    "position": "13",
-                    "point": "87061"
-                },
-                {
-                    "id": "4919492",
-                    "name": "Dudung Somplak",
-                    "position": "14",
-                    "point": "85989"
-                },
-                {
-                    "id": "4856345",
-                    "name": "Strygwyr",
-                    "position": "15",
-                    "point": "83430"
-                },
-                {
-                    "id": "1442023",
-                    "name": "cold",
-                    "position": "16",
-                    "point": "81637"
-                },
-                {
-                    "id": "4749790",
-                    "name": "RIVULS",
-                    "position": "17",
-                    "point": "79660"
-                },
-                {
-                    "id": "1782401",
-                    "name": "\u96f2\u5c71\u3051\u3044\u3053\u273f\u5409\u4e95\u512a\u592aJUNON\u4e8c\u6b21\u5be9\u67fb\u4e2d\/\u6cc9\u7a42\/\u3081\u3044\/\u5927\u667a",
-                    "position": "18",
-                    "point": "71935"
-                },
-                {
-                    "id": "4883911",
-                    "name": "Fikih",
-                    "position": "19",
-                    "point": "60603"
-                },
-                {
-                    "id": "4748936",
-                    "name": "Ilham Akbar",
-                    "position": "20",
-                    "point": "60299"
-                },
-                {
-                    "id": "4751989",
-                    "name": "Nova INUZUKA",
-                    "position": "21",
-                    "point": "53936"
-                },
-                {
-                    "id": "4749465",
-                    "name": "kuli_coding",
-                    "position": "22",
-                    "point": "51476"
-                },
-                {
-                    "id": "5291534",
-                    "name": "Mencarisesuatuyg.hilang",
-                    "position": "23",
-                    "point": "46750"
-                },
-                {
-                    "id": "4750409",
-                    "name": "Taufik Tri S.k",
-                    "position": "24",
-                    "point": "46658"
-                },
-                {
-                    "id": "4749074",
-                    "name": "Izdi",
-                    "position": "25",
-                    "point": "41433"
-                },
-                {
-                    "id": "4749972",
-                    "name": "zaen49",
-                    "position": "26",
-                    "point": "35176"
-                },
-                {
-                    "id": "4923834",
-                    "name": "MSK",
-                    "position": "27",
-                    "point": "31849"
-                },
-                {
-                    "id": "4749312",
-                    "name": "Tasyatepe\u2728",
-                    "position": "28",
-                    "point": "31195"
-                },
-                {
-                    "id": "3955324",
-                    "name": "FADIL Indonesia BebyOshi",
-                    "position": "29",
-                    "point": "30525"
-                },
-                {
-                    "id": "4749968",
-                    "name": "Akasyah\u5d50.Lichess",
-                    "position": "30",
-                    "point": "30236"
-                },
-                {
-                    "id": "4781018",
-                    "name": "Hutamiyaa~",
-                    "position": "31",
-                    "point": "30172"
-                },
-                {
-                    "id": "5401319",
-                    "name": "SKY",
-                    "position": "32",
-                    "point": "30004"
-                },
-                {
-                    "id": "5109810",
-                    "name": "Saga",
-                    "position": "33",
-                    "point": "25934"
-                },
-                {
-                    "id": "4751472",
-                    "name": "Achdyma",
-                    "position": "34",
-                    "point": "24477"
-                },
-                {
-                    "id": "5290714",
-                    "name": "iza",
-                    "position": "35",
-                    "point": "24040"
-                },
-                {
-                    "id": "4924238",
-                    "name": "Kaze00",
-                    "position": "36",
-                    "point": "23410"
-                },
-                {
-                    "id": "4755838",
-                    "name": "Hamzah",
-                    "position": "37",
-                    "point": "22965"
-                },
-                {
-                    "id": "1578231",
-                    "name": "\u307f\u305a\u304c\u3081(MIZUGAME)\u2652\u24cf\u5ca9\u6238\u9065\u2661MeeL\u2740",
-                    "position": "38",
-                    "point": "22020"
-                },
-                {
-                    "id": "4749042",
-                    "name": "Mas Bumi",
-                    "position": "39",
-                    "point": "21658"
-                },
-                {
-                    "id": "4745802",
-                    "name": "Misgi_103",
-                    "position": "40",
-                    "point": "21630"
-                },
-                {
-                    "id": "4746548",
-                    "name": "Arlc.Arif GetLaks U",
-                    "position": "41",
-                    "point": "21483"
-                },
-                {
-                    "id": "4761975",
-                    "name": "jipo",
-                    "position": "42",
-                    "point": "21220"
-                },
-                {
-                    "id": "4759521",
-                    "name": "Erlangga FeriK",
-                    "position": "43",
-                    "point": "20452"
-                },
-                {
-                    "id": "4775041",
-                    "name": "Patricias",
-                    "position": "44",
-                    "point": "20447"
-                },
-                {
-                    "id": "4751930",
-                    "name": "Dont[AD] JKT48",
-                    "position": "45",
-                    "point": "20060"
-                },
-                {
-                    "id": "4764352",
-                    "name": "Jess \u30b8\u30a7\u30b9",
-                    "position": "46",
-                    "point": "19835"
-                },
-                {
-                    "id": "5115356",
-                    "name": "Araditumh",
-                    "position": "47",
-                    "point": "19631"
-                },
-                {
-                    "id": "5295401",
-                    "name": "kopeyy (\uff7a\uff8d\uff9f\uff72\uff70)",
-                    "position": "48",
-                    "point": "19616"
-                },
-                {
-                    "id": "5178258",
-                    "name": "Fauzan Alfansa",
-                    "position": "49",
-                    "point": "19364"
-                },
-                {
-                    "id": "5252196",
-                    "name": "Hamster geprek",
-                    "position": "50",
-                    "point": "19262"
-                },
-                {
-                    "id": "4741857",
-                    "name": "Babaii",
-                    "position": "51",
-                    "point": "19200"
-                },
-                {
-                    "id": "4756968",
-                    "name": "Nyoman Insan",
-                    "position": "52",
-                    "point": "19131"
-                },
-                {
-                    "id": "4831720",
-                    "name": "\u273f\u01ddz\u0250\u029e\u0250\u0279n\u029e\u0250s",
-                    "position": "53",
-                    "point": "18997"
-                },
-                {
-                    "id": "4760154",
-                    "name": "thehasya",
-                    "position": "54",
-                    "point": "18792"
-                },
-                {
-                    "id": "4745911",
-                    "name": "KESAYANGAN",
-                    "position": "55",
-                    "point": "18749"
-                },
-                {
-                    "id": "4748323",
-                    "name": "RizkaMd",
-                    "position": "56",
-                    "point": "18680"
-                },
-                {
-                    "id": "4758514",
-                    "name": "Lana",
-                    "position": "57",
-                    "point": "18641"
-                },
-                {
-                    "id": "4741993",
-                    "name": "Riza",
-                    "position": "58",
-                    "point": "18530"
-                },
-                {
-                    "id": "4753322",
-                    "name": "rkz SARUTOBI.",
-                    "position": "59",
-                    "point": "18154"
-                },
-                {
-                    "id": "5302214",
-                    "name": "bukan purrr",
-                    "position": "60",
-                    "point": "18114"
-                },
-                {
-                    "id": "4748856",
-                    "name": "Gus owen",
-                    "position": "61",
-                    "point": "18000"
-                },
-                {
-                    "id": "4742071",
-                    "name": "LIS.",
-                    "position": "62",
-                    "point": "17971"
-                },
-                {
-                    "id": "5018896",
-                    "name": "andriawan98",
-                    "position": "63",
-                    "point": "17730"
-                },
-                {
-                    "id": "4759321",
-                    "name": "Desfaa",
-                    "position": "64",
-                    "point": "17443"
-                },
-                {
-                    "id": "5221830",
-                    "name": "Giveyourbest",
-                    "position": "65",
-                    "point": "17309"
-                },
-                {
-                    "id": "4769801",
-                    "name": "Ele",
-                    "position": "66",
-                    "point": "17023"
-                },
-                {
-                    "id": "4940773",
-                    "name": "Kid",
-                    "position": "67",
-                    "point": "17015"
-                },
-                {
-                    "id": "4852064",
-                    "name": "Evelice - Official",
-                    "position": "68",
-                    "point": "16952"
-                },
-                {
-                    "id": "4849545",
-                    "name": "akbarfy",
-                    "position": "69",
-                    "point": "16575"
-                },
-                {
-                    "id": "4749412",
-                    "name": "Aksarakaa SisOne",
-                    "position": "70",
-                    "point": "16561"
-                },
-                {
-                    "id": "5339369",
-                    "name": "Teh Tarik Sis",
-                    "position": "71",
-                    "point": "16328"
-                },
-                {
-                    "id": "4759858",
-                    "name": "Novita Febri",
-                    "position": "72",
-                    "point": "16299"
-                },
-                {
-                    "id": "4787841",
-                    "name": "Hasbi LH",
-                    "position": "73",
-                    "point": "16240"
-                },
-                {
-                    "id": "1519498",
-                    "name": "mayuyu \u304a\u3057",
-                    "position": "74",
-                    "point": "16064"
-                },
-                {
-                    "id": "4751322",
-                    "name": "Ipull",
-                    "position": "75",
-                    "point": "16004"
-                },
-                {
-                    "id": "4762314",
-                    "name": "Agustinus Bunyau",
-                    "position": "76",
-                    "point": "15978"
-                },
-                {
-                    "id": "4746774",
-                    "name": "Afi",
-                    "position": "77",
-                    "point": "15760"
-                },
-                {
-                    "id": "4749765",
-                    "name": "khoiru",
-                    "position": "78",
-                    "point": "15709"
-                },
-                {
-                    "id": "4927423",
-                    "name": "Rebornian48",
-                    "position": "79",
-                    "point": "15701"
-                },
-                {
-                    "id": "4750511",
-                    "name": "  Felix-Jordan",
-                    "position": "80",
-                    "point": "15680"
-                },
-                {
-                    "id": "4748811",
-                    "name": "Hirumi",
-                    "position": "81",
-                    "point": "15456"
-                },
-                {
-                    "id": "5179054",
-                    "name": "gflyrinn",
-                    "position": "82",
-                    "point": "15430"
-                },
-                {
-                    "id": "4752241",
-                    "name": "Tio Pradana",
-                    "position": "83",
-                    "point": "15421"
-                },
-                {
-                    "id": "4753295",
-                    "name": "KaptenYadi",
-                    "position": "84",
-                    "point": "15414"
-                },
-                {
-                    "id": "5110108",
-                    "name": "Alventtt",
-                    "position": "85",
-                    "point": "15379"
-                },
-                {
-                    "id": "4750014",
-                    "name": "Wisnu BS [\u30a6\u30a3\u30b9\u30cc]",
-                    "position": "86",
-                    "point": "15210"
-                },
-                {
-                    "id": "4751528",
-                    "name": "Niaa",
-                    "position": "87",
-                    "point": "15187"
-                },
-                {
-                    "id": "4742870",
-                    "name": "crispychicken",
-                    "position": "88",
-                    "point": "15010"
-                },
-                {
-                    "id": "4755155",
-                    "name": "daemon",
-                    "position": "89",
-                    "point": "14981"
-                },
-                {
-                    "id": "4755379",
-                    "name": "Podcast Diagonal",
-                    "position": "90",
-                    "point": "14961"
-                },
-                {
-                    "id": "4769358",
-                    "name": "Alif Julian",
-                    "position": "91",
-                    "point": "14878"
-                },
-                {
-                    "id": "4750898",
-                    "name": "nads",
-                    "position": "92",
-                    "point": "14747"
-                },
-                {
-                    "id": "4846611",
-                    "name": "Netha",
-                    "position": "93",
-                    "point": "14646"
-                },
-                {
-                    "id": "4942526",
-                    "name": "Heppiiiiiii",
-                    "position": "94",
-                    "point": "14644"
-                },
-                {
-                    "id": "4745844",
-                    "name": "purrr-ke-DEL",
-                    "position": "95",
-                    "point": "14600"
-                },
-                {
-                    "id": "4769886",
-                    "name": "Wahyu",
-                    "position": "96",
-                    "point": "14577"
-                },
-                {
-                    "id": "4772634",
-                    "name": "anggi_wirza",
-                    "position": "97",
-                    "point": "14416"
-                },
-                {
-                    "id": "4936482",
-                    "name": "yovie \u1d55\u0308",
-                    "position": "98",
-                    "point": "14243"
-                },
-                {
-                    "id": "641260",
-                    "name": "Wildan",
-                    "position": "99",
-                    "point": "14222"
-                },
-                {
-                    "id": "4748812",
-                    "name": "kezia",
-                    "position": "100",
-                    "point": "14217"
-                }
-            ]
-        },
-        {
             "name": "JKT48_Zee",
             "position": "3",
             "point": "2706452",
-            "gap": "6677866",
+            "gap": "6806111",
             "ranking": [
                 {
                     "id": "5161645",
@@ -9124,98 +9124,98 @@
         {
             "name": "JKT48_Jinan",
             "position": "16",
-            "point": "420659",
-            "gap": "79237",
+            "point": "442768",
+            "gap": "57128",
             "ranking": [
+                {
+                    "id": "4749129",
+                    "name": "Jinanika",
+                    "position": "1",
+                    "point": "42302"
+                },
                 {
                     "id": "5178273",
                     "name": "ralmafaza",
-                    "position": "1",
+                    "position": "2",
                     "point": "37470"
                 },
                 {
                     "id": "4750931",
                     "name": "Tjibjib",
-                    "position": "2",
-                    "point": "33392"
-                },
-                {
-                    "id": "4749129",
-                    "name": "Jinanika",
                     "position": "3",
-                    "point": "33299"
-                },
-                {
-                    "id": "1135357",
-                    "name": "RENDY APRIZAL",
-                    "position": "4",
-                    "point": "12395"
+                    "point": "33392"
                 },
                 {
                     "id": "4745701",
                     "name": "niajadeh",
+                    "position": "4",
+                    "point": "12712"
+                },
+                {
+                    "id": "4844486",
+                    "name": "elwanday",
                     "position": "5",
-                    "point": "12303"
+                    "point": "12690"
                 },
                 {
-                    "id": "4752773",
-                    "name": "De Upi",
+                    "id": "1135357",
+                    "name": "RENDY APRIZAL",
                     "position": "6",
-                    "point": "11633"
-                },
-                {
-                    "id": "4748781",
-                    "name": "Djoe",
-                    "position": "7",
-                    "point": "11476"
+                    "point": "12395"
                 },
                 {
                     "id": "4788261",
                     "name": "Ride.O",
+                    "position": "7",
+                    "point": "11658"
+                },
+                {
+                    "id": "4752773",
+                    "name": "De Upi",
                     "position": "8",
-                    "point": "11407"
+                    "point": "11639"
+                },
+                {
+                    "id": "4748781",
+                    "name": "Djoe",
+                    "position": "9",
+                    "point": "11476"
                 },
                 {
                     "id": "4750699",
                     "name": "daniichan",
-                    "position": "9",
-                    "point": "10976"
+                    "position": "10",
+                    "point": "11049"
                 },
                 {
                     "id": "5251033",
                     "name": "pipipiw",
-                    "position": "10",
-                    "point": "10810"
-                },
-                {
-                    "id": "4844393",
-                    "name": "Nuts",
                     "position": "11",
-                    "point": "10432"
+                    "point": "10814"
                 },
                 {
                     "id": "4926079",
                     "name": "Pikachu",
                     "position": "12",
-                    "point": "10276"
+                    "point": "10442"
+                },
+                {
+                    "id": "4844393",
+                    "name": "Nuts",
+                    "position": "13",
+                    "point": "10432"
                 },
                 {
                     "id": "4747554",
                     "name": "Gabriel Febyliana Morano",
-                    "position": "13",
-                    "point": "10263"
-                },
-                {
-                    "id": "4844486",
-                    "name": "elwanday",
                     "position": "14",
-                    "point": "9690"
+                    "point": "10263"
                 },
                 {
                     "id": "4755958",
                     "name": "Adraaa",
                     "position": "15",
-                    "point": "9220"
+                    "point": "9811"
                 },
                 {
                     "id": "5285637",
@@ -9239,7 +9239,7 @@
                     "id": "5139521",
                     "name": "FitriPtrc",
                     "position": "19",
-                    "point": "7236"
+                    "point": "7486"
                 },
                 {
                     "id": "4754039",
@@ -9254,16 +9254,16 @@
                     "point": "4835"
                 },
                 {
-                    "id": "4754288",
-                    "name": "cynthiadfs",
-                    "position": "22",
-                    "point": "4468"
-                },
-                {
                     "id": "1007156",
                     "name": "Sop Saudara",
+                    "position": "22",
+                    "point": "4582"
+                },
+                {
+                    "id": "4754288",
+                    "name": "cynthiadfs",
                     "position": "23",
-                    "point": "4252"
+                    "point": "4468"
                 },
                 {
                     "id": "4794740",
@@ -9275,55 +9275,55 @@
                     "id": "5418724",
                     "name": "Andhika",
                     "position": "25",
-                    "point": "3452"
+                    "point": "3608"
+                },
+                {
+                    "id": "4749086",
+                    "name": "Bang Klimis",
+                    "position": "26",
+                    "point": "3397"
+                },
+                {
+                    "id": "4746743",
+                    "name": "YOGI",
+                    "position": "27",
+                    "point": "3222"
                 },
                 {
                     "id": "4914285",
                     "name": "__kay__",
-                    "position": "26",
+                    "position": "28",
                     "point": "3060"
                 },
                 {
                     "id": "4744340",
                     "name": " E",
-                    "position": "27",
+                    "position": "29",
                     "point": "2969"
                 },
                 {
                     "id": "4917803",
                     "name": "Alma",
-                    "position": "28",
-                    "point": "2885"
+                    "position": "30",
+                    "point": "2886"
                 },
                 {
-                    "id": "4749086",
-                    "name": "Bang Klimis",
-                    "position": "29",
-                    "point": "2845"
+                    "id": "4746698",
+                    "name": "dioramadhan",
+                    "position": "31",
+                    "point": "2840"
                 },
                 {
                     "id": "3624649",
                     "name": "Rivano",
-                    "position": "30",
+                    "position": "32",
                     "point": "2805"
                 },
                 {
                     "id": "4769479",
                     "name": "yabchan.jp",
-                    "position": "31",
-                    "point": "2553"
-                },
-                {
-                    "id": "4746698",
-                    "name": "dioramadhan",
-                    "position": "32",
-                    "point": "2540"
-                },
-                {
-                    "id": "4746743",
-                    "name": "YOGI",
                     "position": "33",
-                    "point": "2381"
+                    "point": "2553"
                 },
                 {
                     "id": "4752784",
@@ -9386,346 +9386,346 @@
                     "point": "1778"
                 },
                 {
+                    "id": "4751240",
+                    "name": "MKdafi21",
+                    "position": "44",
+                    "point": "1736"
+                },
+                {
                     "id": "5414174",
                     "name": "ahsiriem",
-                    "position": "44",
-                    "point": "1654"
+                    "position": "45",
+                    "point": "1655"
                 },
                 {
                     "id": "5266485",
                     "name": "Aditya Arlelt",
-                    "position": "45",
+                    "position": "46",
                     "point": "1640"
+                },
+                {
+                    "id": "4746526",
+                    "name": "Zaidan\u2022",
+                    "position": "47",
+                    "point": "1507"
                 },
                 {
                     "id": "4742043",
                     "name": "fellina w",
-                    "position": "46",
+                    "position": "48",
                     "point": "1502"
                 },
                 {
-                    "id": "4751240",
-                    "name": "MKdafi21",
-                    "position": "47",
-                    "point": "1382"
+                    "id": "4743166",
+                    "name": "Reza Febian",
+                    "position": "49",
+                    "point": "1486"
                 },
                 {
                     "id": "4748060",
                     "name": "K89Sora_F",
-                    "position": "48",
+                    "position": "50",
                     "point": "1360"
+                },
+                {
+                    "id": "4742117",
+                    "name": "Ahya_dya",
+                    "position": "51",
+                    "point": "1295"
                 },
                 {
                     "id": "4751849",
                     "name": "Riyan\u26a1YAW",
-                    "position": "49",
+                    "position": "52",
                     "point": "1290"
                 },
                 {
                     "id": "4958097",
                     "name": "Piisuke nya Ceu Eli",
-                    "position": "50",
+                    "position": "53",
                     "point": "1251"
                 },
                 {
                     "id": "5425654",
                     "name": "Zidhan aka cino 48",
-                    "position": "51",
+                    "position": "54",
                     "point": "1250"
-                },
-                {
-                    "id": "4743166",
-                    "name": "Reza Febian",
-                    "position": "52",
-                    "point": "1246"
                 },
                 {
                     "id": "4748868",
                     "name": "zakaiv",
-                    "position": "53",
+                    "position": "55",
                     "point": "1240"
                 },
                 {
                     "id": "2526448",
                     "name": "\u30df\u2605 \u30d2\u30c7\u30df \u2605\u5f61",
-                    "position": "54",
+                    "position": "56",
                     "point": "1240"
                 },
                 {
                     "id": "4750640",
                     "name": "TAKA-san",
-                    "position": "55",
+                    "position": "57",
                     "point": "1239"
                 },
                 {
                     "id": "5020988",
                     "name": "mang Ari",
-                    "position": "56",
+                    "position": "58",
                     "point": "1228"
                 },
                 {
                     "id": "4753346",
                     "name": "Aryo Kusumojati",
-                    "position": "57",
+                    "position": "59",
                     "point": "1201"
                 },
                 {
                     "id": "4826400",
                     "name": "aldir",
-                    "position": "58",
+                    "position": "60",
                     "point": "1192"
                 },
                 {
                     "id": "4797607",
                     "name": "Rereyy",
-                    "position": "59",
+                    "position": "61",
                     "point": "1192"
                 },
                 {
                     "id": "5020019",
                     "name": "KalutSan",
-                    "position": "60",
+                    "position": "62",
                     "point": "1190"
                 },
                 {
                     "id": "4786884",
                     "name": "Sundoro",
-                    "position": "61",
+                    "position": "63",
                     "point": "1190"
                 },
                 {
                     "id": "4928281",
                     "name": "Nanda A",
-                    "position": "62",
+                    "position": "64",
                     "point": "1190"
                 },
                 {
                     "id": "5221656",
                     "name": "Baruna",
-                    "position": "63",
+                    "position": "65",
                     "point": "1189"
                 },
                 {
                     "id": "4942826",
                     "name": "Kizashi2021",
-                    "position": "64",
+                    "position": "66",
                     "point": "1188"
                 },
                 {
                     "id": "2526853",
                     "name": "Ucupp",
-                    "position": "65",
+                    "position": "67",
                     "point": "1178"
                 },
                 {
                     "id": "4753408",
                     "name": "Irfan Alfath",
-                    "position": "66",
+                    "position": "68",
                     "point": "1162"
-                },
-                {
-                    "id": "4742117",
-                    "name": "Ahya_dya",
-                    "position": "67",
-                    "point": "1158"
                 },
                 {
                     "id": "5113725",
                     "name": "Pablo",
-                    "position": "68",
-                    "point": "1148"
+                    "position": "69",
+                    "point": "1149"
                 },
                 {
                     "id": "5109452",
                     "name": "Loh, AdaOyong !!!",
-                    "position": "69",
+                    "position": "70",
                     "point": "1140"
                 },
                 {
                     "id": "4755921",
                     "name": "Kru Mugiwara",
-                    "position": "70",
+                    "position": "71",
                     "point": "1136"
                 },
                 {
                     "id": "268360",
                     "name": "Eggy Ama \/ \u30a8\u30c3\u30ae\u30e3\u30de",
-                    "position": "71",
+                    "position": "72",
                     "point": "1136"
                 },
                 {
-                    "id": "4752675",
-                    "name": "_Jkt48.one",
-                    "position": "72",
-                    "point": "1069"
+                    "id": "5208354",
+                    "name": "Awann",
+                    "position": "73",
+                    "point": "1110"
                 },
                 {
                     "id": "5158777",
                     "name": "Krystal",
-                    "position": "73",
-                    "point": "959"
+                    "position": "74",
+                    "point": "1108"
+                },
+                {
+                    "id": "4752675",
+                    "name": "_Jkt48.one",
+                    "position": "75",
+                    "point": "1069"
                 },
                 {
                     "id": "5413181",
                     "name": "indah",
-                    "position": "74",
+                    "position": "76",
                     "point": "957"
                 },
                 {
                     "id": "4769600",
                     "name": "rizkymfl\u2077",
-                    "position": "75",
+                    "position": "77",
                     "point": "950"
                 },
                 {
                     "id": "4770825",
                     "name": "Es We",
-                    "position": "76",
-                    "point": "923"
+                    "position": "78",
+                    "point": "929"
                 },
                 {
                     "id": "4929045",
                     "name": "hiuhiu",
-                    "position": "77",
+                    "position": "79",
                     "point": "912"
-                },
-                {
-                    "id": "4941974",
-                    "name": "Ina",
-                    "position": "78",
-                    "point": "722"
                 },
                 {
                     "id": "4749060",
                     "name": "ay \u30a2\u30a4",
-                    "position": "79",
-                    "point": "686"
+                    "position": "80",
+                    "point": "846"
+                },
+                {
+                    "id": "4778996",
+                    "name": "farhanbili",
+                    "position": "81",
+                    "point": "746"
                 },
                 {
                     "id": "5400982",
                     "name": "dita",
-                    "position": "80",
-                    "point": "682"
+                    "position": "82",
+                    "point": "733"
+                },
+                {
+                    "id": "4941974",
+                    "name": "Ina",
+                    "position": "83",
+                    "point": "722"
                 },
                 {
                     "id": "4759321",
                     "name": "Desfaa",
-                    "position": "81",
+                    "position": "84",
                     "point": "672"
                 },
                 {
                     "id": "4957398",
                     "name": "Puspa",
-                    "position": "82",
+                    "position": "85",
+                    "point": "664"
+                },
+                {
+                    "id": "5350637",
+                    "name": "Pandora Box",
+                    "position": "86",
                     "point": "664"
                 },
                 {
                     "id": "4746301",
                     "name": "Resiver96",
-                    "position": "83",
+                    "position": "87",
                     "point": "661"
                 },
                 {
                     "id": "5150543",
                     "name": "Ohosama",
-                    "position": "84",
-                    "point": "650"
+                    "position": "88",
+                    "point": "652"
                 },
                 {
                     "id": "4752038",
                     "name": "Straft",
-                    "position": "85",
+                    "position": "89",
                     "point": "648"
                 },
                 {
                     "id": "5324815",
                     "name": "Riannn",
-                    "position": "86",
+                    "position": "90",
                     "point": "647"
                 },
                 {
                     "id": "4826890",
                     "name": "WAH KAK SIDIQ NIH!",
-                    "position": "87",
+                    "position": "91",
                     "point": "640"
+                },
+                {
+                    "id": "4904998",
+                    "name": "usus halus",
+                    "position": "92",
+                    "point": "632"
                 },
                 {
                     "id": "4755368",
                     "name": "Siapa ya",
-                    "position": "88",
+                    "position": "93",
                     "point": "629"
                 },
                 {
                     "id": "4752710",
                     "name": "Light (OshinyaAra)",
-                    "position": "89",
+                    "position": "94",
                     "point": "629"
+                },
+                {
+                    "id": "4780535",
+                    "name": "mORi",
+                    "position": "95",
+                    "point": "612"
                 },
                 {
                     "id": "4749961",
                     "name": "Em0",
-                    "position": "90",
+                    "position": "96",
                     "point": "610"
                 },
                 {
                     "id": "5413836",
                     "name": "Alfienda",
-                    "position": "91",
+                    "position": "97",
                     "point": "608"
+                },
+                {
+                    "id": "4748998",
+                    "name": "razkiriz",
+                    "position": "98",
+                    "point": "606"
                 },
                 {
                     "id": "4780201",
                     "name": "Topi Jerami",
-                    "position": "92",
+                    "position": "99",
                     "point": "606"
                 },
                 {
                     "id": "810436",
                     "name": "Alpacaaargh",
-                    "position": "93",
-                    "point": "605"
-                },
-                {
-                    "id": "5162214",
-                    "name": "Arie Musafa",
-                    "position": "94",
-                    "point": "604"
-                },
-                {
-                    "id": "4778996",
-                    "name": "farhanbili",
-                    "position": "95",
-                    "point": "600"
-                },
-                {
-                    "id": "5142083",
-                    "name": "Sadar Diri ~",
-                    "position": "96",
-                    "point": "594"
-                },
-                {
-                    "id": "5350637",
-                    "name": "Pandora Box",
-                    "position": "97",
-                    "point": "594"
-                },
-                {
-                    "id": "4742274",
-                    "name": "keziaz",
-                    "position": "98",
-                    "point": "588"
-                },
-                {
-                    "id": "4748998",
-                    "name": "razkiriz",
-                    "position": "99",
-                    "point": "588"
-                },
-                {
-                    "id": "5243949",
-                    "name": "Safatalitha nya Boss J",
                     "position": "100",
-                    "point": "586"
+                    "point": "605"
                 }
             ]
         },
@@ -9733,7 +9733,7 @@
             "name": "JKT48_Muthe",
             "position": "17",
             "point": "413401",
-            "gap": "7258",
+            "gap": "29367",
             "ranking": [
                 {
                     "id": "4778711",
@@ -16418,10 +16418,1226 @@
             ]
         },
         {
-            "name": "JKT48_Eve",
+            "name": "JKT48_Cindy",
             "position": "28",
+            "point": "1993",
+            "gap": "74225",
+            "ranking": [
+                {
+                    "id": "4759715",
+                    "name": "Ka Ariq",
+                    "position": "1",
+                    "point": "590"
+                },
+                {
+                    "id": "4745988",
+                    "name": "Sonia",
+                    "position": "2",
+                    "point": "522"
+                },
+                {
+                    "id": "5018896",
+                    "name": "andriawan98",
+                    "position": "3",
+                    "point": "257"
+                },
+                {
+                    "id": "4921724",
+                    "name": "thania",
+                    "position": "4",
+                    "point": "61"
+                },
+                {
+                    "id": "3019319",
+                    "name": "Nan",
+                    "position": "5",
+                    "point": "60"
+                },
+                {
+                    "id": "4763901",
+                    "name": "Find",
+                    "position": "6",
+                    "point": "49"
+                },
+                {
+                    "id": "5227657",
+                    "name": "TeamFeni",
+                    "position": "7",
+                    "point": "49"
+                },
+                {
+                    "id": "4741904",
+                    "name": "Fahmifmos brina",
+                    "position": "8",
+                    "point": "48"
+                },
+                {
+                    "id": "4756665",
+                    "name": "\u30ad\u30a2\u30f3\u30ea\u30ba\u300cKian\u300d",
+                    "position": "9",
+                    "point": "48"
+                },
+                {
+                    "id": "4749750",
+                    "name": "Irfan",
+                    "position": "10",
+                    "point": "48"
+                },
+                {
+                    "id": "4916157",
+                    "name": "wizday wisdi",
+                    "position": "11",
+                    "point": "34"
+                },
+                {
+                    "id": "4942698",
+                    "name": "BG",
+                    "position": "12",
+                    "point": "29"
+                },
+                {
+                    "id": "5142120",
+                    "name": "Auraayu",
+                    "position": "13",
+                    "point": "25"
+                },
+                {
+                    "id": "4765763",
+                    "name": "\u306e",
+                    "position": "14",
+                    "point": "24"
+                },
+                {
+                    "id": "4748665",
+                    "name": "Fazzz",
+                    "position": "15",
+                    "point": "24"
+                },
+                {
+                    "id": "5191601",
+                    "name": "irfan dharma",
+                    "position": "16",
+                    "point": "24"
+                },
+                {
+                    "id": "5248835",
+                    "name": "Ihza Mahen Syg Azizi",
+                    "position": "17",
+                    "point": "24"
+                },
+                {
+                    "id": "4941621",
+                    "name": "Mutia_26",
+                    "position": "18",
+                    "point": "24"
+                },
+                {
+                    "id": "4745910",
+                    "name": "Darickz",
+                    "position": "19",
+                    "point": "24"
+                },
+                {
+                    "id": "4741820",
+                    "name": "Maul Arfan",
+                    "position": "20",
+                    "point": "13"
+                },
+                {
+                    "id": "5363951",
+                    "name": "Azhra-kun",
+                    "position": "21",
+                    "point": "12"
+                },
+                {
+                    "id": "4957012",
+                    "name": "Soda48",
+                    "position": "22",
+                    "point": "1"
+                },
+                {
+                    "id": "4778595",
+                    "name": "Eulen",
+                    "position": "23",
+                    "point": "1"
+                },
+                {
+                    "id": "4748323",
+                    "name": "RizkaMd",
+                    "position": "24",
+                    "point": "1"
+                },
+                {
+                    "id": "848003",
+                    "name": "Sham",
+                    "position": "25",
+                    "point": "1"
+                },
+                {
+                    "id": "4775297",
+                    "name": "aghi",
+                    "position": "26",
+                    "point": "0"
+                },
+                {
+                    "id": "5425164",
+                    "name": "Saad Anshory",
+                    "position": "27",
+                    "point": "0"
+                },
+                {
+                    "id": "5391602",
+                    "name": "Almcb150305",
+                    "position": "28",
+                    "point": "0"
+                },
+                {
+                    "id": "5157643",
+                    "name": "Dhani",
+                    "position": "29",
+                    "point": "0"
+                },
+                {
+                    "id": "5368221",
+                    "name": "oni nya chikuy",
+                    "position": "30",
+                    "point": "0"
+                },
+                {
+                    "id": "4753567",
+                    "name": "Kynan S",
+                    "position": "31",
+                    "point": "0"
+                },
+                {
+                    "id": "5387951",
+                    "name": "Aliska Iswandi",
+                    "position": "32",
+                    "point": "0"
+                },
+                {
+                    "id": "2820189",
+                    "name": "NiXiN",
+                    "position": "33",
+                    "point": "0"
+                },
+                {
+                    "id": "5423108",
+                    "name": "xqfXlee",
+                    "position": "34",
+                    "point": "0"
+                },
+                {
+                    "id": "4957289",
+                    "name": "Nayaana",
+                    "position": "35",
+                    "point": "0"
+                },
+                {
+                    "id": "4750041",
+                    "name": "\u30a4\u30de\u30f3 Iman",
+                    "position": "36",
+                    "point": "0"
+                },
+                {
+                    "id": "4954348",
+                    "name": "Syahrul Rifai",
+                    "position": "37",
+                    "point": "0"
+                },
+                {
+                    "id": "4758409",
+                    "name": "Sakuranohana",
+                    "position": "38",
+                    "point": "0"
+                },
+                {
+                    "id": "4775181",
+                    "name": "Mas Ahnadi",
+                    "position": "39",
+                    "point": "0"
+                },
+                {
+                    "id": "4897462",
+                    "name": "TRISHA NI",
+                    "position": "40",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "41",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "42",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "43",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "44",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "45",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "46",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "47",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "48",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "49",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "50",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "51",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "52",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "53",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "54",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "55",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "56",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "57",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "58",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "59",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "60",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "61",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "62",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "63",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "64",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "65",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "66",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "67",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "68",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "69",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "70",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "71",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "72",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "73",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "74",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "75",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "76",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "77",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "78",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "79",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "80",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "81",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "82",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "83",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "84",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "85",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "86",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "87",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "88",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "89",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "90",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "91",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "92",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "93",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "94",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "95",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "96",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "97",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "98",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "99",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "100",
+                    "point": "0"
+                }
+            ]
+        },
+        {
+            "name": "JKT48_Celine",
+            "position": "29",
             "point": "0",
-            "gap": "76218",
+            "gap": "1993",
+            "ranking": [
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "1",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "2",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "3",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "4",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "5",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "6",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "7",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "8",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "9",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "10",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "11",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "12",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "13",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "14",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "15",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "16",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "17",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "18",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "19",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "20",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "21",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "22",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "23",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "24",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "25",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "26",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "27",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "28",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "29",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "30",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "31",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "32",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "33",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "34",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "35",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "36",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "37",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "38",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "39",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "40",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "41",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "42",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "43",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "44",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "45",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "46",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "47",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "48",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "49",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "50",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "51",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "52",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "53",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "54",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "55",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "56",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "57",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "58",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "59",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "60",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "61",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "62",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "63",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "64",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "65",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "66",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "67",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "68",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "69",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "70",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "71",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "72",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "73",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "74",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "75",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "76",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "77",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "78",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "79",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "80",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "81",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "82",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "83",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "84",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "85",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "86",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "87",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "88",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "89",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "90",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "91",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "92",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "93",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "94",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "95",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "96",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "97",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "98",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "99",
+                    "point": "0"
+                },
+                {
+                    "id": "0",
+                    "name": "",
+                    "position": "100",
+                    "point": "0"
+                }
+            ]
+        },
+        {
+            "name": "JKT48_Eve",
+            "position": "29",
+            "point": "0",
+            "gap": "1993",
             "ranking": [
                 {
                     "id": "0",
@@ -17027,9 +18243,9 @@
         },
         {
             "name": "JKT48_Ara",
-            "position": "28",
+            "position": "29",
             "point": "0",
-            "gap": "76218",
+            "gap": "1993",
             "ranking": [
                 {
                     "id": "0",
@@ -17635,9 +18851,9 @@
         },
         {
             "name": "JKT48_Flora",
-            "position": "28",
+            "position": "29",
             "point": "0",
-            "gap": "76218",
+            "gap": "1993",
             "ranking": [
                 {
                     "id": "0",
@@ -18243,1225 +19459,9 @@
         },
         {
             "name": "JKT48_Jesslyn",
-            "position": "28",
+            "position": "29",
             "point": "0",
-            "gap": "76218",
-            "ranking": [
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "1",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "2",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "3",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "4",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "5",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "6",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "7",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "8",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "9",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "10",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "11",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "12",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "13",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "14",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "15",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "16",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "17",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "18",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "19",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "20",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "21",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "22",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "23",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "24",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "25",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "26",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "27",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "28",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "29",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "30",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "31",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "32",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "33",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "34",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "35",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "36",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "37",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "38",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "39",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "40",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "41",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "42",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "43",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "44",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "45",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "46",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "47",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "48",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "49",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "50",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "51",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "52",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "53",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "54",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "55",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "56",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "57",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "58",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "59",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "60",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "61",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "62",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "63",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "64",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "65",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "66",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "67",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "68",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "69",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "70",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "71",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "72",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "73",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "74",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "75",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "76",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "77",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "78",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "79",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "80",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "81",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "82",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "83",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "84",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "85",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "86",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "87",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "88",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "89",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "90",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "91",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "92",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "93",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "94",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "95",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "96",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "97",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "98",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "99",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "100",
-                    "point": "0"
-                }
-            ]
-        },
-        {
-            "name": "JKT48_Cindy",
-            "position": "28",
-            "point": "0",
-            "gap": "76218",
-            "ranking": [
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "1",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "2",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "3",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "4",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "5",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "6",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "7",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "8",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "9",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "10",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "11",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "12",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "13",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "14",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "15",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "16",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "17",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "18",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "19",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "20",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "21",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "22",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "23",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "24",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "25",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "26",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "27",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "28",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "29",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "30",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "31",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "32",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "33",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "34",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "35",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "36",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "37",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "38",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "39",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "40",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "41",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "42",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "43",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "44",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "45",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "46",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "47",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "48",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "49",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "50",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "51",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "52",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "53",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "54",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "55",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "56",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "57",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "58",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "59",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "60",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "61",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "62",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "63",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "64",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "65",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "66",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "67",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "68",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "69",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "70",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "71",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "72",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "73",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "74",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "75",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "76",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "77",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "78",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "79",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "80",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "81",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "82",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "83",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "84",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "85",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "86",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "87",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "88",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "89",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "90",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "91",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "92",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "93",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "94",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "95",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "96",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "97",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "98",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "99",
-                    "point": "0"
-                },
-                {
-                    "id": "0",
-                    "name": "",
-                    "position": "100",
-                    "point": "0"
-                }
-            ]
-        },
-        {
-            "name": "JKT48_Celine",
-            "position": "28",
-            "point": "0",
-            "gap": "76218",
+            "gap": "1993",
             "ranking": [
                 {
                     "id": "0",
