@@ -1,11 +1,619 @@
 {
-    "last_update": "2021-05-02T05:10:02",
+    "last_update": "2021-05-02T05:15:01",
     "members": [
         {
-            "name": "JKT48_Gracia",
+            "name": "JKT48_Sisca",
             "position": "1",
+            "point": "12923060",
+            "gap": "45673",
+            "ranking": [
+                {
+                    "id": "4793722",
+                    "name": "RanggaWidigda",
+                    "position": "1",
+                    "point": "744492"
+                },
+                {
+                    "id": "4741769",
+                    "name": "adreN DUKUNG CI GRE",
+                    "position": "2",
+                    "point": "631929"
+                },
+                {
+                    "id": "785616",
+                    "name": "\u0ed2gaku\ua4b1\u26f1\ufe0fA\u03d6\u03d6a\u26a1\ufe0f\u2618\ufe0f\u13ca\u26d1\ufe0f",
+                    "position": "3",
+                    "point": "519050"
+                },
+                {
+                    "id": "5291534",
+                    "name": "Mencarisesuatuyg.hilang",
+                    "position": "4",
+                    "point": "356387"
+                },
+                {
+                    "id": "4984569",
+                    "name": "KakanyaElmo",
+                    "position": "5",
+                    "point": "324701"
+                },
+                {
+                    "id": "3277867",
+                    "name": "\u3010\u5fdc\u63f4\u611f\u8b1d\u3011MARINA\u2661\u304f\u3082\u3055\u307e\/Eve\/D's\/\u26f1",
+                    "position": "6",
+                    "point": "308936"
+                },
+                {
+                    "id": "4995137",
+                    "name": "Metiuw",
+                    "position": "7",
+                    "point": "240482"
+                },
+                {
+                    "id": "4758156",
+                    "name": "Japanese JKT48 fan",
+                    "position": "8",
+                    "point": "192457"
+                },
+                {
+                    "id": "4743712",
+                    "name": "FMI",
+                    "position": "9",
+                    "point": "172075"
+                },
+                {
+                    "id": "4830566",
+                    "name": "muLya",
+                    "position": "10",
+                    "point": "169047"
+                },
+                {
+                    "id": "5114357",
+                    "name": "HA[Z]MI",
+                    "position": "11",
+                    "point": "164233"
+                },
+                {
+                    "id": "4919492",
+                    "name": "Dudung Somplak",
+                    "position": "12",
+                    "point": "132879"
+                },
+                {
+                    "id": "1782401",
+                    "name": "\u96f2\u5c71\u3051\u3044\u3053\u273f\u5409\u4e95\u512a\u592aJUNON\u4e8c\u6b21\u5be9\u67fb\u4e2d\/\u6cc9\u7a42\/\u3081\u3044\/\u5927\u667a",
+                    "position": "13",
+                    "point": "131935"
+                },
+                {
+                    "id": "4755242",
+                    "name": "appcoustic",
+                    "position": "14",
+                    "point": "125559"
+                },
+                {
+                    "id": "4856345",
+                    "name": "Strygwyr",
+                    "position": "15",
+                    "point": "113984"
+                },
+                {
+                    "id": "4776057",
+                    "name": "DIKASSSnya Dey",
+                    "position": "16",
+                    "point": "109709"
+                },
+                {
+                    "id": "2960315",
+                    "name": "\u7121\u30b4\u30f3\u5409\u2600\u264fhr\u968a69 @\u30dd\u30e1",
+                    "position": "17",
+                    "point": "96111"
+                },
+                {
+                    "id": "4883911",
+                    "name": "Fikih",
+                    "position": "18",
+                    "point": "90627"
+                },
+                {
+                    "id": "4751989",
+                    "name": "Nova",
+                    "position": "19",
+                    "point": "85906"
+                },
+                {
+                    "id": "1442023",
+                    "name": "cold",
+                    "position": "20",
+                    "point": "81637"
+                },
+                {
+                    "id": "4956403",
+                    "name": "Udang",
+                    "position": "21",
+                    "point": "80626"
+                },
+                {
+                    "id": "4749790",
+                    "name": "RIVULS",
+                    "position": "22",
+                    "point": "79660"
+                },
+                {
+                    "id": "4749074",
+                    "name": "Izdi",
+                    "position": "23",
+                    "point": "73454"
+                },
+                {
+                    "id": "4749465",
+                    "name": "kuli_coding",
+                    "position": "24",
+                    "point": "71056"
+                },
+                {
+                    "id": "5401319",
+                    "name": "SKY",
+                    "position": "25",
+                    "point": "63226"
+                },
+                {
+                    "id": "4748936",
+                    "name": "Ilham Akbar",
+                    "position": "26",
+                    "point": "60498"
+                },
+                {
+                    "id": "4750409",
+                    "name": "Taufik Tri S.k",
+                    "position": "27",
+                    "point": "53008"
+                },
+                {
+                    "id": "4923834",
+                    "name": "MSK",
+                    "position": "28",
+                    "point": "46399"
+                },
+                {
+                    "id": "4745802",
+                    "name": "Misgi_103",
+                    "position": "29",
+                    "point": "43235"
+                },
+                {
+                    "id": "4749312",
+                    "name": "Tasyatepe\u2728",
+                    "position": "30",
+                    "point": "42156"
+                },
+                {
+                    "id": "4749968",
+                    "name": "Akasyah\u5d50.Lichess",
+                    "position": "31",
+                    "point": "37671"
+                },
+                {
+                    "id": "4749972",
+                    "name": "zaen49",
+                    "position": "32",
+                    "point": "35919"
+                },
+                {
+                    "id": "3955324",
+                    "name": "FADIL Indonesia BebyOshi",
+                    "position": "33",
+                    "point": "35374"
+                },
+                {
+                    "id": "4927423",
+                    "name": "Rebornian48",
+                    "position": "34",
+                    "point": "33491"
+                },
+                {
+                    "id": "4751930",
+                    "name": "Dont[AD] dibaca donat",
+                    "position": "35",
+                    "point": "33406"
+                },
+                {
+                    "id": "1578231",
+                    "name": "\u307f\u305a\u304c\u3081(MIZUGAME)\u2652\u24cf\u5ca9\u6238\u9065\u2661MeeL\u2740",
+                    "position": "36",
+                    "point": "33244"
+                },
+                {
+                    "id": "4924238",
+                    "name": "Kaze00",
+                    "position": "37",
+                    "point": "32790"
+                },
+                {
+                    "id": "4781018",
+                    "name": "Hutamiyaa~",
+                    "position": "38",
+                    "point": "32326"
+                },
+                {
+                    "id": "5109810",
+                    "name": "Saga",
+                    "position": "39",
+                    "point": "32311"
+                },
+                {
+                    "id": "4751472",
+                    "name": "Achdyma",
+                    "position": "40",
+                    "point": "30208"
+                },
+                {
+                    "id": "4761975",
+                    "name": "jipo",
+                    "position": "41",
+                    "point": "30060"
+                },
+                {
+                    "id": "4745911",
+                    "name": "KESAYANGAN",
+                    "position": "42",
+                    "point": "28114"
+                },
+                {
+                    "id": "4782491",
+                    "name": "Aprizqiani",
+                    "position": "43",
+                    "point": "28007"
+                },
+                {
+                    "id": "5290714",
+                    "name": "iza\/\u30a4\u30b6",
+                    "position": "44",
+                    "point": "27719"
+                },
+                {
+                    "id": "5178258",
+                    "name": "Fauzan Alfansa",
+                    "position": "45",
+                    "point": "26654"
+                },
+                {
+                    "id": "4759521",
+                    "name": "Erlangga FeriK",
+                    "position": "46",
+                    "point": "26237"
+                },
+                {
+                    "id": "920297",
+                    "name": "Team_horee",
+                    "position": "47",
+                    "point": "25820"
+                },
+                {
+                    "id": "4764352",
+                    "name": "Jess \u30b8\u30a7\u30b9",
+                    "position": "48",
+                    "point": "25768"
+                },
+                {
+                    "id": "4748323",
+                    "name": "RizkaMd",
+                    "position": "49",
+                    "point": "25658"
+                },
+                {
+                    "id": "4755838",
+                    "name": "Hamzah",
+                    "position": "50",
+                    "point": "25631"
+                },
+                {
+                    "id": "4916573",
+                    "name": "Prazka",
+                    "position": "51",
+                    "point": "25475"
+                },
+                {
+                    "id": "5115356",
+                    "name": "Araditumh",
+                    "position": "52",
+                    "point": "25401"
+                },
+                {
+                    "id": "5339369",
+                    "name": "Teh Tarik Sis",
+                    "position": "53",
+                    "point": "25069"
+                },
+                {
+                    "id": "4775041",
+                    "name": "Pino2",
+                    "position": "54",
+                    "point": "24904"
+                },
+                {
+                    "id": "3582364",
+                    "name": "Yanti.suko",
+                    "position": "55",
+                    "point": "24528"
+                },
+                {
+                    "id": "5295401",
+                    "name": "kopeyy (\uff7a\uff8d\uff9f\uff72\uff70)",
+                    "position": "56",
+                    "point": "24267"
+                },
+                {
+                    "id": "5018896",
+                    "name": "andriawan98",
+                    "position": "57",
+                    "point": "24120"
+                },
+                {
+                    "id": "5302214",
+                    "name": "bukan purrr",
+                    "position": "58",
+                    "point": "24103"
+                },
+                {
+                    "id": "4852064",
+                    "name": "Evelice - Official",
+                    "position": "59",
+                    "point": "23992"
+                },
+                {
+                    "id": "4748856",
+                    "name": "Gus owen",
+                    "position": "60",
+                    "point": "23510"
+                },
+                {
+                    "id": "4787841",
+                    "name": "Hasbi LH",
+                    "position": "61",
+                    "point": "22940"
+                },
+                {
+                    "id": "4742071",
+                    "name": "LIS.",
+                    "position": "62",
+                    "point": "22655"
+                },
+                {
+                    "id": "5210392",
+                    "name": "Iki Piye To",
+                    "position": "63",
+                    "point": "22654"
+                },
+                {
+                    "id": "4759321",
+                    "name": "Desfaa",
+                    "position": "64",
+                    "point": "22418"
+                },
+                {
+                    "id": "5221830",
+                    "name": "Giveyourbest",
+                    "position": "65",
+                    "point": "22085"
+                },
+                {
+                    "id": "4755379",
+                    "name": "Podcast Diagonal",
+                    "position": "66",
+                    "point": "21868"
+                },
+                {
+                    "id": "4749042",
+                    "name": "Mifta",
+                    "position": "67",
+                    "point": "21862"
+                },
+                {
+                    "id": "4752241",
+                    "name": "Tio Pradana",
+                    "position": "68",
+                    "point": "21772"
+                },
+                {
+                    "id": "4746548",
+                    "name": "Arlc.Arif GetLaks U",
+                    "position": "69",
+                    "point": "21759"
+                },
+                {
+                    "id": "4751528",
+                    "name": "Niaa",
+                    "position": "70",
+                    "point": "21686"
+                },
+                {
+                    "id": "4741993",
+                    "name": "Riza",
+                    "position": "71",
+                    "point": "21590"
+                },
+                {
+                    "id": "4769801",
+                    "name": "Ele",
+                    "position": "72",
+                    "point": "21551"
+                },
+                {
+                    "id": "5252196",
+                    "name": "Dah gila",
+                    "position": "73",
+                    "point": "21544"
+                },
+                {
+                    "id": "5340194",
+                    "name": "Hafidz23",
+                    "position": "74",
+                    "point": "21459"
+                },
+                {
+                    "id": "4749765",
+                    "name": "khoiru",
+                    "position": "75",
+                    "point": "21341"
+                },
+                {
+                    "id": "4759858",
+                    "name": "\u30ce\u30d3\u30bf\u30d5\u30a7\u30d6\u30ea",
+                    "position": "76",
+                    "point": "21286"
+                },
+                {
+                    "id": "4746774",
+                    "name": "Afi",
+                    "position": "77",
+                    "point": "21134"
+                },
+                {
+                    "id": "4940773",
+                    "name": "Kid",
+                    "position": "78",
+                    "point": "20944"
+                },
+                {
+                    "id": "4758514",
+                    "name": "Lana",
+                    "position": "79",
+                    "point": "20526"
+                },
+                {
+                    "id": "4831720",
+                    "name": "\u273f\u01ddz\u0250\u029e\u0250\u0279n\u029e\u0250s",
+                    "position": "80",
+                    "point": "20431"
+                },
+                {
+                    "id": "4748812",
+                    "name": "kezia",
+                    "position": "81",
+                    "point": "20407"
+                },
+                {
+                    "id": "4751322",
+                    "name": "Ipull",
+                    "position": "82",
+                    "point": "20351"
+                },
+                {
+                    "id": "4769358",
+                    "name": "Alif Julian",
+                    "position": "83",
+                    "point": "20280"
+                },
+                {
+                    "id": "4753322",
+                    "name": "rkz SARUTOBI.",
+                    "position": "84",
+                    "point": "20186"
+                },
+                {
+                    "id": "4751544",
+                    "name": "cesara kharism",
+                    "position": "85",
+                    "point": "20180"
+                },
+                {
+                    "id": "4745844",
+                    "name": "purrr-ke-DEL",
+                    "position": "86",
+                    "point": "20110"
+                },
+                {
+                    "id": "4942526",
+                    "name": "Heppiiiiiii",
+                    "position": "87",
+                    "point": "20094"
+                },
+                {
+                    "id": "4750511",
+                    "name": "  Felix-Jordan",
+                    "position": "88",
+                    "point": "19940"
+                },
+                {
+                    "id": "4762314",
+                    "name": "Agustinus Bunyau",
+                    "position": "89",
+                    "point": "19650"
+                },
+                {
+                    "id": "4749412",
+                    "name": "Aksarakaa SisOne",
+                    "position": "90",
+                    "point": "19593"
+                },
+                {
+                    "id": "4826890",
+                    "name": "WAH KAK SIDIQ NIH!",
+                    "position": "91",
+                    "point": "19563"
+                },
+                {
+                    "id": "4753295",
+                    "name": "KaptenYadi",
+                    "position": "92",
+                    "point": "19282"
+                },
+                {
+                    "id": "4769886",
+                    "name": "Wahyu",
+                    "position": "93",
+                    "point": "19255"
+                },
+                {
+                    "id": "4849545",
+                    "name": "akbarfy",
+                    "position": "94",
+                    "point": "19242"
+                },
+                {
+                    "id": "4741857",
+                    "name": "Babaii",
+                    "position": "95",
+                    "point": "19200"
+                },
+                {
+                    "id": "1519498",
+                    "name": "mayuyu \u304a\u3057",
+                    "position": "96",
+                    "point": "19168"
+                },
+                {
+                    "id": "4756968",
+                    "name": "Nyoman Insan",
+                    "position": "97",
+                    "point": "19131"
+                },
+                {
+                    "id": "4751849",
+                    "name": "Riyan\u26a1YAW",
+                    "position": "98",
+                    "point": "18894"
+                },
+                {
+                    "id": "4745825",
+                    "name": "Dessieds",
+                    "position": "99",
+                    "point": "18862"
+                },
+                {
+                    "id": "4760154",
+                    "name": "thehasya",
+                    "position": "100",
+                    "point": "18792"
+                }
+            ]
+        },
+        {
+            "name": "JKT48_Gracia",
+            "position": "2",
             "point": "12877387",
-            "gap": "49576",
+            "gap": "45673",
             "ranking": [
                 {
                     "id": "4909993",
@@ -610,618 +1218,10 @@
             ]
         },
         {
-            "name": "JKT48_Sisca",
-            "position": "2",
-            "point": "12827811",
-            "gap": "49576",
-            "ranking": [
-                {
-                    "id": "4793722",
-                    "name": "RanggaWidigda",
-                    "position": "1",
-                    "point": "744492"
-                },
-                {
-                    "id": "4741769",
-                    "name": "adreN DUKUNG CI GRE",
-                    "position": "2",
-                    "point": "631929"
-                },
-                {
-                    "id": "785616",
-                    "name": "\u0ed2gaku\ua4b1\u26f1\ufe0fA\u03d6\u03d6a\u26a1\ufe0f\u2618\ufe0f\u13ca\u26d1\ufe0f",
-                    "position": "3",
-                    "point": "519050"
-                },
-                {
-                    "id": "5291534",
-                    "name": "Mencarisesuatuyg.hilang",
-                    "position": "4",
-                    "point": "356387"
-                },
-                {
-                    "id": "4984569",
-                    "name": "KakanyaElmo",
-                    "position": "5",
-                    "point": "324701"
-                },
-                {
-                    "id": "3277867",
-                    "name": "\u3010\u5fdc\u63f4\u611f\u8b1d\u3011MARINA\u2661\u304f\u3082\u3055\u307e\/Eve\/D's\/\u26f1",
-                    "position": "6",
-                    "point": "308492"
-                },
-                {
-                    "id": "4995137",
-                    "name": "Metiuw",
-                    "position": "7",
-                    "point": "240482"
-                },
-                {
-                    "id": "4758156",
-                    "name": "Japanese JKT48 fan",
-                    "position": "8",
-                    "point": "192457"
-                },
-                {
-                    "id": "4743712",
-                    "name": "FMI",
-                    "position": "9",
-                    "point": "171887"
-                },
-                {
-                    "id": "4830566",
-                    "name": "muLya",
-                    "position": "10",
-                    "point": "167245"
-                },
-                {
-                    "id": "5114357",
-                    "name": "HA[Z]MI",
-                    "position": "11",
-                    "point": "164233"
-                },
-                {
-                    "id": "4919492",
-                    "name": "Dudung Somplak",
-                    "position": "12",
-                    "point": "132879"
-                },
-                {
-                    "id": "1782401",
-                    "name": "\u96f2\u5c71\u3051\u3044\u3053\u273f\u5409\u4e95\u512a\u592aJUNON\u4e8c\u6b21\u5be9\u67fb\u4e2d\/\u6cc9\u7a42\/\u3081\u3044\/\u5927\u667a",
-                    "position": "13",
-                    "point": "131935"
-                },
-                {
-                    "id": "4755242",
-                    "name": "appcoustic",
-                    "position": "14",
-                    "point": "124179"
-                },
-                {
-                    "id": "4856345",
-                    "name": "Strygwyr",
-                    "position": "15",
-                    "point": "113984"
-                },
-                {
-                    "id": "4776057",
-                    "name": "DIKASSSnya Dey",
-                    "position": "16",
-                    "point": "109709"
-                },
-                {
-                    "id": "2960315",
-                    "name": "\u7121\u30b4\u30f3\u5409\u2600\u264fhr\u968a69 @\u30dd\u30e1",
-                    "position": "17",
-                    "point": "96111"
-                },
-                {
-                    "id": "4883911",
-                    "name": "Fikih",
-                    "position": "18",
-                    "point": "90627"
-                },
-                {
-                    "id": "1442023",
-                    "name": "cold",
-                    "position": "19",
-                    "point": "81637"
-                },
-                {
-                    "id": "4956403",
-                    "name": "Udang",
-                    "position": "20",
-                    "point": "80626"
-                },
-                {
-                    "id": "4749790",
-                    "name": "RIVULS",
-                    "position": "21",
-                    "point": "79660"
-                },
-                {
-                    "id": "4751989",
-                    "name": "Nova",
-                    "position": "22",
-                    "point": "79549"
-                },
-                {
-                    "id": "4749074",
-                    "name": "Izdi",
-                    "position": "23",
-                    "point": "73413"
-                },
-                {
-                    "id": "5401319",
-                    "name": "SKY",
-                    "position": "24",
-                    "point": "63226"
-                },
-                {
-                    "id": "4749465",
-                    "name": "kuli_coding",
-                    "position": "25",
-                    "point": "60853"
-                },
-                {
-                    "id": "4748936",
-                    "name": "Ilham Akbar",
-                    "position": "26",
-                    "point": "60498"
-                },
-                {
-                    "id": "4750409",
-                    "name": "Taufik Tri S.k",
-                    "position": "27",
-                    "point": "53008"
-                },
-                {
-                    "id": "4923834",
-                    "name": "MSK",
-                    "position": "28",
-                    "point": "46349"
-                },
-                {
-                    "id": "4745802",
-                    "name": "Misgi_103",
-                    "position": "29",
-                    "point": "43217"
-                },
-                {
-                    "id": "4749312",
-                    "name": "Tasyatepe\u2728",
-                    "position": "30",
-                    "point": "42156"
-                },
-                {
-                    "id": "4749968",
-                    "name": "Akasyah\u5d50.Lichess",
-                    "position": "31",
-                    "point": "37098"
-                },
-                {
-                    "id": "4749972",
-                    "name": "zaen49",
-                    "position": "32",
-                    "point": "35919"
-                },
-                {
-                    "id": "3955324",
-                    "name": "FADIL Indonesia BebyOshi",
-                    "position": "33",
-                    "point": "34781"
-                },
-                {
-                    "id": "4927423",
-                    "name": "Rebornian48",
-                    "position": "34",
-                    "point": "33488"
-                },
-                {
-                    "id": "4751930",
-                    "name": "Dont[AD] dibaca donat",
-                    "position": "35",
-                    "point": "33400"
-                },
-                {
-                    "id": "1578231",
-                    "name": "\u307f\u305a\u304c\u3081(MIZUGAME)\u2652\u24cf\u5ca9\u6238\u9065\u2661MeeL\u2740",
-                    "position": "36",
-                    "point": "32548"
-                },
-                {
-                    "id": "4924238",
-                    "name": "Kaze00",
-                    "position": "37",
-                    "point": "32430"
-                },
-                {
-                    "id": "4781018",
-                    "name": "Hutamiyaa~",
-                    "position": "38",
-                    "point": "32254"
-                },
-                {
-                    "id": "5109810",
-                    "name": "Saga",
-                    "position": "39",
-                    "point": "31930"
-                },
-                {
-                    "id": "4751472",
-                    "name": "Achdyma",
-                    "position": "40",
-                    "point": "30208"
-                },
-                {
-                    "id": "4761975",
-                    "name": "jipo",
-                    "position": "41",
-                    "point": "29743"
-                },
-                {
-                    "id": "4745911",
-                    "name": "KESAYANGAN",
-                    "position": "42",
-                    "point": "28114"
-                },
-                {
-                    "id": "4782491",
-                    "name": "Aprizqiani",
-                    "position": "43",
-                    "point": "28007"
-                },
-                {
-                    "id": "5290714",
-                    "name": "iza\/\u30a4\u30b6",
-                    "position": "44",
-                    "point": "27659"
-                },
-                {
-                    "id": "5178258",
-                    "name": "Fauzan Alfansa",
-                    "position": "45",
-                    "point": "26114"
-                },
-                {
-                    "id": "920297",
-                    "name": "Team_horee",
-                    "position": "46",
-                    "point": "25820"
-                },
-                {
-                    "id": "4759521",
-                    "name": "Erlangga FeriK",
-                    "position": "47",
-                    "point": "25688"
-                },
-                {
-                    "id": "4755838",
-                    "name": "Hamzah",
-                    "position": "48",
-                    "point": "25631"
-                },
-                {
-                    "id": "4764352",
-                    "name": "Jess \u30b8\u30a7\u30b9",
-                    "position": "49",
-                    "point": "25408"
-                },
-                {
-                    "id": "4748323",
-                    "name": "RizkaMd",
-                    "position": "50",
-                    "point": "25358"
-                },
-                {
-                    "id": "4916573",
-                    "name": "Prazka",
-                    "position": "51",
-                    "point": "24995"
-                },
-                {
-                    "id": "5339369",
-                    "name": "Teh Tarik Sis",
-                    "position": "52",
-                    "point": "24951"
-                },
-                {
-                    "id": "4775041",
-                    "name": "Pino2",
-                    "position": "53",
-                    "point": "24903"
-                },
-                {
-                    "id": "5115356",
-                    "name": "Araditumh",
-                    "position": "54",
-                    "point": "24751"
-                },
-                {
-                    "id": "3582364",
-                    "name": "Yanti.suko",
-                    "position": "55",
-                    "point": "23938"
-                },
-                {
-                    "id": "5018896",
-                    "name": "andriawan98",
-                    "position": "56",
-                    "point": "23880"
-                },
-                {
-                    "id": "5295401",
-                    "name": "kopeyy (\uff7a\uff8d\uff9f\uff72\uff70)",
-                    "position": "57",
-                    "point": "23811"
-                },
-                {
-                    "id": "5302214",
-                    "name": "bukan purrr",
-                    "position": "58",
-                    "point": "23563"
-                },
-                {
-                    "id": "4852064",
-                    "name": "Evelice - Official",
-                    "position": "59",
-                    "point": "23462"
-                },
-                {
-                    "id": "4748856",
-                    "name": "Gus owen",
-                    "position": "60",
-                    "point": "23168"
-                },
-                {
-                    "id": "5210392",
-                    "name": "Iki Piye To",
-                    "position": "61",
-                    "point": "22604"
-                },
-                {
-                    "id": "4787841",
-                    "name": "Hasbi LH",
-                    "position": "62",
-                    "point": "22400"
-                },
-                {
-                    "id": "4759321",
-                    "name": "Desfaa",
-                    "position": "63",
-                    "point": "22239"
-                },
-                {
-                    "id": "4742071",
-                    "name": "LIS.",
-                    "position": "64",
-                    "point": "22237"
-                },
-                {
-                    "id": "5221830",
-                    "name": "Giveyourbest",
-                    "position": "65",
-                    "point": "21910"
-                },
-                {
-                    "id": "4749042",
-                    "name": "Mifta",
-                    "position": "66",
-                    "point": "21862"
-                },
-                {
-                    "id": "4746548",
-                    "name": "Arlc.Arif GetLaks U",
-                    "position": "67",
-                    "point": "21759"
-                },
-                {
-                    "id": "4752241",
-                    "name": "Tio Pradana",
-                    "position": "68",
-                    "point": "21688"
-                },
-                {
-                    "id": "4751528",
-                    "name": "Niaa",
-                    "position": "69",
-                    "point": "21628"
-                },
-                {
-                    "id": "4741993",
-                    "name": "Riza",
-                    "position": "70",
-                    "point": "21590"
-                },
-                {
-                    "id": "4769801",
-                    "name": "Ele",
-                    "position": "71",
-                    "point": "21551"
-                },
-                {
-                    "id": "5252196",
-                    "name": "Dah gila",
-                    "position": "72",
-                    "point": "21544"
-                },
-                {
-                    "id": "5340194",
-                    "name": "Hafidz23",
-                    "position": "73",
-                    "point": "21459"
-                },
-                {
-                    "id": "4755379",
-                    "name": "Podcast Diagonal",
-                    "position": "74",
-                    "point": "21363"
-                },
-                {
-                    "id": "4759858",
-                    "name": "\u30ce\u30d3\u30bf\u30d5\u30a7\u30d6\u30ea",
-                    "position": "75",
-                    "point": "21286"
-                },
-                {
-                    "id": "4749765",
-                    "name": "khoiru",
-                    "position": "76",
-                    "point": "21188"
-                },
-                {
-                    "id": "4746774",
-                    "name": "Afi",
-                    "position": "77",
-                    "point": "20874"
-                },
-                {
-                    "id": "4831720",
-                    "name": "\u273f\u01ddz\u0250\u029e\u0250\u0279n\u029e\u0250s",
-                    "position": "78",
-                    "point": "20411"
-                },
-                {
-                    "id": "4748812",
-                    "name": "kezia",
-                    "position": "79",
-                    "point": "20407"
-                },
-                {
-                    "id": "4940773",
-                    "name": "Kid",
-                    "position": "80",
-                    "point": "20295"
-                },
-                {
-                    "id": "4753322",
-                    "name": "rkz SARUTOBI.",
-                    "position": "81",
-                    "point": "20186"
-                },
-                {
-                    "id": "4745844",
-                    "name": "purrr-ke-DEL",
-                    "position": "82",
-                    "point": "20072"
-                },
-                {
-                    "id": "4758514",
-                    "name": "Lana",
-                    "position": "83",
-                    "point": "19972"
-                },
-                {
-                    "id": "4751322",
-                    "name": "Ipull",
-                    "position": "84",
-                    "point": "19844"
-                },
-                {
-                    "id": "4769358",
-                    "name": "Alif Julian",
-                    "position": "85",
-                    "point": "19800"
-                },
-                {
-                    "id": "4751544",
-                    "name": "cesara kharism",
-                    "position": "86",
-                    "point": "19700"
-                },
-                {
-                    "id": "4750511",
-                    "name": "  Felix-Jordan",
-                    "position": "87",
-                    "point": "19700"
-                },
-                {
-                    "id": "4762314",
-                    "name": "Agustinus Bunyau",
-                    "position": "88",
-                    "point": "19602"
-                },
-                {
-                    "id": "4749412",
-                    "name": "Aksarakaa SisOne",
-                    "position": "89",
-                    "point": "19593"
-                },
-                {
-                    "id": "4942526",
-                    "name": "Heppiiiiiii",
-                    "position": "90",
-                    "point": "19554"
-                },
-                {
-                    "id": "4769886",
-                    "name": "Wahyu",
-                    "position": "91",
-                    "point": "19255"
-                },
-                {
-                    "id": "4741857",
-                    "name": "Babaii",
-                    "position": "92",
-                    "point": "19200"
-                },
-                {
-                    "id": "4756968",
-                    "name": "Nyoman Insan",
-                    "position": "93",
-                    "point": "19131"
-                },
-                {
-                    "id": "1519498",
-                    "name": "mayuyu \u304a\u3057",
-                    "position": "94",
-                    "point": "19050"
-                },
-                {
-                    "id": "4826890",
-                    "name": "WAH KAK SIDIQ NIH!",
-                    "position": "95",
-                    "point": "19023"
-                },
-                {
-                    "id": "4849545",
-                    "name": "akbarfy",
-                    "position": "96",
-                    "point": "18984"
-                },
-                {
-                    "id": "4751849",
-                    "name": "Riyan\u26a1YAW",
-                    "position": "97",
-                    "point": "18894"
-                },
-                {
-                    "id": "4753295",
-                    "name": "KaptenYadi",
-                    "position": "98",
-                    "point": "18892"
-                },
-                {
-                    "id": "4760154",
-                    "name": "thehasya",
-                    "position": "99",
-                    "point": "18792"
-                },
-                {
-                    "id": "5108819",
-                    "name": "yoga",
-                    "position": "100",
-                    "point": "18767"
-                }
-            ]
-        },
-        {
             "name": "JKT48_Zee",
             "position": "3",
             "point": "2704244",
-            "gap": "10123567",
+            "gap": "10173143",
             "ranking": [
                 {
                     "id": "5161645",
@@ -4535,7 +4535,7 @@
                 },
                 {
                     "id": "4749486",
-                    "name": "Slebebewww",
+                    "name": "Slebewnya Anin",
                     "position": "46",
                     "point": "7070"
                 },
