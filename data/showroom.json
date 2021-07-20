@@ -1,13 +1,13 @@
 {
-    "last_update": "2021-07-20T13:10:02",
+    "last_update": "2021-07-20T13:20:01",
     "members": [
         {
             "name": "JKT48_Anin",
             "followers": "17094",
             "room_level": "163",
             "league_label": "",
-            "live_date": "1626782495",
-            "last_live": "1626782495",
+            "live_date": "1626786599",
+            "last_live": "1626786599",
             "total_point": "16280817",
             "total_live": 85,
             "ranking": [
@@ -290,7 +290,7 @@
             "league_label": "",
             "live_date": "",
             "last_live": "1626783287",
-            "total_point": "9124447",
+            "total_point": "9132334",
             "total_live": 61,
             "ranking": [
                 {
@@ -486,7 +486,7 @@
                     "id": "4764948",
                     "name": "ABIIII",
                     "position": "22",
-                    "point": "63397",
+                    "point": "63398",
                     "visit_count": "43",
                     "last_position": "22",
                     "last_point": "62195"
@@ -568,11 +568,11 @@
         {
             "name": "JKT48_Zee",
             "followers": "18738",
-            "room_level": "117",
+            "room_level": "118",
             "league_label": "",
             "live_date": "1626782467",
             "last_live": "1626782467",
-            "total_point": "11677079",
+            "total_point": "11717688",
             "total_live": 34,
             "ranking": [
                 {
@@ -854,7 +854,7 @@
             "league_label": "",
             "live_date": "1626782717",
             "last_live": "1626782717",
-            "total_point": "5835187",
+            "total_point": "5850648",
             "total_live": 40,
             "ranking": [
                 {
@@ -1134,10 +1134,10 @@
             "followers": "15501",
             "room_level": "47",
             "league_label": "",
-            "live_date": "1626782787",
-            "last_live": "1626782787",
-            "total_point": "4678622",
-            "total_live": 28,
+            "live_date": "1626787033",
+            "last_live": "1626787033",
+            "total_point": "4689277",
+            "total_live": 29,
             "ranking": [
                 {
                     "id": "785616",
@@ -1170,10 +1170,10 @@
                     "id": "4750127",
                     "name": "Raymond B",
                     "position": "4",
-                    "point": "111854",
+                    "point": "111860",
                     "visit_count": "26",
                     "last_position": "4",
-                    "last_point": "111851"
+                    "last_point": "111854"
                 },
                 {
                     "id": "4749068",
@@ -1260,16 +1260,16 @@
                     "id": "4864549",
                     "name": "ahsae",
                     "position": "14",
-                    "point": "43502",
+                    "point": "43506",
                     "visit_count": "20",
                     "last_position": "14",
-                    "last_point": "43500"
+                    "last_point": "43502"
                 },
                 {
                     "id": "4750758",
                     "name": "Hanzzuu_",
                     "position": "15",
-                    "point": "41288",
+                    "point": "41291",
                     "visit_count": "18",
                     "last_position": "15",
                     "last_point": "41288"
@@ -1290,34 +1290,34 @@
                     "point": "32602",
                     "visit_count": "23",
                     "last_position": "17",
-                    "last_point": "32601"
+                    "last_point": "32602"
+                },
+                {
+                    "id": "4960215",
+                    "name": "JaJoY",
+                    "position": "18",
+                    "point": "31658",
+                    "visit_count": "21",
+                    "last_position": "19",
+                    "last_point": "31368"
                 },
                 {
                     "id": "4750318",
                     "name": "Hantu Laut",
-                    "position": "18",
+                    "position": "19",
                     "point": "31406",
                     "visit_count": "26",
                     "last_position": "18",
                     "last_point": "31406"
                 },
                 {
-                    "id": "4960215",
-                    "name": "JaJoY",
-                    "position": "19",
-                    "point": "31368",
-                    "visit_count": "21",
-                    "last_position": "19",
-                    "last_point": "31368"
-                },
-                {
                     "id": "940727",
                     "name": "kuro337",
                     "position": "20",
-                    "point": "30414",
+                    "point": "30510",
                     "visit_count": "8",
                     "last_position": "20",
-                    "last_point": "30408"
+                    "last_point": "30414"
                 },
                 {
                     "id": "4756386",
@@ -1342,7 +1342,7 @@
                     "name": "agit",
                     "position": "23",
                     "point": "27443",
-                    "visit_count": "22",
+                    "visit_count": "23",
                     "last_position": "23",
                     "last_point": "27443"
                 },
@@ -1392,28 +1392,28 @@
                     "last_point": "25190"
                 },
                 {
+                    "id": "4756378",
+                    "name": "SemmyPrayitna",
+                    "position": "29",
+                    "point": "23748",
+                    "visit_count": "18",
+                    "last_position": "30",
+                    "last_point": "23565"
+                },
+                {
                     "id": "4750014",
                     "name": "Wisnu BS",
-                    "position": "29",
+                    "position": "30",
                     "point": "23743",
                     "visit_count": "23",
                     "last_position": "29",
                     "last_point": "23743"
-                },
-                {
-                    "id": "4756378",
-                    "name": "SemmyPrayitna",
-                    "position": "30",
-                    "point": "23565",
-                    "visit_count": "18",
-                    "last_position": "30",
-                    "last_point": "23517"
                 }
             ]
         },
         {
             "name": "JKT48_Feni",
-            "followers": "14119",
+            "followers": "14120",
             "room_level": "109",
             "league_label": "",
             "live_date": "",
@@ -1700,7 +1700,7 @@
             "league_label": "",
             "live_date": "1626783020",
             "last_live": "1626783020",
-            "total_point": "24064898",
+            "total_point": "24087290",
             "total_live": 90,
             "ranking": [
                 {
@@ -1980,10 +1980,10 @@
             "followers": "14170",
             "room_level": "58",
             "league_label": "",
-            "live_date": "",
-            "last_live": "1626617430",
+            "live_date": "1626786847",
+            "last_live": "1626786847",
             "total_point": "5725697",
-            "total_live": 37,
+            "total_live": 38,
             "ranking": [
                 {
                     "id": "4917308",
@@ -2008,8 +2008,8 @@
                     "name": "Eggy Ama \/ \u30a8\u30c3\u30ae\u30e3\u30de",
                     "position": "3",
                     "point": "99751",
-                    "visit_count": "24",
-                    "last_position": "4",
+                    "visit_count": "25",
+                    "last_position": "3",
                     "last_point": "99751"
                 },
                 {
@@ -2017,81 +2017,81 @@
                     "name": "kevingotama07",
                     "position": "4",
                     "point": "92855",
-                    "visit_count": "28",
-                    "last_position": "5",
-                    "last_point": "88356"
+                    "visit_count": "29",
+                    "last_position": "4",
+                    "last_point": "92855"
                 },
                 {
                     "id": "4770626",
                     "name": "Pu2t",
                     "position": "5",
                     "point": "86929",
-                    "visit_count": "7",
-                    "last_position": "6",
-                    "last_point": "86319"
+                    "visit_count": "8",
+                    "last_position": "5",
+                    "last_point": "86929"
                 },
                 {
                     "id": "4750424",
                     "name": "E  G  Y",
                     "position": "6",
                     "point": "82214",
-                    "visit_count": "36",
-                    "last_position": "7",
-                    "last_point": "80103"
+                    "visit_count": "37",
+                    "last_position": "6",
+                    "last_point": "82214"
                 },
                 {
                     "id": "4742174",
                     "name": "BanggDhoo",
                     "position": "7",
                     "point": "67072",
-                    "visit_count": "36",
-                    "last_position": "8",
-                    "last_point": "64978"
+                    "visit_count": "37",
+                    "last_position": "7",
+                    "last_point": "67072"
                 },
                 {
                     "id": "4774057",
                     "name": "Elri\u00e9mo",
                     "position": "8",
                     "point": "66997",
-                    "visit_count": "35",
-                    "last_position": "9",
-                    "last_point": "64679"
+                    "visit_count": "36",
+                    "last_position": "8",
+                    "last_point": "66997"
                 },
                 {
                     "id": "4756366",
                     "name": "Thomi Faisal Fakhruddin",
                     "position": "9",
                     "point": "64983",
-                    "visit_count": "37",
-                    "last_position": "10",
-                    "last_point": "63131"
+                    "visit_count": "38",
+                    "last_position": "9",
+                    "last_point": "64983"
                 },
                 {
                     "id": "5407978",
                     "name": "ranyaedwins",
                     "position": "10",
                     "point": "57891",
-                    "visit_count": "14",
-                    "last_position": "11",
-                    "last_point": "57647"
+                    "visit_count": "15",
+                    "last_position": "10",
+                    "last_point": "57891"
                 },
                 {
                     "id": "4751758",
                     "name": " theo.",
                     "position": "11",
                     "point": "57865",
-                    "visit_count": "37",
-                    "last_position": "12",
-                    "last_point": "56013"
+                    "visit_count": "38",
+                    "last_position": "11",
+                    "last_point": "57865"
                 },
                 {
                     "id": "4750237",
                     "name": "Rinoooooo",
                     "position": "12",
                     "point": "55965",
-                    "visit_count": "26",
-                    "last_position": "13",
-                    "last_point": "54113"
+                    "visit_count": "27",
+                    "last_position": "12",
+                    "last_point": "55965"
                 },
                 {
                     "id": "4757084",
@@ -2099,17 +2099,17 @@
                     "position": "13",
                     "point": "46599",
                     "visit_count": "32",
-                    "last_position": "14",
-                    "last_point": "44747"
+                    "last_position": "13",
+                    "last_point": "46599"
                 },
                 {
                     "id": "4752910",
                     "name": "A",
                     "position": "14",
                     "point": "43597",
-                    "visit_count": "37",
-                    "last_position": "15",
-                    "last_point": "42407"
+                    "visit_count": "38",
+                    "last_position": "14",
+                    "last_point": "43597"
                 },
                 {
                     "id": "4746555",
@@ -2117,26 +2117,26 @@
                     "position": "15",
                     "point": "39253",
                     "visit_count": "33",
-                    "last_position": "16",
-                    "last_point": "37999"
+                    "last_position": "15",
+                    "last_point": "39253"
                 },
                 {
                     "id": "4748802",
                     "name": "Rahmat",
                     "position": "16",
                     "point": "39183",
-                    "visit_count": "31",
-                    "last_position": "17",
-                    "last_point": "37933"
+                    "visit_count": "32",
+                    "last_position": "16",
+                    "last_point": "39183"
                 },
                 {
                     "id": "4754830",
                     "name": "Timothy Michael",
                     "position": "17",
                     "point": "37858",
-                    "visit_count": "27",
-                    "last_position": "18",
-                    "last_point": "35860"
+                    "visit_count": "28",
+                    "last_position": "17",
+                    "last_point": "37858"
                 },
                 {
                     "id": "4749291",
@@ -2144,8 +2144,8 @@
                     "position": "18",
                     "point": "34982",
                     "visit_count": "36",
-                    "last_position": "20",
-                    "last_point": "33459"
+                    "last_position": "18",
+                    "last_point": "34982"
                 },
                 {
                     "id": "4750931",
@@ -2161,9 +2161,9 @@
                     "name": "Yogolafia \u2b50",
                     "position": "20",
                     "point": "32453",
-                    "visit_count": "35",
-                    "last_position": "22",
-                    "last_point": "30361"
+                    "visit_count": "36",
+                    "last_position": "20",
+                    "last_point": "32453"
                 },
                 {
                     "id": "4835758",
@@ -2180,7 +2180,7 @@
                     "position": "22",
                     "point": "28430",
                     "visit_count": "27",
-                    "last_position": "23",
+                    "last_position": "22",
                     "last_point": "28430"
                 },
                 {
@@ -2189,7 +2189,7 @@
                     "position": "23",
                     "point": "28369",
                     "visit_count": "26",
-                    "last_position": "24",
+                    "last_position": "23",
                     "last_point": "28369"
                 },
                 {
@@ -2197,8 +2197,8 @@
                     "name": "rizal",
                     "position": "24",
                     "point": "27305",
-                    "visit_count": "35",
-                    "last_position": "25",
+                    "visit_count": "36",
+                    "last_position": "24",
                     "last_point": "27305"
                 },
                 {
@@ -2207,7 +2207,7 @@
                     "position": "25",
                     "point": "26856",
                     "visit_count": "23",
-                    "last_position": "26",
+                    "last_position": "25",
                     "last_point": "26856"
                 },
                 {
@@ -2215,8 +2215,8 @@
                     "name": "Cibobzz",
                     "position": "26",
                     "point": "26832",
-                    "visit_count": "20",
-                    "last_position": "27",
+                    "visit_count": "21",
+                    "last_position": "26",
                     "last_point": "26832"
                 },
                 {
@@ -2224,8 +2224,8 @@
                     "name": "Yohanes W",
                     "position": "27",
                     "point": "25399",
-                    "visit_count": "26",
-                    "last_position": "28",
+                    "visit_count": "27",
+                    "last_position": "27",
                     "last_point": "25399"
                 },
                 {
@@ -2234,7 +2234,7 @@
                     "position": "28",
                     "point": "25056",
                     "visit_count": "30",
-                    "last_position": "29",
+                    "last_position": "28",
                     "last_point": "25056"
                 },
                 {
@@ -2243,7 +2243,7 @@
                     "position": "29",
                     "point": "25000",
                     "visit_count": "1",
-                    "last_position": "30",
+                    "last_position": "29",
                     "last_point": "25000"
                 },
                 {
@@ -2252,14 +2252,14 @@
                     "position": "30",
                     "point": "24896",
                     "visit_count": "21",
-                    "last_position": "0",
-                    "last_point": "0"
+                    "last_position": "30",
+                    "last_point": "24896"
                 }
             ]
         },
         {
             "name": "JKT48_Celine",
-            "followers": "14602",
+            "followers": "14608",
             "room_level": "55",
             "league_label": "",
             "live_date": "",
@@ -2307,7 +2307,7 @@
                     "id": "5500231",
                     "name": "elcekahaaaaa",
                     "position": "5",
-                    "point": "66263",
+                    "point": "66265",
                     "visit_count": "8",
                     "last_position": "7",
                     "last_point": "62350"
@@ -2316,7 +2316,7 @@
                     "id": "2707649",
                     "name": "Jordan Petualang",
                     "position": "6",
-                    "point": "64568",
+                    "point": "64570",
                     "visit_count": "29",
                     "last_position": "6",
                     "last_point": "63348"
@@ -2496,7 +2496,7 @@
                     "id": "4746436",
                     "name": "Stefanus oshinya Celine",
                     "position": "26",
-                    "point": "35575",
+                    "point": "35578",
                     "visit_count": "27",
                     "last_position": "26",
                     "last_point": "34353"
@@ -2541,7 +2541,7 @@
         },
         {
             "name": "JKT48_Christy",
-            "followers": "17394",
+            "followers": "17402",
             "room_level": "99",
             "league_label": "",
             "live_date": "1626786226",
@@ -2828,7 +2828,7 @@
             "league_label": "",
             "live_date": "1626785978",
             "last_live": "1626785978",
-            "total_point": "6327539",
+            "total_point": "6355361",
             "total_live": 55,
             "ranking": [
                 {
@@ -3096,7 +3096,7 @@
         },
         {
             "name": "JKT48_Eli",
-            "followers": "13205",
+            "followers": "13206",
             "room_level": "47",
             "league_label": "",
             "live_date": "",
@@ -4498,11 +4498,11 @@
         {
             "name": "JKT48_Chika",
             "followers": "21345",
-            "room_level": "181",
+            "room_level": "182",
             "league_label": "",
             "live_date": "1626782883",
             "last_live": "1626782883",
-            "total_point": "18018005",
+            "total_point": "18115554",
             "total_live": 41,
             "ranking": [
                 {
@@ -5062,11 +5062,11 @@
         {
             "name": "JKT48_Mira",
             "followers": "15104",
-            "room_level": "100",
+            "room_level": "101",
             "league_label": "",
             "live_date": "1626786314",
             "last_live": "1626786314",
-            "total_point": "9947596",
+            "total_point": "10003701",
             "total_live": 43,
             "ranking": [
                 {
@@ -5612,14 +5612,14 @@
             "league_label": "",
             "live_date": "",
             "last_live": "1626779102",
-            "total_point": "11868155",
+            "total_point": "11872761",
             "total_live": 83,
             "ranking": [
                 {
                     "id": "4754853",
                     "name": "ilovejkt48",
                     "position": "1",
-                    "point": "1613301",
+                    "point": "1613302",
                     "visit_count": "46",
                     "last_position": "1",
                     "last_point": "1548150"
@@ -5689,7 +5689,7 @@
                 },
                 {
                     "id": "4755205",
-                    "name": "A M R U L San",
+                    "name": "A M R U L Jelas Sayangku",
                     "position": "9",
                     "point": "109776",
                     "visit_count": "76",
@@ -5727,7 +5727,7 @@
                     "id": "1875953",
                     "name": "Arzee",
                     "position": "13",
-                    "point": "99218",
+                    "point": "99220",
                     "visit_count": "70",
                     "last_position": "13",
                     "last_point": "95623"
@@ -6172,11 +6172,11 @@
         {
             "name": "JKT48_Fiony",
             "followers": "16420",
-            "room_level": "137",
+            "room_level": "138",
             "league_label": "",
             "live_date": "1626784382",
             "last_live": "1626784382",
-            "total_point": "13649226",
+            "total_point": "13709926",
             "total_live": 44,
             "ranking": [
                 {
@@ -6826,7 +6826,7 @@
                 },
                 {
                     "id": "4755205",
-                    "name": "A M R U L San",
+                    "name": "A M R U L Jelas Sayangku",
                     "position": "11",
                     "point": "49807",
                     "visit_count": "26",
@@ -7009,11 +7009,11 @@
         {
             "name": "JKT48_Indah",
             "followers": "12313",
-            "room_level": "69",
+            "room_level": "70",
             "league_label": "",
             "live_date": "1626784546",
             "last_live": "1626784546",
-            "total_point": "6876641",
+            "total_point": "6907059",
             "total_live": 52,
             "ranking": [
                 {
@@ -7290,65 +7290,65 @@
         },
         {
             "name": "JKT48_Jessi",
-            "followers": "12764",
+            "followers": "12771",
             "room_level": "93",
             "league_label": "",
-            "live_date": "1626782511",
+            "live_date": "",
             "last_live": "1626782511",
             "total_point": "9299090",
-            "total_live": 69,
+            "total_live": 70,
             "ranking": [
                 {
                     "id": "4741806",
-                    "name": "#N",
+                    "name": "omurice",
                     "position": "1",
-                    "point": "159125",
-                    "visit_count": "67",
+                    "point": "160905",
+                    "visit_count": "68",
                     "last_position": "1",
-                    "last_point": "156673"
+                    "last_point": "159125"
                 },
                 {
                     "id": "4751849",
                     "name": "Riyan\u26a1YAW",
                     "position": "2",
-                    "point": "158116",
-                    "visit_count": "69",
+                    "point": "159896",
+                    "visit_count": "70",
                     "last_position": "2",
-                    "last_point": "155307"
+                    "last_point": "158116"
                 },
                 {
                     "id": "4784112",
                     "name": "veronica",
                     "position": "3",
-                    "point": "155210",
-                    "visit_count": "68",
+                    "point": "156990",
+                    "visit_count": "69",
                     "last_position": "3",
-                    "last_point": "152218"
+                    "last_point": "155210"
                 },
                 {
                     "id": "4748961",
                     "name": "Hus nya Jc-Krispi",
                     "position": "4",
-                    "point": "141436",
-                    "visit_count": "68",
+                    "point": "141546",
+                    "visit_count": "69",
                     "last_position": "4",
-                    "last_point": "138447"
+                    "last_point": "141436"
                 },
                 {
                     "id": "3031927",
                     "name": "dialektikaksara kgn wonyoung",
                     "position": "5",
-                    "point": "120256",
-                    "visit_count": "60",
+                    "point": "122008",
+                    "visit_count": "61",
                     "last_position": "5",
-                    "last_point": "117051"
+                    "last_point": "120256"
                 },
                 {
                     "id": "4750630",
                     "name": "ANGGAZEL",
                     "position": "6",
-                    "point": "116346",
-                    "visit_count": "65",
+                    "point": "116407",
+                    "visit_count": "66",
                     "last_position": "6",
                     "last_point": "116346"
                 },
@@ -7356,10 +7356,10 @@
                     "id": "4749800",
                     "name": "RENDY THE BULLY",
                     "position": "7",
-                    "point": "112666",
-                    "visit_count": "67",
+                    "point": "113786",
+                    "visit_count": "68",
                     "last_position": "7",
-                    "last_point": "110835"
+                    "last_point": "112666"
                 },
                 {
                     "id": "4750403",
@@ -7374,46 +7374,46 @@
                     "id": "4745888",
                     "name": "Azerazer",
                     "position": "9",
-                    "point": "100268",
-                    "visit_count": "68",
+                    "point": "101459",
+                    "visit_count": "69",
                     "last_position": "9",
-                    "last_point": "99027"
+                    "last_point": "100268"
                 },
                 {
                     "id": "4742690",
                     "name": "Cimit",
                     "position": "10",
-                    "point": "99188",
-                    "visit_count": "62",
-                    "last_position": "11",
-                    "last_point": "96736"
+                    "point": "100423",
+                    "visit_count": "63",
+                    "last_position": "10",
+                    "last_point": "99188"
                 },
                 {
                     "id": "4749769",
                     "name": "Sandesande",
                     "position": "11",
-                    "point": "99118",
-                    "visit_count": "62",
-                    "last_position": "10",
-                    "last_point": "97283"
+                    "point": "100306",
+                    "visit_count": "63",
+                    "last_position": "11",
+                    "last_point": "99118"
                 },
                 {
                     "id": "4750430",
                     "name": "Mufqi",
                     "position": "12",
-                    "point": "93210",
-                    "visit_count": "48",
+                    "point": "93910",
+                    "visit_count": "49",
                     "last_position": "12",
-                    "last_point": "92546"
+                    "last_point": "93210"
                 },
                 {
                     "id": "4787739",
                     "name": "7Adri",
                     "position": "13",
-                    "point": "92746",
-                    "visit_count": "68",
+                    "point": "93385",
+                    "visit_count": "69",
                     "last_position": "13",
-                    "last_point": "90294"
+                    "last_point": "92746"
                 },
                 {
                     "id": "4747789",
@@ -7421,8 +7421,8 @@
                     "position": "14",
                     "point": "83905",
                     "visit_count": "51",
-                    "last_position": "16",
-                    "last_point": "80163"
+                    "last_position": "14",
+                    "last_point": "83905"
                 },
                 {
                     "id": "4774198",
@@ -7430,7 +7430,7 @@
                     "position": "15",
                     "point": "82925",
                     "visit_count": "17",
-                    "last_position": "14",
+                    "last_position": "15",
                     "last_point": "82925"
                 },
                 {
@@ -7439,7 +7439,7 @@
                     "position": "16",
                     "point": "81713",
                     "visit_count": "46",
-                    "last_position": "15",
+                    "last_position": "16",
                     "last_point": "81713"
                 },
                 {
@@ -7447,36 +7447,36 @@
                     "name": "Yuza\u22bfCukupAninAja",
                     "position": "17",
                     "point": "76693",
-                    "visit_count": "51",
+                    "visit_count": "52",
                     "last_position": "17",
                     "last_point": "76693"
                 },
                 {
+                    "id": "4750796",
+                    "name": "Arlyan Zaky",
+                    "position": "18",
+                    "point": "71111",
+                    "visit_count": "61",
+                    "last_position": "20",
+                    "last_point": "70460"
+                },
+                {
                     "id": "4750014",
                     "name": "Wisnu BS",
-                    "position": "18",
+                    "position": "19",
                     "point": "70641",
-                    "visit_count": "62",
-                    "last_position": "19",
-                    "last_point": "70178"
+                    "visit_count": "63",
+                    "last_position": "18",
+                    "last_point": "70641"
                 },
                 {
                     "id": "4835758",
                     "name": "Prince Tamara",
-                    "position": "19",
+                    "position": "20",
                     "point": "70499",
                     "visit_count": "2",
-                    "last_position": "18",
+                    "last_position": "19",
                     "last_point": "70499"
-                },
-                {
-                    "id": "4750796",
-                    "name": "Arlyan Zaky",
-                    "position": "20",
-                    "point": "70460",
-                    "visit_count": "60",
-                    "last_position": "20",
-                    "last_point": "68041"
                 },
                 {
                     "id": "4782855",
@@ -7500,55 +7500,55 @@
                     "id": "4753831",
                     "name": "\u767c",
                     "position": "23",
-                    "point": "64071",
-                    "visit_count": "56",
+                    "point": "64219",
+                    "visit_count": "57",
                     "last_position": "23",
-                    "last_point": "63867"
+                    "last_point": "64071"
+                },
+                {
+                    "id": "4749072",
+                    "name": "\u2728 confused \u2728 catt \u2728",
+                    "position": "24",
+                    "point": "63088",
+                    "visit_count": "61",
+                    "last_position": "25",
+                    "last_point": "62316"
                 },
                 {
                     "id": "4752799",
                     "name": "Ish",
-                    "position": "24",
+                    "position": "25",
                     "point": "62716",
                     "visit_count": "40",
                     "last_position": "24",
                     "last_point": "62716"
                 },
                 {
-                    "id": "4749072",
-                    "name": "\u2728 confused \u2728 catt \u2728",
-                    "position": "25",
-                    "point": "62316",
-                    "visit_count": "60",
-                    "last_position": "26",
-                    "last_point": "60651"
+                    "id": "4669203",
+                    "name": "RioT",
+                    "position": "26",
+                    "point": "62346",
+                    "visit_count": "44",
+                    "last_position": "27",
+                    "last_point": "59746"
                 },
                 {
                     "id": "4748936",
                     "name": "Ilham Akbar",
-                    "position": "26",
+                    "position": "27",
                     "point": "61114",
                     "visit_count": "52",
-                    "last_position": "25",
+                    "last_position": "26",
                     "last_point": "61114"
-                },
-                {
-                    "id": "4669203",
-                    "name": "RioT",
-                    "position": "27",
-                    "point": "59746",
-                    "visit_count": "43",
-                    "last_position": "27",
-                    "last_point": "58371"
                 },
                 {
                     "id": "4751755",
                     "name": "David",
                     "position": "28",
                     "point": "58770",
-                    "visit_count": "62",
+                    "visit_count": "63",
                     "last_position": "28",
-                    "last_point": "57092"
+                    "last_point": "58770"
                 },
                 {
                     "id": "4788176",
@@ -7744,7 +7744,7 @@
                 },
                 {
                     "id": "4741806",
-                    "name": "omurice",
+                    "name": "#N",
                     "position": "19",
                     "point": "74014",
                     "visit_count": "49",
@@ -8136,7 +8136,7 @@
         },
         {
             "name": "JKT48_Lulu",
-            "followers": "11072",
+            "followers": "11077",
             "room_level": "44",
             "league_label": "",
             "live_date": "1626784388",
@@ -8705,7 +8705,7 @@
             "league_label": "",
             "live_date": "1626784697",
             "last_live": "1626784697",
-            "total_point": "7155638",
+            "total_point": "7191347",
             "total_live": 50,
             "ranking": [
                 {
@@ -8974,11 +8974,11 @@
         {
             "name": "JKT48_Ara",
             "followers": "20103",
-            "room_level": "147",
+            "room_level": "148",
             "league_label": "",
             "live_date": "1626783073",
             "last_live": "1626783073",
-            "total_point": "14625799",
+            "total_point": "14717683",
             "total_live": 33,
             "ranking": [
                 {
