@@ -1645,13 +1645,9 @@
         "nickname": "Ara",
         "gen": 8,
         "birth_date": "2003-08-05",
-        "active": true,
-        "twitter": "@N_AraJKT48",
-        "instagram": "@jkt48.ara",
-        "tiktok": "@ara.jkt48",
-        "teams": [
-            "JKT48 One"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1470?lang=id",
+        "last_date": "2021-08-25"
     },
     {
         "name": "Adzana Shaliha",
