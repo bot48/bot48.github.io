@@ -1,5 +1,5 @@
 {
-    "last_update": "2021-10-19T11:00:02",
+    "last_update": "2021-10-19T11:10:01",
     "members": [
         {
             "name": "JKT48_Anin",
@@ -4791,8 +4791,8 @@
             "followers": "18192",
             "room_level": "106",
             "league_label": "",
-            "live_date": "",
-            "last_live": "1634563832",
+            "live_date": "1634641715",
+            "last_live": "1634641715",
             "total_point": "10577143",
             "total_live": 60,
             "ranking": [
@@ -6924,9 +6924,18 @@
                     "last_point": "39464"
                 },
                 {
+                    "id": "4784112",
+                    "name": "veronica",
+                    "position": "21",
+                    "point": "32710",
+                    "visit_count": "31",
+                    "last_position": "22",
+                    "last_point": "32060"
+                },
+                {
                     "id": "4778277",
                     "name": "Hanief Haq",
-                    "position": "21",
+                    "position": "22",
                     "point": "32704",
                     "visit_count": "23",
                     "last_position": "21",
@@ -6935,26 +6944,17 @@
                 {
                     "id": "4748961",
                     "name": "HusHusHusHusHusHusHusHusHusHus",
-                    "position": "22",
+                    "position": "23",
                     "point": "32254",
                     "visit_count": "30",
                     "last_position": "23",
                     "last_point": "31634"
                 },
                 {
-                    "id": "4784112",
-                    "name": "veronica",
-                    "position": "23",
-                    "point": "32120",
-                    "visit_count": "31",
-                    "last_position": "22",
-                    "last_point": "32060"
-                },
-                {
                     "id": "4752343",
                     "name": "RizkyKJ",
                     "position": "24",
-                    "point": "31503",
+                    "point": "32103",
                     "visit_count": "26",
                     "last_position": "25",
                     "last_point": "30313"
@@ -6972,7 +6972,7 @@
                     "id": "4750073",
                     "name": "A SOLALI",
                     "position": "26",
-                    "point": "30335",
+                    "point": "30695",
                     "visit_count": "22",
                     "last_position": "28",
                     "last_point": "29567"
@@ -6999,7 +6999,7 @@
                     "id": "4750640",
                     "name": "TAKA-san",
                     "position": "29",
-                    "point": "29746",
+                    "point": "30130",
                     "visit_count": "26",
                     "last_position": "30",
                     "last_point": "28506"
