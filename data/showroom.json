@@ -1,5 +1,5 @@
 {
-    "last_update": "2021-12-01T13:30:01",
+    "last_update": "2021-12-01T13:40:01",
     "members": [
         {
             "name": "JKT48_Anin",
@@ -1242,7 +1242,7 @@
                     "id": "4864549",
                     "name": "ahsae",
                     "position": "12",
-                    "point": "120610",
+                    "point": "120613",
                     "visit_count": "76",
                     "last_position": "12",
                     "last_point": "119423"
@@ -1293,22 +1293,22 @@
                     "last_point": "83508"
                 },
                 {
+                    "id": "4787841",
+                    "name": "Hasbi LH\u2122",
+                    "position": "18",
+                    "point": "81872",
+                    "visit_count": "76",
+                    "last_position": "19",
+                    "last_point": "81222"
+                },
+                {
                     "id": "4749068",
                     "name": "Mchmdfajarf",
-                    "position": "18",
+                    "position": "19",
                     "point": "81670",
                     "visit_count": "25",
                     "last_position": "18",
                     "last_point": "81670"
-                },
-                {
-                    "id": "4787841",
-                    "name": "Hasbi LH\u2122",
-                    "position": "19",
-                    "point": "81572",
-                    "visit_count": "76",
-                    "last_position": "19",
-                    "last_point": "81222"
                 },
                 {
                     "id": "4754892",
@@ -1332,7 +1332,7 @@
                     "id": "5558525",
                     "name": "Kia",
                     "position": "22",
-                    "point": "75200",
+                    "point": "75260",
                     "visit_count": "64",
                     "last_position": "22",
                     "last_point": "74020"
@@ -1341,7 +1341,7 @@
                     "id": "4750318",
                     "name": "Hantu Laut",
                     "position": "23",
-                    "point": "74145",
+                    "point": "74578",
                     "visit_count": "69",
                     "last_position": "23",
                     "last_point": "73387"
@@ -1359,7 +1359,7 @@
                     "id": "4779765",
                     "name": "florencia.s",
                     "position": "25",
-                    "point": "70967",
+                    "point": "70969",
                     "visit_count": "58",
                     "last_position": "25",
                     "last_point": "69624"
@@ -1368,7 +1368,7 @@
                     "id": "5419064",
                     "name": "abrar",
                     "position": "26",
-                    "point": "67442",
+                    "point": "67443",
                     "visit_count": "54",
                     "last_position": "26",
                     "last_point": "66048"
@@ -1377,7 +1377,7 @@
                     "id": "4768371",
                     "name": "Alma",
                     "position": "27",
-                    "point": "65427",
+                    "point": "65433",
                     "visit_count": "72",
                     "last_position": "27",
                     "last_point": "63939"
@@ -3936,8 +3936,8 @@
             "followers": "30196",
             "room_level": "306",
             "league_label": "",
-            "live_date": "",
-            "last_live": "1638277974",
+            "live_date": "1638365365",
+            "last_live": "1638365365",
             "total_point": "30586903",
             "total_live": 112,
             "ranking": [
