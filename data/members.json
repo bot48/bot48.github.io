@@ -107,8 +107,9 @@
         "instagram": "@jkt48gaby",
         "tiktok": "@gaby.jkt48",
         "teams": [
-            "JKT48 One"
-        ]
+            "JKT48"
+        ],
+        "announce_grad": true
     },
     {
         "name": "Ghaida Farisya",
@@ -577,8 +578,9 @@
         "instagram": "@jkt48anin",
         "tiktok": "@aninjkt48",
         "teams": [
-            "JKT48 One"
-        ]
+            "JKT48"
+        ],
+        "announce_grad": true
     },
     {
         "name": "Ayu Safira Oktaviani",
@@ -626,7 +628,7 @@
         "instagram": "@jkt48feni",
         "tiktok": "@fenijkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -639,7 +641,7 @@
         "instagram": "@jkt48sisca",
         "tiktok": "@siscajkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -769,7 +771,7 @@
         "instagram": "@jkt48shani",
         "tiktok": "@shanijkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -782,7 +784,7 @@
         "instagram": "@jkt48gracia",
         "tiktok": "@graciajkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -867,7 +869,7 @@
         "instagram": "@jkt48cinhap",
         "tiktok": "@cindyjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -897,7 +899,7 @@
         "instagram": "@jkt48jinan",
         "tiktok": "@jinanjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -944,7 +946,7 @@
         "twitter": "@Celine_JKT48",
         "instagram": "@jkt48.celine",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1015,13 +1017,9 @@
         "nickname": "Eve",
         "gen": 5,
         "birth_date": "2003-10-17",
-        "active": true,
-        "twitter": "@Eve_JKT48",
-        "instagram": "@jkt48.eve",
-        "tiktok": "@evejkt48",
-        "teams": [
-            "JKT48 One"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1529?lang=id",
+        "last_date": "2022-02-12"
     },
     {
         "name": "Gabryela Marcelina",
@@ -1136,12 +1134,9 @@
         "nickname": "Ariel",
         "gen": 6,
         "birth_date": "2000-05-12",
-        "active": true,
-        "twitter": "@C_ArielJKT48",
-        "instagram": "@jkt48ariel",
-        "teams": [
-            "JKT48 One"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1529?lang=id",
+        "last_date": "2022-02-12"
     },
     {
         "name": "Denise Caroline",
@@ -1180,7 +1175,7 @@
         "instagram": "@jkt48gita",
         "tiktok": "@gitajkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1265,7 +1260,7 @@
         "instagram": "@jkt48.christy",
         "tiktok": "@christyjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1287,7 +1282,7 @@
         "instagram": "@jkt48.zee",
         "tiktok": "@zeejkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1309,7 +1304,7 @@
         "instagram": "@jkt48.dey",
         "tiktok": "@deyjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1340,7 +1335,7 @@
         "instagram": "@jkt48.olla",
         "tiktok": "@ollajkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1353,7 +1348,7 @@
         "instagram": "@jkt48.freya",
         "tiktok": "@freyajkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1375,7 +1370,7 @@
         "instagram": "@jkt48.eli",
         "tiktok": "@elijkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1388,7 +1383,7 @@
         "instagram": "@jkt48.jessi",
         "tiktok": "@jessijkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1400,7 +1395,7 @@
         "twitter": "@C_JesslynJKT48",
         "instagram": "@jkt48.jesslyn",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1422,7 +1417,7 @@
         "instagram": "@jkt48.muthe_",
         "tiktok": "@muthejkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1462,7 +1457,7 @@
         "instagram": "@jkt48.chika",
         "tiktok": "@chikajkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1479,13 +1474,9 @@
         "nickname": "Mira",
         "gen": 8,
         "birth_date": "2000-10-12",
-        "active": true,
-        "twitter": "@F_MiraJKT48",
-        "instagram": "@jkt48.mira",
-        "tiktok": "@mirajkt48",
-        "teams": [
-            "JKT48 One"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1497?lang=id",
+        "last_date": "2021-11-27"
     },
     {
         "name": "Cindy Nugroho",
@@ -1506,7 +1497,7 @@
         "instagram": "@jkt48.oniel",
         "tiktok": "@onieljkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1537,7 +1528,7 @@
         "instagram": "@jkt48.fiony",
         "tiktok": "@fionyjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1549,7 +1540,7 @@
         "twitter": "@S_FloraJKT48",
         "instagram": "@jkt48.flora",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1579,7 +1570,7 @@
         "twitter": "@A_LuluJKT48",
         "instagram": "@jkt48.lulu",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1619,7 +1610,7 @@
         "instagram": "@jkt48.adel",
         "tiktok": "@adeljkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1659,7 +1650,7 @@
         "instagram": "@jkt48.ashel",
         "tiktok": "@asheljkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1699,7 +1690,7 @@
         "instagram": "@jkt48indah_",
         "tiktok": "@indahjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1721,7 +1712,7 @@
         "instagram": "@jkt48.kathrina",
         "tiktok": "@kathrinjkt48",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1733,7 +1724,7 @@
         "twitter": "@L_MarshaJKT48",
         "instagram": "@jkt48.marsha",
         "teams": [
-            "JKT48 One"
+            "JKT48"
         ]
     },
     {
@@ -1793,33 +1784,37 @@
         "name": "Alia Giselle Maharani",
         "nickname": "Alia",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Amanda Puspita Sukma Mulyadewi",
         "nickname": "Amanda",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Aurellia",
         "nickname": "Aurellia",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Calista Alifia Wardhana",
         "nickname": "Calista",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Danessa Valerie Hertanto",
@@ -1833,25 +1828,28 @@
         "name": "Gabriela Abigail Mawengkang",
         "nickname": "Gabriela",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Indira Putri Seruni",
         "nickname": "Indira",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Jesslyn Elly",
         "nickname": "Jesslyn",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     },
     {
         "name": "Naura Safinatunnajah",
@@ -1865,8 +1863,9 @@
         "name": "Raisha Syifa Wardhana",
         "nickname": "Abieza",
         "gen": 10,
-        "active": false,
-        "link_graduation": "https://jkt48.com/news/detail/id/1362?lang=id",
-        "last_date": "2020-12-04"
+        "active": true,
+        "teams": [
+            "Trainee"
+        ]
     }
 ]
