@@ -102,14 +102,9 @@
         "nickname": "Gaby",
         "gen": 1,
         "birth_date": "1998-04-11",
-        "active": true,
-        "twitter": "@gabyJKT48",
-        "instagram": "@jkt48gaby",
-        "tiktok": "@gaby.jkt48",
-        "teams": [
-            "JKT48"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1592?lang=id",
+        "last_date": "2022-08-14"
     },
     {
         "name": "Ghaida Farisya",
@@ -573,14 +568,9 @@
         "nickname": "Anin",
         "gen": 3,
         "birth_date": "1999-01-05",
-        "active": true,
-        "twitter": "@R_AninJKT48",
-        "instagram": "@jkt48anin",
-        "tiktok": "@aninjkt48",
-        "teams": [
-            "JKT48"
-        ],
-        "announce_grad": true
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1557?lang=id",
+        "last_date": "2022-05-29"
     },
     {
         "name": "Ayu Safira Oktaviani",
@@ -636,13 +626,9 @@
         "nickname": "Sisca",
         "gen": 3,
         "birth_date": "2000-02-24",
-        "active": true,
-        "twitter": "@S_SiscaJKT48",
-        "instagram": "@jkt48sisca",
-        "tiktok": "@siscajkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1693?lang=id",
+        "last_date": "2023-09-02"
     },
     {
         "name": "Indah Permata Sari",
@@ -766,13 +752,9 @@
         "nickname": "Shani",
         "gen": 3,
         "birth_date": "1998-10-05",
-        "active": true,
-        "twitter": "@N_ShaniJKT48",
-        "instagram": "@jkt48shani",
-        "tiktok": "@shanijkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1761?lang=id",
+        "last_date": "2024-05-05"
     },
     {
         "name": "Shania Gracia",
@@ -864,13 +846,9 @@
         "nickname": "CinHap",
         "gen": 4,
         "birth_date": "1998-09-13",
-        "active": true,
-        "twitter": "@CindyH_JKT48",
-        "instagram": "@jkt48cinhap",
-        "tiktok": "@cindyjkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1583?lang=id",
+        "last_date": "2022-07-17"
     },
     {
         "name": "Fidly Immanda Azzahra",
@@ -894,13 +872,9 @@
         "nickname": "Jinan",
         "gen": 4,
         "birth_date": "1999-06-08",
-        "active": true,
-        "twitter": "@Jinan_JKT48",
-        "instagram": "@jkt48jinan",
-        "tiktok": "@jinanjkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1643?lang=id",
+        "last_date": "2023-03-18"
     },
     {
         "name": "Made Devi Ranita Ningtara",
@@ -942,12 +916,9 @@
         "nickname": "Celine",
         "gen": 4,
         "birth_date": "2001-08-21",
-        "active": true,
-        "twitter": "@Celine_JKT48",
-        "instagram": "@jkt48.celine",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1593?lang=id",
+        "last_date": "2022-08-13"
     },
     {
         "name": "Zahra Yuriva Dermawan",
@@ -1283,7 +1254,8 @@
         "tiktok": "@zeejkt48",
         "teams": [
             "JKT48"
-        ]
+        ],
+        "announce_grad": true
     },
     {
         "name": "Calista Lea",
@@ -1299,13 +1271,9 @@
         "nickname": "Dey",
         "gen": 7,
         "birth_date": "2001-08-18",
-        "active": true,
-        "twitter": "@A_DeyJKT48",
-        "instagram": "@jkt48.dey",
-        "tiktok": "@deyjkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1637?lang=id",
+        "last_date": "2023-02-23"
     },
     {
         "name": "Febi Komaril",
@@ -1391,12 +1359,9 @@
         "nickname": "Jesslyn",
         "gen": 7,
         "birth_date": "2000-04-20",
-        "active": true,
-        "twitter": "@C_JesslynJKT48",
-        "instagram": "@jkt48.jesslyn",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1687?lang=id",
+        "last_date": "2023-07-29"
     },
     {
         "name": "Kanya Caya",
@@ -1452,13 +1417,9 @@
         "nickname": "Chika",
         "gen": 7,
         "birth_date": "2002-09-24",
-        "active": true,
-        "twitter": "@Y_ChikaJKT48",
-        "instagram": "@jkt48.chika",
-        "tiktok": "@chikajkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1733?lang=id",
+        "last_date": "2024-01-20"
     },
     {
         "name": "Amanina Afiqah",
@@ -1645,13 +1606,9 @@
         "nickname": "Ashel",
         "gen": 9,
         "birth_date": "2005-01-08",
-        "active": true,
-        "twitter": "@S_AshelJKT48",
-        "instagram": "@jkt48.ashel",
-        "tiktok": "@asheljkt48",
-        "teams": [
-            "JKT48"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1739?lang=id",
+        "last_date": "2024-02-11"
     },
     {
         "name": "Caithlyn Gwyneth",
@@ -1785,10 +1742,9 @@
         "nickname": "Alia",
         "gen": 10,
         "birth_date": "2006-12-20",
-        "active": true,
-        "teams": [
-            "Trainee"
-        ]
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1655?lang=id",
+        "last_date": "2023-04-03"
     },
     {
         "name": "Amanda Puspita Sukma Mulyadewi",
@@ -1796,28 +1752,37 @@
         "gen": 10,
         "birth_date": "2004-12-17",
         "active": true,
+        "twitter": "@PS_AmandaJKT48",
+        "instagram": "@jkt48.amanda.s",
+        "tiktok": "@jkt48.amanda.s",
         "teams": [
-            "Trainee"
+            "JKT48"
         ]
     },
     {
         "name": "Aurellia",
-        "nickname": "Aurellia",
+        "nickname": "Lia",
         "gen": 10,
         "birth_date": "2002-10-29",
         "active": true,
+        "twitter": "@AU_LiaJKT48",
+        "instagram": "@jkt48.aurellia_",
+        "tiktok": "@jkt48.aurellia_",
         "teams": [
-            "Trainee"
+            "JKT48"
         ]
     },
     {
         "name": "Calista Alifia Wardhana",
-        "nickname": "Calista",
+        "nickname": "Callie",
         "gen": 10,
         "birth_date": "2005-08-08",
         "active": true,
+        "twitter": "@AW_CallieJKT48",
+        "instagram": "@jkt48.callie.a",
+        "tiktok": "@jkt48.callie.a",
         "teams": [
-            "Trainee"
+            "JKT48"
         ]
     },
     {
@@ -1830,12 +1795,15 @@
     },
     {
         "name": "Gabriela Abigail Mawengkang",
-        "nickname": "Gabriela",
+        "nickname": "Ella",
         "gen": 10,
         "birth_date": "2006-08-07",
         "active": true,
+        "twitter": "@AM_EllaJKT48",
+        "instagram": "@jkt48.ella.a",
+        "tiktok": "@jkt48.ella.a",
         "teams": [
-            "Trainee"
+            "JKT48"
         ]
     },
     {
@@ -1844,18 +1812,24 @@
         "gen": 10,
         "birth_date": "2004-04-26",
         "active": true,
+        "twitter": "@SP_IndiraJKT48",
+        "instagram": "@jkt48.indira.s",
+        "tiktok": "@jkt48.indira.s",
         "teams": [
-            "Trainee"
+            "JKT48"
         ]
     },
     {
         "name": "Jesslyn Elly",
-        "nickname": "Jesslyn",
+        "nickname": "Lyn",
         "gen": 10,
         "birth_date": "2001-09-13",
         "active": true,
+        "twitter": "@SE_LynJKT48",
+        "instagram": "@jkt48.indira.s",
+        "tiktok": "@jkt48.indira.s",
         "teams": [
-            "Trainee"
+            "JKT48"
         ]
     },
     {
@@ -1872,6 +1846,408 @@
         "gen": 10,
         "birth_date": "2007-11-11",
         "active": true,
+        "twitter": "@SW_RaishaJKT48",
+        "instagram": "@jkt48.raisha.s",
+        "tiktok": "@jkt48.raisha.s",
+        "teams": [
+            "JKT48"
+        ]
+    },
+    {
+        "name": "Alya Amanda",
+        "nickname": "Alya",
+        "gen": 11,
+        "birth_date": "2006-08-26",
+        "active": true,
+        "twitter": "@AA_AlyaJKT48",
+        "instagram": "@jkt48.alya_",
+        "tiktok": "@alyajkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Anindya Ramadhani",
+        "nickname": "Anin",
+        "gen": 11,
+        "birth_date": "2005-10-18",
+        "active": true,
+        "twitter": "@AR_AnindyaJKT48",
+        "instagram": "@jkt48.anindya_",
+        "tiktok": "@anindyajkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Aulia Asyira",
+        "nickname": "Aulia",
+        "gen": 11,
+        "birth_date": "2007-01-19",
+        "active": false,
+        "link_graduation": "https://jkt48.com/news/detail/id/1655?lang=id",
+        "last_date": "2024-04-03"
+    },
+    {
+        "name": "Cathleen Nixie",
+        "nickname": "Cathy",
+        "gen": 11,
+        "birth_date": "2009-05-29",
+        "active": true,
+        "twitter": "@N_CathyJKT48",
+        "instagram": "@jkt48.cathy",
+        "tiktok": "@cathyjkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Celline Thefani",
+        "nickname": "Elin",
+        "gen": 11,
+        "birth_date": "2007-04-09",
+        "active": true,
+        "twitter": "@N_CathyJKT48",
+        "instagram": "@jkt48.cathy",
+        "tiktok": "@cathyjkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Chelsea Davina",
+        "nickname": "Chelsea",
+        "gen": 11,
+        "birth_date": "2009-12-23",
+        "active": true,
+        "twitter": "@DC_ChelseaJKT48",
+        "instagram": "@jkt48.chelsea",
+        "tiktok": "@_chelseajkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Cynthia Yaputera",
+        "nickname": "Cynthia",
+        "gen": 11,
+        "birth_date": "2003-11-22",
+        "active": true,
+        "twitter": "@Y_CynthiaJKT48",
+        "instagram": "@jkt48.cynthia",
+        "tiktok": "@cynthiajkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Dena Natalia",
+        "nickname": "Danella",
+        "gen": 11,
+        "birth_date": "2005-12-16",
+        "active": true,
+        "twitter": "@Danella_JKT48",
+        "instagram": "@jkt48.danella",
+        "tiktok": "@danellajkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Desy Natalia",
+        "nickname": "Daisy",
+        "gen": 11,
+        "birth_date": "2005-12-16",
+        "active": true,
+        "twitter": "@Daisy_JKT48",
+        "instagram": "@jkt48.daisy",
+        "tiktok": "@daisyjkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Gendis Mayrannisa",
+        "nickname": "Gendis",
+        "gen": 11,
+        "birth_date": "2010-06-27",
+        "active": true,
+        "twitter": "@Gendis_JKT48",
+        "instagram": "@jkt48.gendis",
+        "tiktok": "@gendisjkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Grace Octaviani",
+        "nickname": "Gracie",
+        "gen": 11,
+        "birth_date": "2007-11-18",
+        "active": true,
+        "twitter": "@Gracie_JKT48",
+        "instagram": "@jkt48.gracie",
+        "tiktok": "@graciejkt48",
+        "teams": [
+            "JKT48"
+        ]
+    },
+    {
+        "name": "Greesella Adhalia",
+        "nickname": "Greesel",
+        "gen": 11,
+        "birth_date": "2006-01-10",
+        "active": true,
+        "twitter": "@Greesel_JKT48",
+        "instagram": "@jkt48.greesel",
+        "tiktok": "@greeseljkt48",
+        "teams": [
+            "JKT48"
+        ]
+    },
+    {
+        "name": "Jeane Victoria",
+        "nickname": "Jeane",
+        "gen": 11,
+        "birth_date": "2006-06-05",
+        "active": true,
+        "twitter": "@Jeane_JKT48",
+        "instagram": "@jkt48.jeane",
+        "tiktok": "@jeanejkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Michelle Alexandra",
+        "nickname": "Michie",
+        "gen": 11,
+        "birth_date": "2009-04-22",
+        "active": true,
+        "twitter": "@Michie_JKT48",
+        "instagram": "@jkt48.michie_",
+        "tiktok": "@michiejkt48",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Abigail Rachel",
+        "nickname": "Aralie",
+        "gen": 12,
+        "birth_date": "2008-08-06",
+        "active": true,
+        "twitter": "@Aralie_JKT48",
+        "instagram": "@jkt48.aralie",
+        "tiktok": "@jkt48.aralie",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Adeline Wijaya",
+        "nickname": "Delynn",
+        "gen": 12,
+        "birth_date": "2007-09-01",
+        "active": true,
+        "twitter": "@Delynn_JKT48",
+        "instagram": "@jkt48.delynn",
+        "tiktok": "@jkt48.delynn",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Aisa Maharani",
+        "nickname": "Sasha",
+        "gen": 12,
+        "birth_date": "2006-01-31",
+        "active": true,
+        "twitter": "@Shasa_JKT48",
+        "instagram": "@jkt48.shasa",
+        "tiktok": "@jkt48.shasa",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Aurhel Alana",
+        "nickname": "Lana",
+        "gen": 12,
+        "birth_date": "2006-09-14",
+        "active": true,
+        "twitter": "@AR_LanaJKT48",
+        "instagram": "@jkt48.lana.a",
+        "tiktok": "@jkt48.lana",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Catherina Vallencia",
+        "nickname": "Erine",
+        "gen": 12,
+        "birth_date": "2007-08-21",
+        "active": true,
+        "twitter": "@CErine_JKT48",
+        "instagram": "@jkt48.erine",
+        "tiktok": "@jkt48.erine_",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Fritzy Rosmerian",
+        "nickname": "Fritzy",
+        "gen": 12,
+        "birth_date": "2008-07-28",
+        "active": true,
+        "twitter": "@RFritzy_JKT48",
+        "instagram": "@jkt48.fritzy.r",
+        "tiktok": "@jkt48.fritzy",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Hillary Abigail",
+        "nickname": "Lily",
+        "gen": 12,
+        "birth_date": "2007-10-19",
+        "active": true,
+        "twitter": "@Lily_JKT48",
+        "instagram": "@jkt48.lily_",
+        "tiktok": "@jkt48.lily",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Jazzlyn Trisha",
+        "nickname": "Trisha",
+        "gen": 12,
+        "birth_date": "2011-10-16",
+        "active": true,
+        "twitter": "@JTrisha_JKT48",
+        "instagram": "@jkt48.trisha",
+        "tiktok": "@jkt48.trisha",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Letycia Moreen",
+        "nickname": "Moreen",
+        "gen": 12,
+        "birth_date": "2010-06-07",
+        "active": true,
+        "twitter": "@Moreen_JKT48",
+        "instagram": "@jkt48.moreen",
+        "tiktok": "@jkt48.moreen",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Michelle Levia",
+        "nickname": "Levi",
+        "gen": 12,
+        "birth_date": "2009-01-24",
+        "active": true,
+        "twitter": "@Levi_JKT48",
+        "instagram": "@jkt48.levi",
+        "tiktok": "@jkt48.levi",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Nayla Suji",
+        "nickname": "Nayla",
+        "gen": 12,
+        "birth_date": "2007-06-18",
+        "active": true,
+        "twitter": "@SNayla_JKT48",
+        "instagram": "@jkt48.nayla.s",
+        "tiktok": "@jkt48.nayla",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Nina Tutachia",
+        "nickname": "Nachia",
+        "gen": 12,
+        "birth_date": "2009-10-16",
+        "active": true,
+        "twitter": "@Nachia_JKT48",
+        "instagram": "@jkt48.nachia.t",
+        "tiktok": "@jkt48.nachia",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Oline Manuel",
+        "nickname": "Oline",
+        "gen": 12,
+        "birth_date": "2007-11-03",
+        "active": true,
+        "twitter": "@M_OlineJKT48",
+        "instagram": "@jkt48.oline",
+        "tiktok": "@jkt48.oline",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Regina Wilian",
+        "nickname": "Regie",
+        "gen": 12,
+        "birth_date": "2009-12-10",
+        "active": true,
+        "twitter": "@Regie_JKT48",
+        "instagram": "@jkt48.regie",
+        "tiktok": "@jkt48.regie",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Ribka Budiman",
+        "nickname": "Ribka",
+        "gen": 12,
+        "birth_date": "2009-01-13",
+        "active": true,
+        "twitter": "@Ribka_JKT48",
+        "instagram": "@jkt48.ribka",
+        "tiktok": "@jkt48.regie",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Shabilqis Naila",
+        "nickname": "Nala",
+        "gen": 12,
+        "birth_date": "2008-09-01",
+        "active": true,
+        "twitter": "@Nala_JKT48",
+        "instagram": "@jkt48.nala",
+        "tiktok": "@jkt48.nala",
+        "teams": [
+            "Trainee"
+        ]
+    },
+    {
+        "name": "Victoria Kimberly",
+        "nickname": "Kimmy",
+        "gen": 12,
+        "birth_date": "2010-03-08",
+        "active": true,
+        "twitter": "@Kimmy_JKT48",
+        "instagram": "@jkt48.kimmy",
+        "tiktok": "@jkt48.kimmy",
         "teams": [
             "Trainee"
         ]
